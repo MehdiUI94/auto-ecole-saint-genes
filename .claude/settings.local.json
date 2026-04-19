@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:autoecolesaintgenes.com)",
+      "Bash(npm install *)",
+      "WebFetch(domain:github.com)",
+      "Bash(pip install *)",
+      "Bash(graphify install *)",
+      "Bash(python *)",
+      "Bash(python3 -m graphifyy install)",
+      "Bash(python3 -c \"import graphifyy; print\\(graphifyy.__file__\\)\")",
+      "Bash(pip show *)",
+      "Bash(where pip *)",
+      "Bash(/c/Users/Mehdi/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts/graphify.exe install *)",
+      "Read(//c/Users/Mehdi/AppData/Local/**)",
+      "Read(//c/Program Files/Obsidian//**)",
+      "Bash(start *)",
+      "Bash(/c/Users/Mehdi/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts/graphify.exe . *)",
+      "Bash(/c/Users/Mehdi/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts/graphify.exe *)",
+      "Bash(\"/c/Users/Mehdi/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts/graphify.exe\" update *)",
+      "Bash(\"/c/Users/Mehdi/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts/graphify.exe\" claude *)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(git clone *)",
+      "Bash([ -d \"$BASE/$skill\" ])",
+      "Bash(cp -r /c/Users/Mehdi/AppData/Roaming/Claude/awesome-claude-skills/__TRACKED_VAR__ /c/Users/Mehdi/.claude/skills/__TRACKED_VAR__)",
+      "Skill(update-config)",
+      "Bash(gh api *)",
+      "Bash(bun --version)",
+      "Bash(npm --version)",
+      "Bash(bash ./setup)",
+      "Bash(node __TRACKED_VAR__/claude-restore-gen.js)"
+    ]
+  }
+}

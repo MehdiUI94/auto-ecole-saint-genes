@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Auto-École Saint-Genès Bordeaux</title>
+  <meta name="description" content="Contactez l'Auto-École Saint-Genès à Bordeaux. Téléphone, email, formulaire de contact et accès — 22 cours de la Marne, 33800 Bordeaux.">
+  <link rel="canonical" href="https://autoecole-saint-genes.fr/contact">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[
+    {"@type":"DrivingSchool","@id":"https://autoecole-saint-genes.fr/#ecole","name":"Auto-École Saint-Genès","telephone":"+33556912345","email":"contact@autoecole-saint-genes.fr","address":{"@type":"PostalAddress","streetAddress":"22 Cours de la Marne","addressLocality":"Bordeaux","postalCode":"33800","addressCountry":"FR"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"19:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:00","closes":"17:00"}]},
+    {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://autoecole-saint-genes.fr/"},{"@type":"ListItem","position":2,"name":"Contact","item":"https://autoecole-saint-genes.fr/contact"}]}
+  ]}</script>
+</head>
+<body>
+  <a href="#contenu-principal" class="skip-link">Aller au contenu</a>
+  <header class="site-header">
+    <nav class="nav-container" role="navigation" aria-label="Navigation principale">
+      <a href="/" class="nav-logo"><span class="logo-icon">🚗</span><span class="logo-text">Auto-École<strong>Saint-Genès</strong></span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu">☰</button>
+      <ul class="nav-menu" id="nav-menu" role="list">
+        <li class="nav-item nav-dropdown"><a href="#" class="nav-link" aria-haspopup="true">Permis voiture ▾</a>
+          <ul class="dropdown-menu" role="list">
+            <li><a href="/permis-b" class="dropdown-link">Permis B classique</a></li>
+            <li><a href="/conduite-accompagnee" class="dropdown-link">Conduite accompagnée</a></li>
+            <li><a href="/conduite-supervisee" class="dropdown-link">Conduite supervisée</a></li>
+            <li><a href="/permis-ba" class="dropdown-link">Permis B automatique</a></li>
+            <li><a href="/formation-acceleree" class="dropdown-link">Formation accélérée</a></li>
+          </ul>
+        </li>
+        <li class="nav-item nav-dropdown"><a href="#" class="nav-link" aria-haspopup="true">Permis moto ▾</a>
+          <ul class="dropdown-menu" role="list">
+            <li><a href="/permis-a2" class="dropdown-link">Permis A2</a></li>
+            <li><a href="/permis-am" class="dropdown-link">Permis AM / BSR</a></li>
+            <li><a href="/formation-125-cm" class="dropdown-link">Formation 125 cm³</a></li>
+            <li><a href="/passerelle-a2-vers-a" class="dropdown-link">Passerelle A2 → A</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="/code-de-la-route" class="nav-link">Code</a></li>
+        <li class="nav-item"><a href="/mobilite-handicap" class="nav-link">Handicap</a></li>
+        <li class="nav-item"><a href="/permis-a-1-euro" class="nav-link">Financement</a></li>
+        <li class="nav-item"><a href="/contact" class="nav-link" aria-current="page">Contact</a></li>
+        <li class="nav-item"><a href="/preinscription" class="nav-link nav-cta">S'inscrire</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenu-principal">
+    <div class="page-header">
+      <nav aria-label="Fil d'Ariane" class="breadcrumb"><ol><li><a href="/">Accueil</a></li><li aria-current="page">Contact</li></ol></nav>
+      <h1>Contactez l'Auto-École Saint-Genès</h1>
+      <p class="page-subtitle">À Bordeaux depuis 1987 — réponse sous 24h ouvrées</p>
+    </div>
+
+    <div class="page-layout">
+      <article class="page-main">
+        <form id="form-contact" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="nom">Nom complet <span aria-hidden="true">*</span></label>
+            <input type="text" id="nom" name="nom" autocomplete="name" required minlength="2" placeholder="Marie Dupont">
+            <span class="form-error" id="err-nom" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email <span aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" autocomplete="email" required placeholder="marie@exemple.fr">
+            <span class="form-error" id="err-email" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="objet">Objet <span aria-hidden="true">*</span></label>
+            <select id="objet" name="objet" required>
+              <option value="">-- Sélectionnez --</option>
+              <option value="inscription">Demande d'inscription</option>
+              <option value="tarifs">Renseignements tarifs</option>
+              <option value="financement">Financement (CPF, 1€/jour…)</option>
+              <option value="handicap">Formation mobilité handicap</option>
+              <option value="perfectionnement">Perfectionnement / remise à niveau</option>
+              <option value="autre">Autre</option>
+            </select>
+            <span class="form-error" id="err-objet" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message <span aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" rows="5" required minlength="10" placeholder="Votre message…"></textarea>
+            <span class="form-error" id="err-message" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label class="checkbox-label">
+              <input type="checkbox" id="rgpd" name="rgpd" required>
+              <span>J'accepte le traitement de mes données pour répondre à ma demande. <a href="/politique-confidentialite">En savoir plus</a></span>
+            </label>
+            <span class="form-error" id="err-rgpd" role="alert"></span>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--lg">Envoyer mon message</button>
+          <div id="form-feedback" class="form-feedback" role="alert" aria-live="polite" hidden></div>
+        </form>
+      </article>
+
+      <aside class="page-sidebar">
+        <div class="sidebar-card sidebar-card--highlight">
+          <h3>📞 Par téléphone</h3>
+          <p><a href="tel:+33556912345" class="sidebar-phone">05 56 91 23 45</a></p>
+          <p class="sidebar-hours">Lun–Ven : 9h–19h<br>Samedi : 9h–17h<br>Dimanche : fermé</p>
+        </div>
+
+        <div class="sidebar-card">
+          <h3>📍 Nous trouver</h3>
+          <address style="font-style:normal">
+            <p><strong>Auto-École Saint-Genès</strong><br>22 cours de la Marne<br>33800 Bordeaux</p>
+          </address>
+          <div class="map-placeholder" role="img" aria-label="Carte de localisation — 22 cours de la Marne, Bordeaux" style="background:#e2e8f0;border-radius:8px;height:160px;display:flex;align-items:center;justify-content:center;margin-top:0.75rem;color:#64748b;font-size:0.875rem;">
+            📍 22 cours de la Marne<br>Bordeaux (33800)
+          </div>
+          <p style="margin-top:0.5rem;font-size:0.875rem;color:#64748b;">À 5 min à pied de la gare Saint-Jean<br>Tramway ligne C — arrêt Belcier</p>
+        </div>
+
+        <div class="sidebar-card">
+          <h3>✉️ Par email</h3>
+          <p><a href="mailto:contact@autoecole-saint-genes.fr">contact@autoecole-saint-genes.fr</a></p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-col"><h3>Auto-École Saint-Genès</h3><p>22 cours de la Marne<br>33800 Bordeaux</p><p><a href="tel:+33556912345">05 56 91 23 45</a></p></div>
+      <div class="footer-col"><h3>Formations</h3><ul><li><a href="/permis-b">Permis B</a></li><li><a href="/conduite-accompagnee">Conduite accompagnée</a></li><li><a href="/code-de-la-route">Code de la route</a></li></ul></div>
+      <div class="footer-col"><h3>Informations</h3><ul><li><a href="/permis-a-1-euro">Financement</a></li><li><a href="/contact">Contact</a></li><li><a href="/mentions-legales">Mentions légales</a></li></ul></div>
+    </div>
+    <p class="footer-copy">© 2024 Auto-École Saint-Genès — Bordeaux. Agrément préfectoral n° E0503300330.</p>
+  </footer>
+  <script src="/assets/main.js" defer></script>
+  <script>
+  document.getElementById('form-contact').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const btn = this.querySelector('[type=submit]');
+    const feedback = document.getElementById('form-feedback');
+    btn.disabled = true; btn.textContent = 'Envoi…';
+    try {
+      const res = await fetch('/api/contact', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(Object.fromEntries(new FormData(this)))});
+      const json = await res.json();
+      if (res.ok) {
+        feedback.textContent = '✅ Message envoyé ! Référence : ' + json.id + '. Réponse sous 24h.';
+        feedback.className = 'form-feedback form-feedback--success';
+        this.reset();
+      } else {
+        feedback.textContent = '❌ ' + (json.errors?.join(', ') || json.error || 'Erreur — veuillez réessayer.');
+        feedback.className = 'form-feedback form-feedback--error';
+      }
+    } catch { feedback.textContent = '❌ Erreur réseau.'; feedback.className = 'form-feedback form-feedback--error'; }
+    feedback.hidden = false; btn.disabled = false; btn.textContent = 'Envoyer mon message';
+  });
+  </script>
+</body>
+</html>

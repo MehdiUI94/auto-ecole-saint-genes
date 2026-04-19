@@ -1,0 +1,87 @@
+{
+  "mots_cles": {
+    "prioritaires": [
+      "auto école Bordeaux",
+      "permis B Bordeaux",
+      "auto école boîte automatique Bordeaux",
+      "permis boîte auto Bordeaux",
+      "auto école handicap Bordeaux"
+    ],
+    "secondaires": [
+      "conduite accompagnée Bordeaux",
+      "permis à 1 euro Bordeaux",
+      "formation permis CPF Bordeaux",
+      "auto école Saint-Genès Bordeaux",
+      "meilleure auto école Bordeaux"
+    ],
+    "longue_traine": [
+      "auto école spécialisée boîte automatique Bordeaux Saint-Genès",
+      "comment passer son permis avec le CPF à Bordeaux",
+      "auto école accessible fauteuil roulant Bordeaux",
+      "auto école avec le meilleur taux de réussite à Bordeaux"
+    ]
+  },
+  "plan_site": [
+    {
+      "page": "Accueil",
+      "url_suggeree": "/",
+      "h1": "Auto-École Saint-Genès Bordeaux — 40 ans d'expertise, le meilleur taux de réussite",
+      "priorite": 1,
+      "raison": "Page d'entrée principale, doit capter les requêtes génériques 'auto école Bordeaux' et rassurer immédiatement sur les différenciateurs clés : ancienneté, spécialisation boîte auto, handicap, financement."
+    },
+    {
+      "page": "Permis B",
+      "url_suggeree": "/permis-b",
+      "h1": "Permis B à Bordeaux — Formation complète avec le meilleur taux de réussite",
+      "priorite": 2,
+      "raison": "Cible la requête haute volume 'permis B Bordeaux'. Page manquante ou insuffisamment optimisée sur l'ancien site, c'est le gap SEO le plus critique à combler face à Stych, EVS et La Victoire."
+    },
+    {
+      "page": "Permis Boîte Automatique",
+      "url_suggeree": "/boite-automatique",
+      "h1": "Permis Boîte Automatique Bordeaux — Spécialiste depuis 40 ans",
+      "priorite": 3,
+      "raison": "Différenciateur fort : Saint-Genès est citée #1 par Perplexity sur cette requête spécifique. Créer une page dédiée ultra-optimisée consolide cette position IA/SEO et capte une niche à forte intention."
+    },
+    {
+      "page": "Auto-École Handicap & Mobilité",
+      "url_suggeree": "/handicap-mobilite",
+      "h1": "Formation au Permis Adapté Handicap à Bordeaux — Véhicules Aménagés & Accompagnement Personnalisé",
+      "priorite": 4,
+      "raison": "Deuxième différenciateur fort de la marque. Les IA citent Saint-Genès sur ce sujet. Consolider avec des preuves détaillées (types d'aménagements, formations moniteurs, partenaires) renforce la crédibilité GEO."
+    },
+    {
+      "page": "Tarifs & Financement",
+      "url_suggeree": "/tarifs-financement",
+      "h1": "Tarifs Permis Bordeaux — CPF, Permis à 1€/jour, Financement Sans Frais",
+      "priorite": 5,
+      "raison": "Répond à l'intention transactionnelle et aux questions fréquentes sur les prix. Le CPF et le permis à 1€ sont des arguments de conversion puissants. Page essentielle pour la comparaison face aux plateformes nationales."
+    },
+    {
+      "page": "FAQ",
+      "url_suggeree": "/faq",
+      "h1": "Questions Fréquentes sur votre Permis de Conduire à Bordeaux",
+      "priorite": 6,
+      "raison": "Comble le gap 'contenu éditorial SEO/GEO'. Les FAQ structurées en JSON-LD remontent en PAA sur Google et alimentent les réponses IA. C'est le type de contenu manquant identifié dans le diagnostic."
+    }
+  ],
+  "gaps_seo": [
+    "Absence de page dédiée et ultra-optimisée 'Permis B Bordeaux' : la marque ne remonte pas dans le top organique sur cette requête à fort volume, malgré son offre complète.",
+    "Pas de page 'Boîte Automatique' standalone : Saint-Genès se dit spécialiste mais n'apparaît pas dans le top Google sur 'auto école boîte auto Bordeaux', faute de page ciblée avec assez de contenu sémantique.",
+    "Contenu trop dense et peu structuré : les textes institutionnels longs ne favorisent pas la lecture rapide ni le parsing par les IA. Manque de titres H2/H3, listes, FAQ courtes, blocs synthétiques.",
+    "Faible présence sur les signaux externes (GEO) : peu de mentions sur des sites tiers à forte autorité (presse locale, guides comparatifs, annuaires spécialisés), ce qui explique l'absence dans les réponses ChatGPT.",
+    "Pas de FAQ structurée en Schema.org FAQPage : les questions/réponses ne sont pas balisées, donc pas exploitables par Google pour les PAA ni par les LLM pour les réponses directes.",
+    "Absence de contenu éditorial régulier : aucun blog, aucun guide daté, pas de signal de fraîcheur pour Google, contrairement à La Victoire qui publie régulièrement."
+  ],
+  "recommandations_geo": [
+    "Créer des pages de contenu citables par les IA : chaque page doit contenir des données factuelles précises (ancienneté exacte : '40 ans fondée en 1984', taux de réussite chiffré, nombre de véhicules aménagés) que les LLM peuvent extraire et citer comme preuves.",
+    "Obtenir des mentions sur des sites tiers à forte autorité : contacter des médias locaux bordelais (SudOuest.fr, Bordeaux Gazette), des annuaires spécialisés (permisecole.com, leportaildelautomobile.fr) et des guides comparatifs pour augmenter les signaux externes exploités par ChatGPT et Perplexity.",
+    "Renforcer la cohérence NAP (Nom, Adresse, Téléphone) sur tous les supports : fiche Google Business Profile complète et à jour, citations identiques sur Pages Jaunes, Yelp, Tripadvisor, annuaires auto-écoles, pour consolider la confiance des moteurs locaux et des IA d'agrégation."
+  ],
+  "score_actuel": {
+    "seo_local": "4/10 — Présent en Local Pack Maps mais absent du top organique sur les requêtes clés 'auto école Bordeaux' et 'permis B Bordeaux'.",
+    "contenu_editorial": "3/10 — Contenu service riche mais trop institutionnel, dense, sans structure FAQ/guide/comparatif exploitable par Google et les IA.",
+    "presence_geo": "5/10 — Citée spontanément sur les requêtes spécifiques (boîte auto, handicap) mais absente sur les requêtes généralistes. Signaux externes insuffisants pour ChatGPT.",
+    "accessibilite": "4/10 — Informations handicap présentes mais pas de preuves techniques détaillées ; structure HTML à améliorer pour l'accessibilité WCAG."
+  }
+}

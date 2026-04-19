@@ -1,0 +1,231 @@
+
+AUTO ECOLE SAINT-GENES BORDEAUX 
+
+Choix de l’entreprise + objectifs 
+
+Entreprise choisie : Auto-école Bordeaux Saint-Genès
+https://autoecolesaintgenes.com
+
+Type : auto-école locale (Bordeaux)
+
+Pourquoi ce choix : marque réelle, offre diversifiée (permis B, AAC, moto, BA), ancrage local fort, potentiel d’amélioration en visibilité digitale.
+
+Offre principale à prioriser : Permis B (c’est généralement l’offre la plus demandée et la plus stratégique)
+Cible principale :
+15-25 ans (lycéens/étudiants/jeunes actifs)
++ parents prescripteurs (qui comparent les auto-écoles)
+
+Zone géographique primaire : Bordeaux
+secondaire : quartiers proches / Gironde (selon requêtes locales)
+
+Objectif :
+“Être plus visible sur les recherches locales liées au Permis B à Bordeaux et être plus recommandée par les IA sur les requêtes, ex : ‘meilleure auto-école Bordeaux’.”
+
+
+Requêtes + Audit Google (via Alsoasked)
+
+A) Requête SEO : auto école bordeaux
+Top 5 observé : La Victoire / Stych / Ornikar / Cercle Auto / Printel
+Format dominant attendu : 
+Pack Google Maps (Local Pack) + avis (très fort sur “auto école + ville”) → c’est là que Saint -Genès apparaît le plus.
+
+Puis des résultats organiques mixtes :
+
+Sites d’auto-écoles locales (ex: Auto-école de la Victoire)
+Plateformes nationales (ex: Stych, Ornikar)
+Articles comparatifs / guides locaux (ex: Cercle Auto)
+
+
+
+
+
+
+Pourquoi ces acteurs dominent : 
+Stych/Ornikar : grosse autorité de domaine + pages très optimisées + énorme volume de contenu.
+Cercle Auto : page “guide local” qui répond à l’intention comparaison avec tableau, prix, critères, on observe que Google aime ce format informatif.
+La Victoire : site local avec beaucoup de texte “Bordeaux”, offres, preuves (ancienneté, avis, accessibilité) 
+
+B) Requête SEO : permis b bordeaux
+Top 5 observé : En Voiture Simone / Stych / Astuce Permis / La Navette / CER Blanquefort
+Format dominant attendu : 
+Souvent plateformes + pages offres (moins “local pur” que “auto école bordeaux”).
+Possibles Ads au-dessus (plateformes nationales).
+PAA assez probable (prix, CPF, délais, heures…).
+
+Pourquoi Saint‑Genès sort peu : 
+
+L’intention est très “offre permis B à Bordeaux” et Google favorise les gros sites qui couvrent toutes les villes (Simone/Stych) ou des acteurs très bien établis.
+Si Saint‑Genès n’a pas une page ultra ciblée “Permis B Bordeaux” (titre/H1, contenu, preuves, FAQ), elle se fait dépasser.
+
+C) Requête SEO : auto ecole boite auto bordeaux
+Top 5 que tu as observé : Auto moto école / Barmautoecole / CER le volant / Auto-école de la victoire / Cercle auto
+
+Format dominant attendu : 
+
+Local Pack + avis (très probable)
+Sites locaux spécialisés (pages “boîte automatique”)
+Pages comparatives type guide local 
+
+Point important : 
+Saint‑Genès dit être “spécialisée boîte automatique” sur son site, sachant qu’elle n’apparaît pas en top sur cette requête = gros gap SEO 
+
+
+
+
+Requêtes + Audit ia 
+Quelles sont les meilleures auto-écoles à Bordeaux pour passer le permis B ? Donne-moi 5 recommandations avec 2–3 raisons pour chacune. ?
+
+Saint-Genès n’apparaît pas dans le top 5 → signal clair de faible visibilité GEO spontanée.
+
+Le texte est très “générique” (formules répétitives : “bonne réputation”, “accompagnement personnalisé”), donc pas forcément basé sur des preuves solides.
+
+Plusieurs noms semblent être des traductions automatiques (“Driving School De La Victoire”, “Driving School Ecbb”), ce qui peut indiquer une agrégation imparfaite.
+
+Le classement ressemble fortement à une logique Google Maps/avis plus qu’à une analyse experte locale.
+
+La réponse mélange “recommandation” et “copie de snippets”, donc possible faible profondeur.
+
+  Je cherche une auto-école à Bordeaux spécialisée en permis boîte automatique (Permis B). Quelles sont les 5 meilleures options et pourquoi ?
+
+Saint‑Genès est citée en #1 quand la question est spécifique “boîte automatique”.
+      → Donc la marque a une association forte sur cet attribut (spécialisation BA) dans le discours IA.
+Perpexlity justifie avec des éléments cohérents avec le site : spécialisation, véhicules récents, aménagements handicap, CPF/1€ 1.
+Ce que ça révèle sur le positionnement perçu : 
+Positionnement IA de Saint‑Genès : “auto‑école spécialisée boîte auto + accessibilité handicap + options de financement”.
+Concurrents cités en IA sur BA : La Victoire, Stych, Espace Conduite, Auto Moto École (donc ce sont nos concurrents “GEO” sur cet angle).
+Point critique : 
+ChatGPT ne cite pas l’auto école car : 
+ Signaux externes insuffisants : peu de mentions sur sites tiers forts (médias, guides fiables, annuaires autorité) = moins de chances d’être repris.
+Concurrents plus “cités” que vous : certains noms reviennent partout (Stych, EVS), donc l’IA les apprend comme “réponse par défaut”.
+
+
+
+
+Je suis en situation de handicap et je cherche une auto-école à Bordeaux qui propose des véhicules aménagés et un accompagnement adapté. Quelles auto-écoles recommandes-tu ?
+
+La réponse est globalement correct sur perplexity, mais avec des limites importantes :
+Point positif : elle cite Auto-école Saint-Genès (donc présence IA sur un angle spécifique).
+Angle utilisé par l’IA : surtout “accessibilité” (entrée PMR, avis, accompagnement), pas forcément preuve détaillée de véhicules réellement aménagés.
+Niveau de preuve : moyen. Beaucoup d’arguments sont génériques (“professionnalisme”, “pédagogie”, “écoute”).
+Qualité méthodo : bon réflexe final (“appeler pour confirmer les adaptations exactes”) → c’est réaliste.
+Insight GEO : Saint‑Genès ressort mieux quand le prompt active son différenciateur (handicap/boîte auto), moins sur les requêtes généralistes.
+
+
+Récap des 3 questions (vocabulaire, position, sources) : 
+
+1. “Meilleures auto-écoles à Bordeaux pour le permis B” : Faible / absente (pas dans le top principal selon nos tests), “réputation”, “avis”, “accompagnement”, très générique	Surtout logique annuaires/avis/comparatifs, sans source très précise côté ChatGPT
+
+2. “Meilleure auto-école boîte automatique à Bordeaux”: Forte (citée en #1 dans Perplexity)	“spécialisée boîte auto”, “véhicules récents”, “CPF”, “permis à 1€”, cohérent avec le site de l’école + signaux locaux.
+
+3. “Auto-école adaptée handicap à Bordeaux” : Moyenne à forte (citée dans le top, pas toujours #1), “accessible fauteuil roulant”, “accompagnement adapté”, “moniteurs patients”	Principalement fiches locales/avis publics; preuves techniques d’aménagement parfois incomplètes.
+
+
+
+
+
+
+
+
+
+
+
+
+Diagnostic du contenu de la marque 
+         1) Inventaire des contenus existants
+Pages offres / services
+Le site couvre bien les offres principales via le menu :
+Permis auto : Code, Permis B, Conduite accompagnée, Conduite supervisée, Mobilité handicap, Permis BA, Formation accélérée, Permis à 1 euro, Perfectionnement
+Permis moto : A2, AM, 125 cm3, Passerelle A2 vers A
+
+Preuves / réassurance
+Tarifs visibles en homepage (Code, Permis B, AAC, Moto)
+Bloc d’avis clients (nombreux témoignages)
+Mise en avant ancienneté (“40 ans”), extrait presse, plateau privé, options de financement (CPF, 1€/jour)
+
+Contenu informationnel
+Gros blocs pédagogiques/réglementaires : déroulé des évaluations, examen, parcours de formation, modalités handicap, financement
+Ce sont des contenus “institutionnels” utiles
+Ce qui manque en formats : 
+Pas de vrai blog éditorial régulier (articles datés, guides thématiques)
+Pas de FAQ structurée en format question/réponse court
+Pas de pages comparatives (“boîte auto vs manuelle”, “Saint-Genès vs auto-école en ligne”, etc.)
+2) Évaluation du site (clarté, structure, fraîcheur, couverture)
+Clarté
+Points forts : proposition de valeur claire (spécialisation boîte auto + handicap), infos concrètes (prix, contact, financement).
+Points faibles : textes très longs, parfois denses et répétitifs; messages clés noyés dans de gros paragraphes.
+
+Structure
+Points forts : menu assez complet, services bien identifiables.
+Points faibles : hiérarchie éditoriale pas toujours lisible; manque de blocs synthétiques (FAQ courte, comparatifs, “pour qui cette offre ?”, CTA plus visibles).
+Fraîcheur
+Points forts : présence d’avis récents.
+Points faibles : peu de signaux de mise à jour éditoriale continue (guides datés, nouveaux contenus réguliers).
+Couverture thématique
+Points forts : bonne couverture des offres auto/moto + handicap + financement.
+Points faibles : faible couverture “recherche Google/IA” sur des requêtes d’information locales (prix permis Bordeaux, délais, comment choisir son auto-école, etc.).
+
+3) Diagnostic synthétique
+Le site est fort en contenus service/institutionnels.
+Il est moins fort en contenus éditoriaux SEO/GEO (guides, FAQ optimisées, comparatifs), qui sont justement ceux qui remontent souvent dans Google et dans les réponses IA.
+La marque a une vraie différenciation (boîte auto + handicap), mais elle est pas encore transformée en cluster de contenus facile à citer/recommander.
+
+
+
+Nos principaux concurrents
+Pourquoi ces concurrents : 
+
+Auto-école de la Victoire — concurrent local direct très crédible (forte présence locale, offre Permis B/boîte auto, contenu orienté Bordeaux) 
+
+            Pourquoi La Victoire remonte mieux
+Couverture sémantique locale plus large
+
+La Victoire multiplie les pages et formulations orientées “Bordeaux” + variantes d’intention (“pas chère”, “accéléré”, “proche gare”, “Talence”, etc.), ce qui capte plus de requêtes longues traînes.
+
+Ils ont une logique de mini-pages/actualités/guides locaux qui alimente régulièrement Google avec de nouveaux points d’entrée.
+
+“Efficace et pas cher”, “formation accélérée”, “délais courts”, “forfait étudiant” : c’est très aligné avec l’intention transactionnelle.
+
+Stych — concurrent “gros acteur” qui capte beaucoup de visibilité SEO (volume de pages, offres, avis, branding national) 
+
+Ornikar — concurrent digital national très fort en acquisition search (prix, promos, contenu massif, forte notoriété) 
+
+
+
+
+
+
+
+ Forces de la marque
+Positionnement différenciant : spécialisation boîte automatique + accompagnement handicap (rare et très pertinent localement) 
+
+Crédibilité opérationnelle : ancienneté, offres structurées, infos concrètes (tarifs, financement CPF/1€, contact, services) 
+
+Capital confiance local : volume d’avis clients et témoignages qualitatifs, présence en local pack/maps selon vos observations.
+
+
+
+
+
+Faiblesses de la marque
+Faible visibilité SEO sur requêtes généralistes : la marque ressort peu dans les top organiques sur “auto école bordeaux” / “permis b bordeaux” selon vos relevés.
+
+Contenu peu “search-friendly” : beaucoup de texte long institutionnel, pas assez de pages comparatives/FAQ courtes/guides ciblés intention.
+
+Visibilité GEO instable : la marque est mieux citée sur des prompts spécifiques (boîte auto/handicap) que sur des requêtes générales, donc présence IA encore fragile.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2 Insights clés
+

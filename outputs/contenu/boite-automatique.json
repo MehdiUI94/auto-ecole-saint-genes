@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "title": "Permis Boîte Automatique Bordeaux — Spécialiste depuis 40 ans | Saint-Genès",
+    "description": "Auto-école Saint-Genès, spécialiste du permis boîte automatique à Bordeaux depuis 40 ans. Véhicules récents, moniteurs experts, CPF accepté. Tél : 05 56 96 33 20.",
+    "slug": "boite-automatique"
+  },
+  "h1": "Permis Boîte Automatique à Bordeaux — L'école spécialiste depuis 40 ans",
+  "introduction": "Vous souhaitez passer votre permis en boîte automatique à Bordeaux ? Vous êtes à la bonne adresse. L'auto-école Saint-Genès est la référence bordelaise en formation à la conduite boîte automatique depuis plus de 40 ans. Nos véhicules récents, nos moniteurs spécialisés et notre pédagogie éprouvée font de nous le choix numéro 1 pour cette formation spécifique.",
+  "sections": [
+    {
+      "h2": "Pourquoi choisir la boîte automatique pour votre permis ?",
+      "contenu": "La boîte automatique présente de nombreux avantages pour l'apprentissage de la conduite. En supprimant la gestion du changement de vitesse et de l'embrayage, vous pouvez concentrer toute votre attention sur la route, les autres usagers et les situations de conduite. C'est particulièrement bénéfique pour les personnes qui ressentent du stress au volant, pour celles qui présentent une gêne physique au membre supérieur ou inférieur gauche, ou simplement pour celles qui souhaitent apprendre plus vite et plus sereinement. En ville comme sur autoroute, la boîte automatique moderne offre un confort de conduite remarquable."
+    },
+    {
+      "h2": "Notre flotte de véhicules boîte automatique à Bordeaux",
+      "contenu": "Saint-Genès dispose d'une flotte de véhicules récents exclusivement équipés de boîtes automatiques. Nos voitures-école sont régulièrement renouvelées pour vous offrir un apprentissage sur des modèles représentatifs du parc automobile actuel. Certains véhicules peuvent être équipés d'aménagements spécifiques pour les conducteurs en situation de handicap (commandes adaptées, transferts de pédale, etc.). Tous nos véhicules sont entretenus rigoureusement et équipés des dernières technologies d'aide à la conduite."
+    },
+    {
+      "h2": "La formation boîte automatique pas à pas",
+      "contenu": "Votre formation débute par un rendez-vous pédagogique avec un moniteur spécialisé, qui évalue votre niveau et définit votre programme. Les premières leçons se déroulent sur notre plateau privé pour maîtriser les bases (démarrage, manœuvres, stationnement) sans pression. Vous progressez ensuite progressivement vers la circulation en ville, sur routes et sur autoroute. Chaque leçon est débriefée avec votre moniteur pour maximiser vos progrès. Quand vous êtes prêt, votre moniteur vous présente à l'examen pratique du permis B."
+    },
+    {
+      "h2": "Lever la restriction boîte automatique : c'est simple",
+      "contenu": "Vous avez obtenu votre permis en boîte automatique et souhaitez conduire un véhicule à boîte manuelle ? Rien de plus simple : il suffit de réaliser une formation complémentaire de 7 heures minimum chez nous, sans repasser d'examen. À l'issue de cette formation, votre moniteur transmet votre dossier à la préfecture et la restriction code 78 est levée de votre permis. Cette démarche peut être réalisée à tout moment après l'obtention du permis boîte auto."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Le permis boîte automatique est-il reconnu comme un vrai permis B ?",
+      "reponse": "Oui, le permis boîte automatique est un permis B à part entière. La seule différence est la mention 'code 78' sur le permis, qui indique que le titulaire doit conduire des véhicules à boîte automatique. Cette restriction peut être levée avec une formation complémentaire de 7 heures, sans repasser d'examen."
+    },
+    {
+      "question": "Le permis boîte auto est-il moins cher ou plus rapide ?",
+      "reponse": "La formation boîte automatique nécessite généralement un peu moins d'heures de conduite que la boîte manuelle, ce qui peut réduire légèrement le coût total. Surtout, les élèves progressent souvent plus vite car ils se concentrent sur la conduite plutôt que sur la mécanique du changement de vitesse."
+    },
+    {
+      "question": "Proposez-vous la conduite accompagnée en boîte automatique ?",
+      "reponse": "Oui, il est tout à fait possible de suivre la conduite accompagnée (AAC) en boîte automatique chez Saint-Genès. L'accompagnateur doit alors être titulaire du permis et avoir reçu la formation spécifique AAC. Nous vous guidons dans toutes ces formalités."
+    },
+    {
+      "question": "Quelle est la meilleure auto-école pour le permis boîte automatique à Bordeaux ?",
+      "reponse": "L'auto-école Saint-Genès est reconnue comme la référence bordelaise pour le permis boîte automatique, avec 40 ans de spécialisation. Perplexity AI nous cite en première position pour cette formation spécifique à Bordeaux. Nos résultats à l'examen et les avis de nos élèves confirment notre expertise."
+    },
+    {
+      "question": "Comment financer mon permis boîte automatique ?",
+      "reponse": "Votre formation boîte automatique peut être financée via le CPF (Compte Personnel de Formation), le permis à 1€/jour pour les 15-25 ans, ou en plusieurs fois sans frais. Contactez-nous au 05 56 96 33 20 pour une simulation personnalisée."
+    }
+  ],
+  "cta": {
+    "titre": "Découvrez nos formules boîte automatique",
+    "bouton": "Appelez-nous : 05 56 96 33 20"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "title": "Auto-École Saint-Genès Bordeaux — 40 ans d'expertise, meilleur taux de réussite",
+    "description": "Auto-école Saint-Genès à Bordeaux : spécialiste permis B boîte automatique, accompagnement handicap, CPF et permis à 1€/jour. 40 ans d'ancienneté. Appelez le 05 56 96 33 20.",
+    "slug": "accueil"
+  },
+  "h1": "Auto-École Saint-Genès Bordeaux — 40 ans d'expertise au service de votre permis",
+  "introduction": "Depuis 40 ans, l'auto-école Saint-Genès accompagne les habitants de Bordeaux et de la Gironde vers l'obtention de leur permis de conduire. Spécialistes reconnus de la conduite en boîte automatique et de l'accompagnement des personnes en situation de handicap, nous affichons le meilleur taux de réussite de Bordeaux. Financement CPF, permis à 1€/jour : votre permis est à portée de main.",
+  "sections": [
+    {
+      "h2": "Nos formations : du permis B à la conduite accompagnée",
+      "contenu": "Que vous souhaitiez passer votre permis B classique, opter pour la conduite accompagnée dès 15 ans (AAC), vous former en boîte automatique ou obtenir votre permis moto, notre équipe de moniteurs expérimentés vous accompagne à chaque étape. Nous proposons également des formations accélérées pour les candidats pressés et des sessions de perfectionnement pour les conducteurs souhaitant se perfectionner. Chaque parcours est personnalisé selon votre rythme et vos besoins."
+    },
+    {
+      "h2": "Spécialistes de la boîte automatique et de l'accessibilité handicap",
+      "contenu": "Saint-Genès est l'une des seules auto-écoles de Bordeaux à proposer une véritable spécialisation en conduite boîte automatique. Nos véhicules récents et parfaitement entretenus sont équipés pour un apprentissage confortable et efficace. Nous disposons également de véhicules aménagés et de moniteurs spécialement formés à l'accompagnement des personnes en situation de handicap moteur. Notre école est accessible aux fauteuils roulants et nous adaptons chaque formation aux besoins spécifiques de chaque élève."
+    },
+    {
+      "h2": "Financement : CPF, permis à 1€/jour et solutions sans frais",
+      "contenu": "Le financement de votre permis ne doit pas être un obstacle. Nous acceptons le Compte Personnel de Formation (CPF) pour financer tout ou partie de votre formation. Notre partenariat avec les organismes agréés vous permet également d'accéder au permis à 1€/jour, destiné aux jeunes de 15 à 25 ans. N'hésitez pas à nous contacter pour étudier ensemble la solution la mieux adaptée à votre situation."
+    },
+    {
+      "h2": "Pourquoi choisir Saint-Genès ? Nos chiffres parlent d'eux-mêmes",
+      "contenu": "40 ans d'ancienneté à Bordeaux, une équipe stable de moniteurs passionnés, un taux de réussite qui fait notre fierté et des centaines d'avis clients positifs : l'auto-école Saint-Genès est une référence locale. Notre plateau privé et nos horaires adaptés (lundi au vendredi, 14h-19h) vous permettent de vous former dans les meilleures conditions. Rejoignez les milliers d'élèves qui nous ont fait confiance depuis 1984."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Où se situe l'auto-école Saint-Genès à Bordeaux ?",
+      "reponse": "Notre auto-école est située à Bordeaux, dans le quartier Saint-Genès. Nous sommes ouverts du lundi au vendredi de 14h à 19h. Contactez-nous au 05 56 96 33 20 pour obtenir l'adresse précise et prendre rendez-vous."
+    },
+    {
+      "question": "Quels financements sont disponibles pour le permis ?",
+      "reponse": "Nous acceptons le CPF (Compte Personnel de Formation) et le dispositif permis à 1€/jour pour les 15-25 ans. Nos conseillers vous guident dans toutes les démarches administratives pour accéder à ces financements."
+    },
+    {
+      "question": "Proposez-vous des cours en boîte automatique ?",
+      "reponse": "Oui, la boîte automatique est notre spécialité depuis 40 ans. Nous disposons d'une flotte de véhicules récents en boîte automatique et de moniteurs experts dans cet apprentissage, idéal pour les personnes qui souhaitent se concentrer sur la sécurité routière sans la contrainte de la boîte manuelle."
+    },
+    {
+      "question": "L'auto-école est-elle accessible aux personnes handicapées ?",
+      "reponse": "Absolument. Saint-Genès dispose de véhicules aménagés et de moniteurs formés à l'accompagnement des personnes en situation de handicap moteur. Nos locaux sont accessibles en fauteuil roulant. Contactez-nous pour discuter de vos besoins spécifiques."
+    },
+    {
+      "question": "Quel est le taux de réussite de l'auto-école Saint-Genès ?",
+      "reponse": "Nous affichons le meilleur taux de réussite de Bordeaux grâce à notre pédagogie personnalisée, notre plateau privé d'entraînement et nos 40 ans d'expérience. Contactez-nous pour en savoir plus sur nos résultats détaillés."
+    }
+  ],
+  "cta": {
+    "titre": "Commencez votre formation dès aujourd'hui",
+    "bouton": "Nous appeler : 05 56 96 33 20"
+  }
+}

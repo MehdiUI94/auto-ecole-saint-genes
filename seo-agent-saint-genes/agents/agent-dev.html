@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agent Dev — Saint-Genès</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, sans-serif; background: #f9f9f7; color: #1a1a1a; }
+    header { padding: 1.5rem 2rem; border-bottom: 1px solid #e5e5e5; background: #fff; }
+    header h1 { font-size: 18px; font-weight: 500; }
+    header p { font-size: 13px; color: #666; margin-top: 2px; }
+    nav { display: flex; gap: 4px; padding: 0.75rem 2rem; background: #fff; border-bottom: 1px solid #e5e5e5; flex-wrap: wrap; }
+    nav a { font-size: 13px; padding: 6px 14px; border-radius: 6px; text-decoration: none; color: #444; border: 1px solid #e5e5e5; }
+    nav a:hover, nav a.active { background: #1a1a1a; color: #fff; border-color: #1a1a1a; }
+    main { max-width: 1100px; margin: 2rem auto; padding: 0 1.5rem; }
+    .badge { display: inline-block; font-size: 12px; padding: 3px 10px; border-radius: 999px; background: #f4c0d1; color: #72243e; margin-bottom: 12px; }
+    h2 { font-size: 18px; font-weight: 500; margin-bottom: 4px; }
+    .subtitle { font-size: 14px; color: #666; margin-bottom: 1.5rem; }
+    .input-area { border: 1px solid #e5e5e5; border-radius: 12px; padding: 1rem; background: #f5f5f3; margin-bottom: 1rem; }
+    .input-area label { font-size: 13px; color: #666; display: block; margin-bottom: 6px; margin-top: 10px; }
+    .input-area label:first-child { margin-top: 0; }
+    select, input[type="text"] { width: 100%; border: 1px solid #e5e5e5; border-radius: 8px; padding: 8px 12px; font-size: 14px; font-family: inherit; background: #fff; }
+    textarea { width: 100%; min-height: 100px; border: 1px solid #e5e5e5; border-radius: 8px; padding: 10px; font-size: 13px; font-family: monospace; background: #fff; resize: vertical; }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .actions { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 1.5rem; }
+    button { padding: 8px 18px; border-radius: 8px; border: 1px solid #e5e5e5; background: transparent; color: #1a1a1a; font-size: 14px; cursor: pointer; font-family: inherit; }
+    button:hover { background: #f5f5f3; }
+    button.primary { background: #1a1a1a; color: #fff; border-color: #1a1a1a; }
+    button.primary:hover { opacity: 0.85; }
+    button:disabled { opacity: 0.4; cursor: not-allowed; }
+    .result-area { border: 1px solid #e5e5e5; border-radius: 12px; padding: 1.25rem; background: #fff; min-height: 200px; }
+    .loading { display: flex; align-items: center; gap: 8px; color: #666; font-size: 14px; padding: 2rem 0; }
+    .dot { width: 6px; height: 6px; border-radius: 50%; background: #999; animation: pulse 1.2s infinite; }
+    .dot:nth-child(2) { animation-delay: 0.2s; }
+    .dot:nth-child(3) { animation-delay: 0.4s; }
+    @keyframes pulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 1; } }
+    .tabs { display: flex; gap: 4px; margin-bottom: 1rem; border-bottom: 1px solid #e5e5e5; flex-wrap: wrap; }
+    .tab { padding: 8px 14px; font-size: 13px; cursor: pointer; border: none; background: transparent; color: #666; border-bottom: 2px solid transparent; margin-bottom: -1px; font-family: inherit; }
+    .tab.active { color: #1a1a1a; border-bottom-color: #1a1a1a; font-weight: 500; }
+    .preview-frame { border: 1px solid #e5e5e5; border-radius: 8px; background: #fff; width: 100%; min-height: 600px; }
+    .code-output { background: #1a1a1a; color: #e5e5e5; padding: 16px; border-radius: 8px; font-family: monospace; font-size: 12px; overflow-x: auto; white-space: pre-wrap; line-height: 1.6; max-height: 500px; overflow-y: auto; }
+    .file-tabs { display: flex; gap: 2px; background: #f5f5f3; padding: 4px; border-radius: 8px 8px 0 0; margin-bottom: 0; }
+    .file-tab { padding: 6px 12px; font-size: 12px; cursor: pointer; border-radius: 6px; background: transparent; border: none; font-family: monospace; }
+    .file-tab.active { background: #fff; font-weight: 500; }
+    .copy-btn { font-size: 11px; padding: 4px 10px; border-radius: 6px; background: #fff; border: 1px solid #e5e5e5; cursor: pointer; float: right; }
+    .error { color: #e24b4a; font-size: 14px; padding: 1rem; }
+    .empty { color: #666; font-size: 14px; text-align: center; padding: 2rem 0; }
+    .seo-check { padding: 10px 14px; border-radius: 8px; margin-bottom: 8px; display: flex; align-items: center; gap: 10px; font-size: 13px; }
+    .seo-check.pass { background: #e1f5ee; color: #0f6e56; }
+    .seo-check.warn { background: #faeeda; color: #854f0b; }
+    footer { text-align: center; padding: 2rem; font-size: 13px; color: #999; margin-top: 3rem; border-top: 1px solid #e5e5e5; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Plateforme SEO — Auto-École Saint-Genès</h1>
+    <p>Système multi-agents pour le marketing digital</p>
+  </header>
+  <nav>
+    <a href="../index.html">Accueil</a>
+    <a href="agent-seo.html">Agent SEO</a>
+    <a href="agent-contenu.html">Agent Contenu</a>
+    <a href="agent-design.html">Agent Design</a>
+    <a href="agent-dev.html" class="active">Agent Dev</a>
+  </nav>
+  <main>
+    <span class="badge">Agent 4 — Développeur</span>
+    <h2>Génération de pages HTML prêtes à livrer</h2>
+    <p class="subtitle">Assemble contenu + design en code HTML/CSS optimisé SEO, sémantique et accessible.</p>
+
+    <div class="input-area">
+      <div class="row">
+        <div>
+          <label>Page à développer</label>
+          <select id="page-select">
+            <option value="accueil">Page d'accueil</option>
+            <option value="permis-b">Permis B</option>
+            <option value="boite-auto">Permis boîte automatique</option>
+            <option value="handicap">Permis adapté handicap</option>
+            <option value="tarifs">Tarifs</option>
+            <option value="contact">Contact</option>
+          </select>
+        </div>
+        <div>
+          <label>Framework CSS</label>
+          <select id="framework-select">
+            <option value="vanilla" selected>HTML/CSS vanilla (recommandé)</option>
+            <option value="tailwind">Tailwind CSS (via CDN)</option>
+          </select>
+        </div>
+      </div>
+
+      <label>Contenu généré par l'Agent 2 (JSON)</label>
+      <textarea id="content-input" placeholder='Colle ici le JSON généré par l&apos;Agent Contenu, ou laisse vide pour un contenu par défaut.'></textarea>
+
+      <label>Variables CSS de l'Agent 3 (optionnel)</label>
+      <textarea id="design-input" placeholder='Colle ici le CSS :root {} généré par l&apos;Agent Design, ou laisse vide pour utiliser la palette par défaut.'></textarea>
+    </div>
+
+    <div class="actions">
+      <button class="primary" onclick="generateCode()" id="btn-gen">Générer la page HTML</button>
+      <button onclick="loadDefaults()">Charger valeurs par défaut</button>
+      <button onclick="clearAll()">Effacer</button>
+    </div>
+
+    <div class="result-area" id="result-area">
+      <div class="empty">Choisis une page et lance la génération.</div>
+    </div>
+  </main>
+  <footer>Projet SEO Agent — Saint-Genès &copy; 2026</footer>
+
+  <script>
+    const DEFAULT_CSS = `:root {
+  --color-primary: #0c4a6e;
+  --color-primary-dark: #082f4c;
+  --color-primary-light: #e0f2fe;
+  --color-secondary: #d97706;
+  --color-text: #1a1a1a;
+  --color-text-muted: #525252;
+  --color-border: #e5e5e5;
+  --color-bg: #ffffff;
+  --color-bg-alt: #f9fafb;
+  --font-heading: 'Manrope', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 48px;
+}`;
+
+    const DEFAULT_CONTENT = JSON.stringify({
+      meta: {
+        title: "Auto-école Bordeaux Saint-Genès | Permis B, boîte auto, handicap",
+        description: "Passez votre permis à Bordeaux avec 40 ans d'expérience. Spécialiste boîte automatique et accompagnement handicap. CPF et permis à 1€.",
+        slug: "/"
+      },
+      h1: "Votre permis à Bordeaux, avec une auto-école qui vous connaît",
+      introduction: "Depuis 40 ans, l'auto-école Saint-Genès forme les conducteurs bordelais avec une attention particulière pour chaque élève. Spécialistes de la boîte automatique et du permis adapté au handicap, nous vous accompagnons de l'inscription au jour de l'examen.",
+      sections: [
+        {h2: "Pourquoi choisir Saint-Genès ?", contenu: "40 ans d'ancienneté à Bordeaux, le meilleur taux de réussite de la ville selon Sud-Ouest, des moniteurs pédagogues et un plateau privé sécurisé. Nous croyons que passer son permis doit être une expérience rassurante, pas stressante."},
+        {h2: "Une spécialisation unique à Bordeaux", contenu: "Nous sommes l'une des rares auto-écoles bordelaises entièrement équipées pour la boîte automatique et le handicap moteur. Véhicules à aménagements modulables, local PMR, moniteurs formés : tout est pensé pour que chacun puisse apprendre à conduire."},
+        {h2: "Des solutions de financement adaptées", contenu: "Paiement en 3 fois sans frais, financement CPF, permis à 1€/jour, aides de la Région Nouvelle-Aquitaine et du Département. Nous vous accompagnons dans toutes les démarches pour rendre le permis accessible."}
+      ],
+      faq: [
+        {question: "Combien coûte le permis B à Bordeaux chez Saint-Genès ?", reponse: "Le forfait Permis B est à 1566€ et comprend l'inscription, 20 heures de conduite et l'accompagnement à l'examen. Des solutions de financement sont disponibles."},
+        {question: "Proposez-vous le permis boîte automatique ?", reponse: "Oui, c'est notre spécialité. Nos véhicules sont équipés de boîtes automatiques hybrides modernes, et la formation ne dure que 13 heures minimum au lieu de 20."},
+        {question: "L'auto-école est-elle accessible aux personnes à mobilité réduite ?", reponse: "Totalement. Notre local est agréé PMR avec rampe d'accès, et nous disposons d'un véhicule à aménagements modulables (pédales inversées, accélérateur au volant, etc.)."}
+      ],
+      cta: {titre: "Prêt à démarrer votre formation ?", bouton: "Prendre rendez-vous"}
+    }, null, 2);
+
+    function loadDefaults() {
+      document.getElementById('content-input').value = DEFAULT_CONTENT;
+      document.getElementById('design-input').value = DEFAULT_CSS;
+    }
+
+    function clearAll() {
+      document.getElementById('content-input').value = '';
+      document.getElementById('design-input').value = '';
+      document.getElementById('result-area').innerHTML = '<div class="empty">Choisis une page et lance la génération.</div>';
+    }
+
+    function showTab(tab) {
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      document.querySelector(`[data-tab="${tab}"]`).classList.add('active');
+      document.querySelectorAll('.tab-content').forEach(c => c.style.display = 'none');
+      document.getElementById(`tab-${tab}`).style.display = 'block';
+    }
+
+    function copyCode() {
+      const code = document.getElementById('code-full').innerText;
+      navigator.clipboard.writeText(code);
+      event.target.textContent = 'Copié ✓';
+      setTimeout(() => { event.target.textContent = 'Copier'; }, 1500);
+    }
+
+    function downloadHTML() {
+      const code = document.getElementById('code-full').innerText;
+      const blob = new Blob([code], { type: 'text/html' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = document.getElementById('page-select').value + '.html';
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+
+    async function generateCode() {
+      const page = document.getElementById('page-select').value;
+      const framework = document.getElementById('framework-select').value;
+      const contentRaw = document.getElementById('content-input').value.trim() || DEFAULT_CONTENT;
+      const designCss = document.getElementById('design-input').value.trim() || DEFAULT_CSS;
+
+      let content;
+      try {
+        content = JSON.parse(contentRaw);
+      } catch (e) {
+        alert('Le JSON du contenu n\'est pas valide. Charge les valeurs par défaut ou corrige le JSON.');
+        return;
+      }
+
+      const btn = document.getElementById('btn-gen');
+      btn.disabled = true;
+      btn.textContent = 'Génération en cours...';
+
+      document.getElementById('result-area').innerHTML = `
+        <div class="loading">
+          <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+          <span>L'agent assemble le code HTML, CSS et schema.org...</span>
+        </div>`;
+
+      const prompt = `Tu es un développeur front-end senior spécialisé SEO technique et accessibilité WCAG.
+
+CONTEXTE : Page "${page}" pour l'Auto-École Saint-Genès à Bordeaux.
+FRAMEWORK : ${framework}
+CONTENU (JSON) : ${JSON.stringify(content)}
+CSS VARIABLES : ${designCss}
+
+Génère une page HTML COMPLÈTE, autonome, production-ready, EN JSON (réponds UNIQUEMENT en JSON) :
+{
+  "html": "code HTML complet avec <!DOCTYPE html>, <head>, <body>, tout en inline",
+  "seo_checks": [
+    {"critere": "Title présent et optimisé", "status": "pass", "detail": "..."},
+    {"critere": "Meta description", "status": "pass", "detail": "..."},
+    {"critere": "H1 unique", "status": "pass", "detail": "..."},
+    {"critere": "Schema.org LocalBusiness", "status": "pass", "detail": "..."},
+    {"critere": "Schema.org FAQPage", "status": "pass", "detail": "..."},
+    {"critere": "Open Graph tags", "status": "pass", "detail": "..."},
+    {"critere": "Attributs alt sur images", "status": "pass", "detail": "..."},
+    {"critere": "Landmarks ARIA (header, nav, main, footer)", "status": "pass", "detail": "..."},
+    {"critere": "Contraste WCAG AA", "status": "pass", "detail": "..."},
+    {"critere": "Responsive mobile-first", "status": "pass", "detail": "..."}
+  ],
+  "recommandations_suivantes": ["Sitemap XML", "robots.txt", "Schema Review", "..."]
+}
+
+EXIGENCES HTML :
+1. Structure sémantique HTML5 : <header>, <nav>, <main>, <section>, <article>, <footer>
+2. Meta tags complets : title, description, viewport, charset, lang, canonical
+3. Open Graph + Twitter Card pour réseaux sociaux
+4. Schema.org JSON-LD : LocalBusiness (AutoSchool) + BreadcrumbList + FAQPage si FAQ présente
+5. Navigation accessible avec skip-link et ARIA landmarks
+6. Images avec alt descriptif, loading="lazy", width/height
+7. CSS inline dans <style> utilisant les variables CSS fournies, responsive mobile-first
+8. Hero section impactante avec H1 et CTA principal
+9. Sections H2 bien structurées, une seule H1
+10. FAQ en <details>/<summary> OU divs avec schema FAQPage
+11. Footer avec coordonnées, horaires, mentions légales
+12. Focus visible sur tous éléments interactifs
+13. Format français (téléphone, adresse, date)
+14. Coordonnées réelles : 05 56 96 33 20, Bordeaux Saint-Genès
+
+IMPORTANT : le HTML doit être COMPLET et fonctionner en standalone (ouvrable directement dans un navigateur). Utilise les Google Fonts via <link> dans le <head>.`;
+
+      try {
+        const response = await fetch("https://api.anthropic.com/v1/messages", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            model: "claude-sonnet-4-20250514",
+            max_tokens: 8000,
+            messages: [{ role: "user", content: prompt }]
+          })
+        });
+        const data = await response.json();
+        const text = data.content.map(i => i.text || "").join("");
+        const clean = text.replace(/```json|```/g, "").trim();
+        const result = JSON.parse(clean);
+        renderResult(result);
+      } catch (err) {
+        document.getElementById('result-area').innerHTML = `<div class="error">Erreur : ${err.message}. Si c'est un problème de parsing JSON, le contenu généré est trop long — réessaie.</div>`;
+      }
+
+      btn.disabled = false;
+      btn.textContent = 'Générer la page HTML';
+    }
+
+    function renderResult(data) {
+      const seoHtml = data.seo_checks.map(c => {
+        const icon = c.status === 'pass' ? '✓' : '⚠';
+        return `<div class="seo-check ${c.status === 'pass' ? 'pass' : 'warn'}">
+          <span style="font-weight: 600;">${icon}</span>
+          <div><strong>${c.critere}</strong><div style="font-size: 12px; margin-top: 2px; opacity: 0.8;">${c.detail}</div></div>
+        </div>`;
+      }).join('');
+
+      const blob = new Blob([data.html], { type: 'text/html' });
+      const previewUrl = URL.createObjectURL(blob);
+
+      const recHtml = data.recommandations_suivantes.map(r => `
+        <li style="padding: 8px 0; border-bottom: 1px solid #f0f0f0; font-size: 14px;">${r}</li>
+      `).join('');
+
+      document.getElementById('result-area').innerHTML = `
+        <div class="tabs">
+          <button class="tab active" data-tab="preview" onclick="showTab('preview')">Aperçu</button>
+          <button class="tab" data-tab="code" onclick="showTab('code')">Code HTML</button>
+          <button class="tab" data-tab="seo" onclick="showTab('seo')">Audit SEO</button>
+          <button class="tab" data-tab="next" onclick="showTab('next')">Recommandations</button>
+        </div>
+        <div class="tab-content" id="tab-preview">
+          <iframe class="preview-frame" src="${previewUrl}" title="Aperçu de la page"></iframe>
+          <div style="margin-top: 12px; display: flex; gap: 8px;">
+            <button onclick="downloadHTML()">Télécharger le .html</button>
+            <button onclick="window.open('${previewUrl}', '_blank')">Ouvrir en pleine page</button>
+          </div>
+        </div>
+        <div class="tab-content" id="tab-code" style="display:none;">
+          <button class="copy-btn" onclick="copyCode()">Copier</button>
+          <div style="clear:both;"></div>
+          <div class="code-output" id="code-full">${data.html.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</div>
+        </div>
+        <div class="tab-content" id="tab-seo" style="display:none;">${seoHtml}</div>
+        <div class="tab-content" id="tab-next" style="display:none;">
+          <ul style="padding-left: 1rem;">${recHtml}</ul>
+        </div>`;
+    }
+  </script>
+</body>
+</html>

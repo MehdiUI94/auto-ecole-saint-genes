@@ -1,0 +1,12 @@
+# robots.txt — Auto-École Saint-Genès Bordeaux
+# https://autoecolesaintgenes.com
+
+User-agent: *
+Allow: /
+
+# Bloquer les pages légales de l'indexation (pas de valeur SEO)
+Disallow: /mentions-legales
+Disallow: /politique-confidentialite
+
+# Sitemap
+Sitemap: https://autoecolesaintgenes.com/sitemap.xml

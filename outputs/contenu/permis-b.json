@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "title": "Permis B Bordeaux — Formation Complète | Auto-École Saint-Genès",
+    "description": "Passez votre permis B à Bordeaux avec l'auto-école Saint-Genès : meilleur taux de réussite, moniteurs expérimentés, CPF accepté. Appelez le 05 56 96 33 20.",
+    "slug": "permis-b"
+  },
+  "h1": "Permis B à Bordeaux — Formation complète avec le meilleur taux de réussite",
+  "introduction": "Obtenir son permis B à Bordeaux est une étape clé vers l'autonomie. Chez Saint-Genès, nous vous proposons une formation sur mesure, adaptée à votre rythme et à votre niveau, avec le meilleur taux de réussite de la région. Forts de 40 ans d'expérience, nos moniteurs certifiés vous accompagnent du code de la route jusqu'à l'examen pratique, en boîte manuelle comme en boîte automatique.",
+  "sections": [
+    {
+      "h2": "Le déroulé de votre formation Permis B",
+      "contenu": "Votre parcours débute par un rendez-vous pédagogique pour évaluer votre niveau et définir un programme personnalisé. La formation comprend l'apprentissage du code de la route (sessions en salle ou en ligne), des leçons de conduite progressives avec un moniteur diplômé d'État, et des évaluations régulières pour mesurer vos progrès. Nous utilisons notre plateau privé pour les premières séances de manœuvres, ce qui vous permet d'apprendre dans un environnement sécurisé avant de prendre la route. Lorsque votre moniteur estime que vous êtes prêt, il présente votre dossier à l'examen."
+    },
+    {
+      "h2": "Boîte manuelle ou boîte automatique : vous choisissez",
+      "contenu": "Chez Saint-Genès, vous avez le choix de passer votre permis B en boîte manuelle ou en boîte automatique. Le permis boîte automatique est idéal si vous souhaitez vous concentrer sur la sécurité routière, si vous présentez une gêne physique, ou simplement si vous êtes à l'aise avec cette transmission. Note : le permis boîte auto ne permet de conduire que des véhicules à boîte automatique, sauf si vous réalisez ensuite une formation complémentaire. Nos moniteurs vous conseillent sur le choix le plus adapté à votre situation."
+    },
+    {
+      "h2": "La conduite accompagnée (AAC) dès 15 ans",
+      "contenu": "La conduite accompagnée, ou Apprentissage Anticipé de la Conduite (AAC), permet aux jeunes dès 15 ans de se former progressivement. Après une formation initiale chez nous, l'apprenti conducteur peut pratiquer régulièrement avec un accompagnateur adulte. Ce dispositif permet d'accumuler de l'expérience, de réduire la prime d'assurance et d'accéder au permis dès 17 ans. Statisiquement, les élèves en AAC ont de meilleurs taux de réussite et moins d'accidents dans les premières années."
+    },
+    {
+      "h2": "Financer votre permis B à Bordeaux",
+      "contenu": "Le coût du permis B ne doit pas freiner votre projet. L'auto-école Saint-Genès accepte plusieurs modes de financement : le Compte Personnel de Formation (CPF) pour les actifs, le permis à 1€/jour pour les 15-25 ans via un organisme bancaire partenaire, et des règlements en plusieurs fois sans frais. Nos conseillers vous accompagnent dans toutes les démarches pour débloquer ces aides rapidement et simplement."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Quel est le prix d'une formation Permis B à Saint-Genès Bordeaux ?",
+      "reponse": "Le tarif de la formation Permis B varie selon le forfait choisi et le nombre d'heures nécessaires. Contactez-nous au 05 56 96 33 20 pour obtenir un devis personnalisé et découvrir nos offres de financement (CPF, permis à 1€/jour)."
+    },
+    {
+      "question": "Combien de temps faut-il pour obtenir le permis B à Bordeaux ?",
+      "reponse": "La durée moyenne est de 3 à 6 mois pour un candidat sans expérience préalable. Tout dépend de votre rythme d'apprentissage et de la disponibilité des créneaux d'examen. Avec notre formation accélérée, il est possible d'obtenir le permis en quelques semaines."
+    },
+    {
+      "question": "Puis-je utiliser mon CPF pour financer le permis B ?",
+      "reponse": "Oui, Saint-Genès est éligible au Compte Personnel de Formation. Vous pouvez utiliser vos droits CPF pour financer tout ou partie de la formation au permis B. Nos conseillers vous guident gratuitement dans la procédure Mon Compte Formation."
+    },
+    {
+      "question": "Quelle est la différence entre le permis B boîte auto et boîte manuelle ?",
+      "reponse": "Le permis boîte manuelle vous permet de conduire tous les types de véhicules. Le permis boîte automatique est plus accessible pour certains profils (gêne physique, préférence personnelle) mais ne permet de conduire initialement que des véhicules à boîte automatique. Une formation complémentaire de 7 heures permet ensuite de lever cette restriction."
+    },
+    {
+      "question": "À quel âge peut-on commencer la conduite accompagnée ?",
+      "reponse": "La conduite accompagnée (AAC) commence dès 15 ans. Après une formation initiale obligatoire de 20 heures minimum, l'apprenti conducteur peut pratiquer avec un adulte accompagnateur. L'examen pratique peut être passé dès 17 ans et demi."
+    }
+  ],
+  "cta": {
+    "titre": "Prêt à démarrer votre formation Permis B ?",
+    "bouton": "Appelez-nous : 05 56 96 33 20"
+  }
+}

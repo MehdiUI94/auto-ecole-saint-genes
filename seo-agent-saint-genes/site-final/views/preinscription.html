@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Préinscription — Auto-École Saint-Genès Bordeaux</title>
+  <meta name="description" content="Inscrivez-vous à l'Auto-École Saint-Genès à Bordeaux. Formulaire de préinscription en ligne — réponse sous 24h.">
+  <link rel="canonical" href="https://autoecole-saint-genes.fr/preinscription">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[
+    {"@type":"DrivingSchool","@id":"https://autoecole-saint-genes.fr/#ecole","name":"Auto-École Saint-Genès","telephone":"+33556912345","address":{"@type":"PostalAddress","streetAddress":"22 Cours de la Marne","addressLocality":"Bordeaux","postalCode":"33800","addressCountry":"FR"}},
+    {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://autoecole-saint-genes.fr/"},{"@type":"ListItem","position":2,"name":"Préinscription","item":"https://autoecole-saint-genes.fr/preinscription"}]}
+  ]}</script>
+</head>
+<body>
+  <a href="#contenu-principal" class="skip-link">Aller au contenu</a>
+  <header class="site-header">
+    <nav class="nav-container" role="navigation" aria-label="Navigation principale">
+      <a href="/" class="nav-logo"><span class="logo-icon">🚗</span><span class="logo-text">Auto-École<strong>Saint-Genès</strong></span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu">☰</button>
+      <ul class="nav-menu" id="nav-menu" role="list">
+        <li class="nav-item nav-dropdown"><a href="#" class="nav-link" aria-haspopup="true">Permis voiture ▾</a>
+          <ul class="dropdown-menu" role="list">
+            <li><a href="/permis-b" class="dropdown-link">Permis B classique</a></li>
+            <li><a href="/conduite-accompagnee" class="dropdown-link">Conduite accompagnée</a></li>
+            <li><a href="/conduite-supervisee" class="dropdown-link">Conduite supervisée</a></li>
+            <li><a href="/permis-ba" class="dropdown-link">Permis B automatique</a></li>
+            <li><a href="/formation-acceleree" class="dropdown-link">Formation accélérée</a></li>
+          </ul>
+        </li>
+        <li class="nav-item nav-dropdown"><a href="#" class="nav-link" aria-haspopup="true">Permis moto ▾</a>
+          <ul class="dropdown-menu" role="list">
+            <li><a href="/permis-a2" class="dropdown-link">Permis A2</a></li>
+            <li><a href="/permis-am" class="dropdown-link">Permis AM / BSR</a></li>
+            <li><a href="/formation-125-cm" class="dropdown-link">Formation 125 cm³</a></li>
+            <li><a href="/passerelle-a2-vers-a" class="dropdown-link">Passerelle A2 → A</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="/code-de-la-route" class="nav-link">Code</a></li>
+        <li class="nav-item"><a href="/mobilite-handicap" class="nav-link">Handicap</a></li>
+        <li class="nav-item"><a href="/permis-a-1-euro" class="nav-link">Financement</a></li>
+        <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
+        <li class="nav-item"><a href="/preinscription" class="nav-link nav-cta" aria-current="page">S'inscrire</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenu-principal">
+    <div class="page-header">
+      <nav aria-label="Fil d'Ariane" class="breadcrumb"><ol><li><a href="/">Accueil</a></li><li aria-current="page">Préinscription</li></ol></nav>
+      <h1>Préinscription en ligne</h1>
+      <p class="page-subtitle">Gratuite et sans engagement — nous vous recontactons sous 24h ouvrées</p>
+    </div>
+
+    <div class="page-layout">
+      <article class="page-main">
+        <form id="form-inscription" class="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="prenom">Prénom <span aria-hidden="true">*</span></label>
+              <input type="text" id="prenom" name="prenom" autocomplete="given-name" required minlength="2" placeholder="Marie">
+              <span class="form-error" id="err-prenom" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="nom">Nom <span aria-hidden="true">*</span></label>
+              <input type="text" id="nom" name="nom" autocomplete="family-name" required minlength="2" placeholder="Dupont">
+              <span class="form-error" id="err-nom" role="alert"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email <span aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" autocomplete="email" required placeholder="marie@exemple.fr">
+              <span class="form-error" id="err-email" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="telephone">Téléphone <span aria-hidden="true">*</span></label>
+              <input type="tel" id="telephone" name="telephone" autocomplete="tel" required placeholder="06 12 34 56 78">
+              <span class="form-error" id="err-telephone" role="alert"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="permis">Formation souhaitée <span aria-hidden="true">*</span></label>
+            <select id="permis" name="permis" required>
+              <option value="">-- Sélectionnez une formation --</option>
+              <option value="code">Code de la route — 325 €</option>
+              <option value="permis-b">Permis B classique — 1 566 €</option>
+              <option value="conduite-accompagnee">Conduite accompagnée (AAC) — 1 524 €</option>
+              <option value="conduite-supervisee">Conduite supervisée — 1 466 €</option>
+              <option value="permis-ba">Permis B automatique — 1 654 €</option>
+              <option value="formation-acceleree">Formation accélérée — 1 775 €</option>
+              <option value="permis-a2">Permis A2 — 930 €</option>
+              <option value="permis-am">Permis AM / BSR — 311 €</option>
+              <option value="formation-125-cm">Formation 125 cm³ — 320 €</option>
+              <option value="passerelle-a2-vers-a">Passerelle A2 → A — 335 €</option>
+              <option value="perfectionnement">Perfectionnement — 65 €/h</option>
+              <option value="mobilite-handicap">Formation mobilité handicap</option>
+            </select>
+            <span class="form-error" id="err-permis" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message (facultatif)</label>
+            <textarea id="message" name="message" rows="4" placeholder="Questions, contraintes horaires, situation particulière…"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="checkbox-label">
+              <input type="checkbox" id="rgpd" name="rgpd" required>
+              <span>J'accepte que mes données soient utilisées pour traiter ma demande d'inscription. <a href="/politique-confidentialite">Politique de confidentialité</a></span>
+            </label>
+            <span class="form-error" id="err-rgpd" role="alert"></span>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--lg">Envoyer ma préinscription</button>
+
+          <div id="form-feedback" class="form-feedback" role="alert" aria-live="polite" hidden></div>
+        </form>
+      </article>
+
+      <aside class="page-sidebar">
+        <div class="sidebar-card sidebar-card--highlight">
+          <h3>📞 Préférez appeler ?</h3>
+          <p><a href="tel:+33556912345" class="sidebar-phone">05 56 91 23 45</a></p>
+          <p class="sidebar-hours">Lun–Ven 9h–19h<br>Samedi 9h–17h</p>
+        </div>
+        <div class="sidebar-card">
+          <h3>Nous trouver</h3>
+          <p>22 cours de la Marne<br>33800 Bordeaux</p>
+          <p style="margin-top:0.5rem;font-size:0.875rem;color:#64748b;">À 5 min à pied de la gare Saint-Jean</p>
+        </div>
+        <div class="sidebar-card">
+          <h3>Financement</h3>
+          <ul class="sidebar-list">
+            <li>💳 Permis à 1€/jour</li>
+            <li>🏛️ CPF disponible</li>
+            <li>💰 Paiement 3× sans frais</li>
+          </ul>
+          <a href="/permis-a-1-euro" class="btn btn--secondary btn--full" style="margin-top:0.75rem">Voir les aides</a>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-col"><h3>Auto-École Saint-Genès</h3><p>22 cours de la Marne<br>33800 Bordeaux</p><p><a href="tel:+33556912345">05 56 91 23 45</a></p></div>
+      <div class="footer-col"><h3>Formations</h3><ul><li><a href="/permis-b">Permis B</a></li><li><a href="/conduite-accompagnee">Conduite accompagnée</a></li><li><a href="/code-de-la-route">Code de la route</a></li></ul></div>
+      <div class="footer-col"><h3>Informations</h3><ul><li><a href="/permis-a-1-euro">Financement</a></li><li><a href="/contact">Contact</a></li><li><a href="/mentions-legales">Mentions légales</a></li></ul></div>
+    </div>
+    <p class="footer-copy">© 2024 Auto-École Saint-Genès — Bordeaux. Agrément préfectoral n° E0503300330.</p>
+  </footer>
+  <script src="/assets/main.js" defer></script>
+  <script>
+  document.getElementById('form-inscription').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const btn = this.querySelector('[type=submit]');
+    const feedback = document.getElementById('form-feedback');
+    btn.disabled = true;
+    btn.textContent = 'Envoi en cours…';
+    try {
+      const data = Object.fromEntries(new FormData(this));
+      const res = await fetch('/api/inscription', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(data)});
+      const json = await res.json();
+      if (res.ok) {
+        feedback.textContent = '✅ Préinscription reçue ! Votre dossier : ' + json.id + '. Nous vous contactons sous 24h.';
+        feedback.className = 'form-feedback form-feedback--success';
+        this.reset();
+      } else {
+        feedback.textContent = '❌ ' + (json.errors?.join(', ') || json.error || 'Erreur — veuillez réessayer.');
+        feedback.className = 'form-feedback form-feedback--error';
+      }
+    } catch {
+      feedback.textContent = '❌ Erreur réseau — veuillez réessayer ou nous appeler.';
+      feedback.className = 'form-feedback form-feedback--error';
+    }
+    feedback.hidden = false;
+    btn.disabled = false;
+    btn.textContent = 'Envoyer ma préinscription';
+  });
+  </script>
+</body>
+</html>

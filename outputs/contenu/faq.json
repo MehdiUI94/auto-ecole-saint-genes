@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "title": "FAQ — Toutes vos questions sur votre permis à Bordeaux | Auto-École Saint-Genès",
+    "description": "Réponses à toutes vos questions sur le permis de conduire à Bordeaux : coût, durée, CPF, boîte automatique, handicap... Auto-École Saint-Genès, 05 56 96 33 20.",
+    "slug": "faq"
+  },
+  "h1": "Questions Fréquentes sur votre Permis de Conduire à Bordeaux",
+  "introduction": "Vous avez des questions avant de vous inscrire à l'auto-école Saint-Genès à Bordeaux ? Vous trouverez ici les réponses aux interrogations les plus fréquentes de nos futurs élèves. Pour toute question non couverte ici, appelez-nous au 05 56 96 33 20, du lundi au vendredi de 14h à 19h.",
+  "sections": [
+    {
+      "h2": "Questions sur l'inscription et la formation",
+      "contenu": "Avant de commencer votre formation chez Saint-Genès, vous passez un rendez-vous pédagogique pour évaluer votre niveau de conduite et définir un programme sur mesure. Ce bilan initial est gratuit et sans engagement. Vous recevez ensuite votre livret d'apprentissage et planifiez vos premières leçons avec votre moniteur attitré. La formation se déroule à votre rythme, en respectant toujours les étapes réglementaires du parcours d'apprentissage."
+    },
+    {
+      "h2": "Questions sur les tarifs et le financement",
+      "contenu": "Le coût de la formation varie selon les heures de conduite nécessaires et la formule choisie. Plusieurs aides existent : CPF pour les actifs, permis à 1€/jour pour les 15-25 ans, aides AGEFIPH pour les personnes handicapées. Nous proposons également le règlement en plusieurs fois sans frais. Nos conseillers étudient avec vous la solution la plus avantageuse selon votre profil. Contactez-nous au 05 56 96 33 20 pour un devis personnalisé."
+    },
+    {
+      "h2": "Questions sur le permis et les examens",
+      "contenu": "L'examen du code de la route se passe dans un centre agréé avec 40 questions. Il faut obtenir au moins 35 bonnes réponses pour le valider. L'examen pratique du permis B dure environ 35 minutes et évalue votre maîtrise du véhicule, votre comportement en circulation et votre respect du Code de la route. Votre moniteur décide de votre présentation à l'examen lorsqu'il estime que vous êtes prêt. Avec Saint-Genès, notre taux de réussite est le meilleur de Bordeaux."
+    }
+  ],
+  "faq": [
+    {
+      "question": "L'auto-école Saint-Genès est-elle la meilleure auto-école de Bordeaux ?",
+      "reponse": "Saint-Genès affiche le meilleur taux de réussite de Bordeaux et du Sud-Ouest, grâce à ses 40 ans d'expérience, ses moniteurs diplômés d'État et sa pédagogie personnalisée. Nous sommes reconnus comme la référence bordelaise en permis boîte automatique et en accompagnement handicap."
+    },
+    {
+      "question": "Quels sont les horaires de l'auto-école Saint-Genès ?",
+      "reponse": "Notre accueil est ouvert du lundi au vendredi de 14h à 19h. Les leçons de conduite peuvent être planifiées en dehors de ces horaires selon les disponibilités des moniteurs. Appelez-nous au 05 56 96 33 20 pour connaître les créneaux disponibles."
+    },
+    {
+      "question": "Combien de temps faut-il pour passer le permis B ?",
+      "reponse": "La durée moyenne est de 3 à 6 mois pour un candidat sans expérience préalable. Avec notre formation accélérée, il est possible d'obtenir le permis en quelques semaines si votre emploi du temps le permet. Tout dépend de votre rythme, du nombre d'heures de conduite hebdomadaires et des délais d'examen."
+    },
+    {
+      "question": "Proposez-vous une formation accélérée pour le permis B ?",
+      "reponse": "Oui, nous proposons des formations accélérées pour les candidats ayant besoin du permis rapidement (reprise d'emploi, déménagement, etc.). Ces formations intensives concentrent les leçons sur quelques semaines. Contactez-nous au 05 56 96 33 20 pour vérifier la disponibilité et le calendrier."
+    },
+    {
+      "question": "Puis-je transférer mon dossier depuis une autre auto-école ?",
+      "reponse": "Oui, si vous avez commencé votre formation ailleurs, vous pouvez transférer votre dossier chez Saint-Genès. Nous récupérons votre livret d'apprentissage et vos heures déjà effectuées et évaluons le meilleur point de reprise pour vous. Appelez-nous pour en savoir plus."
+    },
+    {
+      "question": "Comment se passe le code de la route ?",
+      "reponse": "L'examen du code de la route est informatisé et se déroule dans un centre officiel. Il comprend 40 questions (images, vidéos, textes) et il faut au moins 35 bonnes réponses pour valider l'épreuve. Nous vous préparons via notre plateforme d'entraînement en ligne et des séances de révision en salle. Le code est valable 5 ans pour passer l'examen pratique."
+    },
+    {
+      "question": "L'auto-école propose-t-elle des leçons le week-end ?",
+      "reponse": "Notre accueil administratif est ouvert en semaine de 14h à 19h. Selon les disponibilités de nos moniteurs, des leçons de conduite peuvent être organisées le samedi. Contactez-nous au 05 56 96 33 20 pour connaître les créneaux disponibles le week-end."
+    }
+  ],
+  "cta": {
+    "titre": "Votre question n'est pas dans la liste ?",
+    "bouton": "Appelez-nous : 05 56 96 33 20"
+  }
+}

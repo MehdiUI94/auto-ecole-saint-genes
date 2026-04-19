@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "title": "Tarifs Permis Bordeaux — CPF, Permis à 1€, Financement | Auto-École Saint-Genès",
+    "description": "Découvrez les tarifs de l'auto-école Saint-Genès à Bordeaux. CPF accepté, permis à 1€/jour pour les jeunes, solutions de financement sans frais. Appelez le 05 56 96 33 20.",
+    "slug": "tarifs-financement"
+  },
+  "h1": "Tarifs & Financement — Votre permis à Bordeaux accessible à tous",
+  "introduction": "Chez l'auto-école Saint-Genès, nous croyons que le coût ne doit jamais être un obstacle à l'obtention de votre permis. C'est pourquoi nous proposons des tarifs transparents et compétitifs, ainsi que plusieurs solutions de financement adaptées à chaque profil. CPF, permis à 1€/jour, règlement en plusieurs fois : votre permis est plus accessible que vous ne le pensez.",
+  "sections": [
+    {
+      "h2": "Nos forfaits de formation",
+      "contenu": "Nous proposons des forfaits adaptés à chaque parcours : forfait Code de la route (accès illimité à notre plateforme en ligne), forfait Permis B boîte manuelle (20h minimum de conduite + code), forfait Permis B boîte automatique (15h minimum + code), forfait Conduite Accompagnée AAC dès 15 ans, forfait Formation Moto (A2, AM, 125 cm3), et forfait Perfectionnement pour conducteurs déjà titulaires du permis. Chaque forfait inclut le livret d'apprentissage, les évaluations de progression et l'accompagnement à l'examen. Contactez-nous au 05 56 96 33 20 pour obtenir le détail tarifaire actualisé et une simulation personnalisée."
+    },
+    {
+      "h2": "Le permis à 1€/jour : pour les 15-25 ans",
+      "contenu": "Le permis à 1€/jour est un dispositif gouvernemental permettant aux jeunes de 15 à 25 ans de financer leur permis via un prêt à taux zéro contracté auprès d'une banque partenaire. En pratique, vous avancez 30€ maximum par mois, et l'État prend en charge les intérêts. L'auto-école Saint-Genès est partenaire de ce dispositif. Il vous suffit de choisir une banque partenaire (Crédit Agricole, BNP Paribas, Société Générale, etc.), de faire une demande de prêt permis à conduire, et de nous contacter pour lancer votre dossier. La démarche prend environ 15 jours."
+    },
+    {
+      "h2": "Utiliser votre CPF pour financer le permis",
+      "contenu": "Si vous êtes salarié, demandeur d'emploi ou alternant, vous pouvez utiliser votre Compte Personnel de Formation (CPF) pour financer tout ou partie de votre formation au permis B. Le montant de vos droits CPF est consultable sur le site moncompteformation.gouv.fr. Saint-Genès est référencé sur la plateforme Mon Compte Formation. Nos conseillers vous accompagnent gratuitement dans la procédure de demande et dans la sélection de la bonne offre de formation éligible. Cette démarche peut financer jusqu'à la totalité de votre formation selon vos droits disponibles."
+    },
+    {
+      "h2": "Autres solutions de financement",
+      "contenu": "Au-delà du CPF et du permis à 1€, nous proposons le règlement en plusieurs fois sans frais pour les formations éligibles. Les personnes en situation de handicap peuvent bénéficier des aides de l'AGEFIPH ou de la MDPH pour financer le surcoût lié au véhicule aménagé. Certains comités d'entreprise et mutuelles proposent également des participations financières pour le permis. N'hésitez pas à vérifier vos avantages auprès de votre employeur ou de votre mutuelle avant de vous engager."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Quel est le prix moyen du permis B à Bordeaux chez Saint-Genès ?",
+      "reponse": "Le coût total d'une formation permis B varie selon le nombre d'heures de conduite nécessaires, votre niveau de départ et le type de boîte choisie. Appelez-nous au 05 56 96 33 20 pour obtenir un devis précis et personnalisé après un bilan initial."
+    },
+    {
+      "question": "Comment accéder au permis à 1€/jour ?",
+      "reponse": "Vous devez avoir entre 15 et 25 ans et vous inscrire dans une auto-école partenaire comme Saint-Genès. Ensuite, choisissez une banque partenaire et faites une demande de prêt permis à conduire. Le prêt est à taux zéro, donc sans frais. Nous vous aidons dans chaque étape."
+    },
+    {
+      "question": "Le CPF peut-il financer la totalité du permis ?",
+      "reponse": "Cela dépend du montant de vos droits CPF disponibles sur moncompteformation.gouv.fr. Selon vos droits accumulés, le CPF peut financer une partie ou la totalité de votre formation. Le reliquat éventuel reste à votre charge ou peut être financé par d'autres dispositifs."
+    },
+    {
+      "question": "Y a-t-il des aides spécifiques pour les demandeurs d'emploi ?",
+      "reponse": "Oui, les demandeurs d'emploi peuvent utiliser leur CPF et, selon leur situation, bénéficier de financements complémentaires via Pôle Emploi (France Travail) ou les Régions. Contactez votre conseiller France Travail et notre équipe pour explorer toutes les options disponibles."
+    },
+    {
+      "question": "Est-il possible de payer en plusieurs fois sans frais ?",
+      "reponse": "Oui, Saint-Genès propose des facilités de paiement en plusieurs fois sans frais pour certaines formules. Renseignez-vous lors de votre appel ou de votre visite à l'auto-école pour connaître les modalités applicables à votre forfait."
+    }
+  ],
+  "cta": {
+    "titre": "Calculez votre financement avec nos conseillers",
+    "bouton": "Appelez-nous : 05 56 96 33 20"
+  }
+}

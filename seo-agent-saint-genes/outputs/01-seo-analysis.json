@@ -1,0 +1,106 @@
+{
+  "mots_cles": {
+    "prioritaires": [
+      "auto-école bordeaux",
+      "permis b bordeaux",
+      "auto ecole boite automatique bordeaux",
+      "permis handicap bordeaux",
+      "permis à 1 euro bordeaux"
+    ],
+    "secondaires": [
+      "conduite accompagnée bordeaux",
+      "permis moto bordeaux",
+      "auto école saint-genès bordeaux",
+      "formation permis accélérée bordeaux",
+      "financement CPF permis bordeaux"
+    ],
+    "longue_traine": [
+      "meilleure auto école boîte automatique bordeaux",
+      "auto école accessible personnes handicapées bordeaux",
+      "comment financer son permis avec le CPF bordeaux",
+      "permis boîte automatique combien d heures bordeaux"
+    ]
+  },
+  "plan_site": [
+    {
+      "page": "Accueil",
+      "url_suggeree": "/",
+      "h1": "Auto-école Saint-Genès — Votre permis B à Bordeaux depuis 40 ans",
+      "priorite": "haute",
+      "raison": "Page principale, doit capter toutes les variantes génériques et établir la proposition de valeur différenciante (ancienneté, boîte auto, handicap, financement)"
+    },
+    {
+      "page": "Permis B",
+      "url_suggeree": "/permis-b",
+      "h1": "Permis B à Bordeaux — Formation Complète chez Saint-Genès",
+      "priorite": "haute",
+      "raison": "Requête à fort volume transactionnel. Saint-Genès absent du top organique sur 'permis b bordeaux'. Page dédiée ultra-ciblée indispensable."
+    },
+    {
+      "page": "Permis Boîte Automatique",
+      "url_suggeree": "/boite-automatique",
+      "h1": "Permis Boîte Automatique à Bordeaux — L'École Spécialiste depuis 40 ans",
+      "priorite": "haute",
+      "raison": "Gros gap SEO identifié : Saint-Genès se dit spécialisée mais n'apparaît pas sur 'auto ecole boite auto bordeaux'. Page dédiée avec contenu comparatif BA vs manuelle obligatoire."
+    },
+    {
+      "page": "Permis Adapté Handicap",
+      "url_suggeree": "/handicap",
+      "h1": "Permis Adapté Handicap à Bordeaux — Véhicules Aménagés & Accompagnement PMR",
+      "priorite": "haute",
+      "raison": "Différenciateur fort, déjà citée par les IA sur ce segment. Renforcer les preuves concrètes : véhicules aménagés, certifications moniteurs, partenaires MDPH."
+    },
+    {
+      "page": "Tarifs & Financement",
+      "url_suggeree": "/tarifs-financement",
+      "h1": "Tarifs Permis & Financement — CPF, Permis à 1€/jour à Bordeaux",
+      "priorite": "moyenne",
+      "raison": "PAA fréquentes sur prix et financement. Page répondant à 'combien coûte le permis' et 'comment le financer' = fort potentiel featured snippets."
+    },
+    {
+      "page": "FAQ",
+      "url_suggeree": "/faq",
+      "h1": "FAQ — Toutes vos questions sur le permis à Bordeaux",
+      "priorite": "moyenne",
+      "raison": "Manque critique identifié dans le diagnostic. Format FAQ court = excellent pour featured snippets Google et citations IA (GEO). Doit couvrir toutes les intentions informationnelles locales."
+    }
+  ],
+  "gaps_seo": [
+    {
+      "probleme": "Aucune page dédiée à la spécialisation boîte automatique",
+      "impact": "fort",
+      "solution": "Créer /boite-automatique avec H1 ciblé, comparatif BA vs manuelle, nb d'heures, coût, FAQ dédiée et témoignages spécifiques boîte auto"
+    },
+    {
+      "probleme": "Absence de FAQ structurée lisible par les moteurs et les IA",
+      "impact": "fort",
+      "solution": "Ajouter des blocs FAQ avec balises <details>/<summary> et Schema.org FAQPage JSON-LD sur chaque page de service clé"
+    },
+    {
+      "probleme": "Schema.org LocalBusiness / AutoSchool non implémenté",
+      "impact": "fort",
+      "solution": "Implémenter JSON-LD AutoSchool avec coordonnées, horaires, zone de service et avis agrégés sur toutes les pages du site"
+    },
+    {
+      "probleme": "Textes trop longs et peu hiérarchisés — H2/H3 generiques ou absents",
+      "impact": "moyen",
+      "solution": "Restructurer chaque page avec des H2 ciblés sur des requêtes précises, paragraphes courts (4-5 lignes), sous-titres descriptifs et listes lisibles"
+    },
+    {
+      "probleme": "Faible couverture des requêtes informationnelles locales",
+      "impact": "moyen",
+      "solution": "Créer des contenus guides type 'Boîte auto vs manuelle à Bordeaux', 'Financer son permis avec le CPF', 'Combien de temps pour passer son permis' — formats très citables par les IA"
+    }
+  ],
+  "recommandations_geo": [
+    "Créer des pages répondant directement aux questions posées aux IA génératives (ChatGPT, Perplexity) : 'meilleures auto-écoles boîte auto Bordeaux', 'auto-école PMR Bordeaux'. Structurer les réponses avec des preuves citables : ancienneté, taux de réussite, certifications, chiffres concrets.",
+    "Développer les signaux externes : mentions dans médias locaux (Sud-Ouest, 20 Minutes Bordeaux), annuaires d'autorité (Pages Jaunes, Kompass, Qapa), blogs mobilité/accessibilité et associations PMR Gironde. Les IA agrègent ces sources pour leurs réponses.",
+    "Consolider la fiche Google Business Profile avec photos réelles des véhicules et locaux, services détaillés, attributs accessibilité PMR, réponses systématiques aux avis — c'est la principale source d'information pour les IA généralistes sur les requêtes locales."
+  ],
+  "score_actuel": {
+    "seo_local": 40,
+    "contenu_editorial": 25,
+    "presence_geo": 45,
+    "accessibilite": 55
+  }
+}

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agent Contenu — Saint-Genès</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, sans-serif; background: #f9f9f7; color: #1a1a1a; }
+    header { padding: 1.5rem 2rem; border-bottom: 1px solid #e5e5e5; background: #fff; }
+    header h1 { font-size: 18px; font-weight: 500; }
+    header p { font-size: 13px; color: #666; margin-top: 2px; }
+    nav { display: flex; gap: 4px; padding: 0.75rem 2rem; background: #fff; border-bottom: 1px solid #e5e5e5; flex-wrap: wrap; }
+    nav a { font-size: 13px; padding: 6px 14px; border-radius: 6px; text-decoration: none; color: #444; border: 1px solid #e5e5e5; }
+    nav a:hover, nav a.active { background: #1a1a1a; color: #fff; border-color: #1a1a1a; }
+    main { max-width: 860px; margin: 2rem auto; padding: 0 1.5rem; }
+    .badge { display: inline-block; font-size: 12px; padding: 3px 10px; border-radius: 999px; background: #e1f5ee; color: #0f6e56; margin-bottom: 12px; }
+    h2 { font-size: 18px; font-weight: 500; margin-bottom: 4px; }
+    .subtitle { font-size: 14px; color: #666; margin-bottom: 1.5rem; }
+    .input-area { border: 1px solid #e5e5e5; border-radius: 12px; padding: 1rem; background: #f5f5f3; margin-bottom: 1rem; }
+    .input-area label { font-size: 13px; color: #666; display: block; margin-bottom: 6px; }
+    textarea { width: 100%; min-height: 100px; resize: vertical; border: 1px solid #e5e5e5; border-radius: 8px; padding: 10px; font-size: 14px; font-family: system-ui, sans-serif; background: #fff; }
+    textarea:focus { outline: none; border-color: #999; }
+    select, input[type="text"] { width: 100%; border: 1px solid #e5e5e5; border-radius: 8px; padding: 8px 12px; font-size: 14px; font-family: system-ui, sans-serif; background: #fff; margin-top: 6px; }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
+    .actions { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 1.5rem; }
+    button { padding: 8px 18px; border-radius: 8px; border: 1px solid #e5e5e5; background: transparent; color: #1a1a1a; font-size: 14px; cursor: pointer; font-family: system-ui, sans-serif; }
+    button:hover { background: #f5f5f3; }
+    button.primary { background: #1a1a1a; color: #fff; border-color: #1a1a1a; }
+    button.primary:hover { opacity: 0.85; }
+    button:disabled { opacity: 0.4; cursor: not-allowed; }
+    .result-area { border: 1px solid #e5e5e5; border-radius: 12px; padding: 1.25rem; background: #fff; min-height: 200px; }
+    .loading { display: flex; align-items: center; gap: 8px; color: #666; font-size: 14px; padding: 2rem 0; }
+    .dot { width: 6px; height: 6px; border-radius: 50%; background: #999; animation: pulse 1.2s infinite; }
+    .dot:nth-child(2) { animation-delay: 0.2s; }
+    .dot:nth-child(3) { animation-delay: 0.4s; }
+    @keyframes pulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 1; } }
+    .tabs { display: flex; gap: 4px; margin-bottom: 1rem; border-bottom: 1px solid #e5e5e5; flex-wrap: wrap; }
+    .tab { padding: 8px 14px; font-size: 13px; cursor: pointer; border: none; background: transparent; color: #666; border-bottom: 2px solid transparent; margin-bottom: -1px; font-family: system-ui, sans-serif; }
+    .tab.active { color: #1a1a1a; border-bottom-color: #1a1a1a; font-weight: 500; }
+    .tab:hover { color: #1a1a1a; }
+    .content-block { border: 1px solid #e5e5e5; border-radius: 8px; padding: 1rem; margin-bottom: 12px; background: #f9f9f7; }
+    .content-block h3 { font-size: 15px; margin-bottom: 8px; color: #185fa5; }
+    .content-block h4 { font-size: 13px; margin: 12px 0 6px; color: #444; }
+    .content-block p { font-size: 14px; line-height: 1.7; margin-bottom: 8px; color: #333; }
+    .tag { display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 999px; margin: 2px; }
+    .tag.keep { background: #e1f5ee; color: #0f6e56; }
+    .tag.rewrite { background: #faeeda; color: #854f0b; }
+    .tag.new { background: #e6f1fb; color: #185fa5; }
+    .error { color: #e24b4a; font-size: 14px; padding: 1rem; }
+    .empty { color: #666; font-size: 14px; text-align: center; padding: 2rem 0; }
+    .copy-btn { float: right; font-size: 11px; padding: 4px 10px; border-radius: 6px; background: #fff; border: 1px solid #e5e5e5; cursor: pointer; }
+    .copy-btn:hover { background: #f5f5f3; }
+    footer { text-align: center; padding: 2rem; font-size: 13px; color: #999; margin-top: 3rem; border-top: 1px solid #e5e5e5; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Plateforme SEO — Auto-École Saint-Genès</h1>
+    <p>Système multi-agents pour le marketing digital</p>
+  </header>
+  <nav>
+    <a href="../index.html">Accueil</a>
+    <a href="agent-seo.html">Agent SEO</a>
+    <a href="agent-contenu.html" class="active">Agent Contenu</a>
+    <a href="agent-design.html">Agent Design</a>
+    <a href="agent-dev.html">Agent Dev</a>
+  </nav>
+  <main>
+    <span class="badge">Agent 2 — Architecte de contenu</span>
+    <h2>Génération de contenu optimisé SEO</h2>
+    <p class="subtitle">L'agent analyse le site existant et génère les textes optimisés pour chaque page.</p>
+
+    <div class="input-area">
+      <label>Mots-clés cibles (séparés par des virgules)</label>
+      <textarea id="keywords-input" placeholder="auto-école bordeaux, permis b bordeaux, boîte automatique bordeaux, permis handicap bordeaux..."></textarea>
+
+      <div class="row">
+        <div>
+          <label>Page à générer</label>
+          <select id="page-select">
+            <option value="accueil">Page d'accueil</option>
+            <option value="permis-b">Permis B</option>
+            <option value="boite-auto">Permis boîte automatique</option>
+            <option value="handicap">Permis adapté handicap</option>
+            <option value="conduite-accompagnee">Conduite accompagnée</option>
+            <option value="moto">Permis moto</option>
+            <option value="tarifs">Tarifs et financement</option>
+            <option value="faq">FAQ</option>
+            <option value="contact">Contact</option>
+          </select>
+        </div>
+        <div>
+          <label>Ton éditorial</label>
+          <select id="tone-select">
+            <option value="professionnel-chaleureux">Professionnel et chaleureux</option>
+            <option value="jeune-dynamique">Jeune et dynamique</option>
+            <option value="rassurant-expert">Rassurant et expert</option>
+            <option value="local-proximite">Local et proximité</option>
+          </select>
+        </div>
+      </div>
+
+      <label style="margin-top: 12px;">Contenu existant du site (optionnel — pour analyse comparative)</label>
+      <textarea id="existing-input" placeholder="Colle ici le texte actuel de cette page du site..."></textarea>
+    </div>
+
+    <div class="actions">
+      <button class="primary" onclick="generateContent()" id="btn-generate">Générer le contenu</button>
+      <button onclick="loadSampleKeywords()">Charger les mots-clés exemple</button>
+      <button onclick="clearAll()">Effacer</button>
+    </div>
+
+    <div class="result-area" id="result-area">
+      <div class="empty">Choisis une page et lance la génération.</div>
+    </div>
+  </main>
+  <footer>Projet SEO Agent — Saint-Genès &copy; 2026</footer>
+
+  <script>
+    const SAMPLE_KW = "auto-école bordeaux, permis b bordeaux, boîte automatique bordeaux, permis handicap bordeaux, permis accéléré bordeaux, conduite accompagnée bordeaux, auto-école saint-genès, CPF permis, permis à 1 euro bordeaux";
+
+    function loadSampleKeywords() {
+      document.getElementById('keywords-input').value = SAMPLE_KW;
+    }
+
+    function clearAll() {
+      document.getElementById('keywords-input').value = '';
+      document.getElementById('existing-input').value = '';
+      document.getElementById('result-area').innerHTML = '<div class="empty">Choisis une page et lance la génération.</div>';
+    }
+
+    function showTab(tab) {
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      document.querySelector(`[data-tab="${tab}"]`).classList.add('active');
+      document.querySelectorAll('.tab-content').forEach(c => c.style.display = 'none');
+      document.getElementById(`tab-${tab}`).style.display = 'block';
+    }
+
+    function copyText(id) {
+      const el = document.getElementById(id);
+      navigator.clipboard.writeText(el.innerText);
+      event.target.textContent = 'Copié ✓';
+      setTimeout(() => { event.target.textContent = 'Copier'; }, 1500);
+    }
+
+    async function generateContent() {
+      const keywords = document.getElementById('keywords-input').value.trim();
+      const page = document.getElementById('page-select').value;
+      const tone = document.getElementById('tone-select').value;
+      const existing = document.getElementById('existing-input').value.trim();
+
+      if (!keywords) { alert('Merci de renseigner les mots-clés cibles.'); return; }
+
+      const btn = document.getElementById('btn-generate');
+      btn.disabled = true;
+      btn.textContent = 'Génération en cours...';
+
+      document.getElementById('result-area').innerHTML = `
+        <div class="loading">
+          <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+          <span>L'agent rédige le contenu optimisé...</span>
+        </div>`;
+
+      const pageNames = {
+        'accueil': "page d'accueil",
+        'permis-b': "page Permis B",
+        'boite-auto': "page Permis boîte automatique",
+        'handicap': "page Permis adapté au handicap",
+        'conduite-accompagnee': "page Conduite accompagnée (AAC)",
+        'moto': "page Permis moto",
+        'tarifs': "page Tarifs et financement",
+        'faq': "page FAQ",
+        'contact': "page Contact"
+      };
+
+      const prompt = `Tu es un rédacteur SEO expert pour les auto-écoles locales françaises. Tu rédiges pour l'Auto-École Saint-Genès à Bordeaux.
+
+CONTEXTE DE LA MARQUE :
+- Auto-école locale à Bordeaux, 40 ans d'ancienneté
+- Spécialisée boîte automatique et accompagnement handicap
+- Financement CPF et permis à 1€/jour
+- Offres : Permis B, AAC, supervisée, boîte auto, moto, handicap
+
+MOTS-CLÉS CIBLES : ${keywords}
+PAGE À RÉDIGER : ${pageNames[page]}
+TON : ${tone.replace(/-/g, ' ')}
+${existing ? `CONTENU EXISTANT À ANALYSER :\n${existing}\n` : ''}
+
+Génère le contenu EN JSON avec exactement ce format (réponds UNIQUEMENT en JSON, sans markdown) :
+{
+  "meta": {
+    "title": "Title SEO optimisé (max 60 caractères)",
+    "description": "Meta description convaincante (max 155 caractères)",
+    "slug": "/url-suggeree"
+  },
+  "h1": "Titre H1 principal optimisé",
+  "introduction": "Paragraphe d'introduction de 2-3 phrases qui place les mots-clés naturellement et accroche le visiteur.",
+  "sections": [
+    {
+      "h2": "Titre de section",
+      "contenu": "Paragraphe riche de 3-5 phrases, ton ${tone}, mots-clés intégrés naturellement."
+    },
+    {
+      "h2": "Titre de section",
+      "contenu": "Paragraphe riche de 3-5 phrases."
+    },
+    {
+      "h2": "Titre de section",
+      "contenu": "Paragraphe riche de 3-5 phrases."
+    }
+  ],
+  "faq": [
+    {"question": "Question fréquente ?", "reponse": "Réponse claire en 2-3 phrases."},
+    {"question": "Question fréquente ?", "reponse": "Réponse claire en 2-3 phrases."},
+    {"question": "Question fréquente ?", "reponse": "Réponse claire en 2-3 phrases."}
+  ],
+  "cta": {
+    "titre": "Call-to-action principal",
+    "bouton": "Texte du bouton"
+  },
+  "analyse_existant": ${existing ? '{"a_garder": ["élément 1", "élément 2"], "a_reecrire": ["élément 1", "élément 2"], "a_ajouter": ["nouveauté 1", "nouveauté 2"]}' : 'null'}
+}
+
+Rédige un contenu authentique, local, utile, qui se démarque des grosses plateformes nationales. Place les mots-clés sans sur-optimisation.`;
+
+      try {
+        const response = await fetch("https://api.anthropic.com/v1/messages", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            model: "claude-sonnet-4-20250514",
+            max_tokens: 3000,
+            messages: [{ role: "user", content: prompt }]
+          })
+        });
+        const data = await response.json();
+        const text = data.content.map(i => i.text || "").join("");
+        const clean = text.replace(/```json|```/g, "").trim();
+        const result = JSON.parse(clean);
+        renderResult(result);
+      } catch (err) {
+        document.getElementById('result-area').innerHTML = `<div class="error">Erreur : ${err.message}</div>`;
+      }
+
+      btn.disabled = false;
+      btn.textContent = 'Générer le contenu';
+    }
+
+    function renderResult(data) {
+      const metaHtml = `
+        <div class="content-block">
+          <button class="copy-btn" onclick="copyText('meta-block')">Copier</button>
+          <h3>Balises meta (SEO)</h3>
+          <div id="meta-block">
+            <p><strong>Title :</strong> ${data.meta.title} <em style="color:#999;font-size:12px;">(${data.meta.title.length} car.)</em></p>
+            <p><strong>Description :</strong> ${data.meta.description} <em style="color:#999;font-size:12px;">(${data.meta.description.length} car.)</em></p>
+            <p><strong>URL :</strong> <code style="background:#f5f5f3;padding:2px 6px;border-radius:4px;">${data.meta.slug}</code></p>
+          </div>
+        </div>`;
+
+      const contentHtml = `
+        <div class="content-block">
+          <button class="copy-btn" onclick="copyText('content-block-main')">Copier</button>
+          <h3>Contenu de la page</h3>
+          <div id="content-block-main">
+            <h4 style="font-size:20px;color:#1a1a1a;margin-bottom:12px;">${data.h1}</h4>
+            <p>${data.introduction}</p>
+            ${data.sections.map(s => `
+              <h4 style="font-size:16px;color:#1a1a1a;margin-top:16px;">${s.h2}</h4>
+              <p>${s.contenu}</p>
+            `).join('')}
+          </div>
+        </div>`;
+
+      const faqHtml = `
+        <div class="content-block">
+          <button class="copy-btn" onclick="copyText('faq-block')">Copier</button>
+          <h3>FAQ optimisée (Schema-ready)</h3>
+          <div id="faq-block">
+            ${data.faq.map(f => `
+              <h4>${f.question}</h4>
+              <p>${f.reponse}</p>
+            `).join('')}
+          </div>
+        </div>`;
+
+      const ctaHtml = `
+        <div class="content-block">
+          <h3>Call-to-action</h3>
+          <p><strong>${data.cta.titre}</strong></p>
+          <button style="background:#1a1a1a;color:#fff;margin-top:8px;">${data.cta.bouton}</button>
+        </div>`;
+
+      let analyseHtml = '';
+      if (data.analyse_existant) {
+        analyseHtml = `
+          <div class="content-block">
+            <h3>Analyse du contenu existant</h3>
+            <h4 style="color:#0f6e56;">À garder</h4>
+            ${data.analyse_existant.a_garder.map(x => `<span class="tag keep">${x}</span>`).join('')}
+            <h4 style="color:#854f0b;margin-top:12px;">À réécrire</h4>
+            ${data.analyse_existant.a_reecrire.map(x => `<span class="tag rewrite">${x}</span>`).join('')}
+            <h4 style="color:#185fa5;margin-top:12px;">À ajouter</h4>
+            ${data.analyse_existant.a_ajouter.map(x => `<span class="tag new">${x}</span>`).join('')}
+          </div>`;
+      }
+
+      document.getElementById('result-area').innerHTML = `
+        <div class="tabs">
+          <button class="tab active" data-tab="content" onclick="showTab('content')">Contenu</button>
+          <button class="tab" data-tab="meta" onclick="showTab('meta')">SEO / Meta</button>
+          <button class="tab" data-tab="faq" onclick="showTab('faq')">FAQ</button>
+          <button class="tab" data-tab="cta" onclick="showTab('cta')">CTA</button>
+          ${data.analyse_existant ? '<button class="tab" data-tab="analyse" onclick="showTab(\'analyse\')">Analyse</button>' : ''}
+        </div>
+        <div class="tab-content" id="tab-content">${contentHtml}</div>
+        <div class="tab-content" id="tab-meta" style="display:none;">${metaHtml}</div>
+        <div class="tab-content" id="tab-faq" style="display:none;">${faqHtml}</div>
+        <div class="tab-content" id="tab-cta" style="display:none;">${ctaHtml}</div>
+        ${data.analyse_existant ? `<div class="tab-content" id="tab-analyse" style="display:none;">${analyseHtml}</div>` : ''}
+        <div style="margin-top:1.5rem;padding-top:1rem;border-top:1px solid #e5e5e5;">
+          <p style="font-size:13px;color:#666;">Prochaine étape → <a href="agent-design.html" style="color:#185fa5;">Agent 3 — Design</a></p>
+        </div>`;
+    }
+  </script>
+</body>
+</html>

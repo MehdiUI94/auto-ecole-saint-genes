@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "title": "Permis Handicap Bordeaux — Véhicules Aménagés & Accompagnement Adapté | Saint-Genès",
+    "description": "Auto-école Saint-Genès à Bordeaux : formation au permis adapté pour personnes en situation de handicap. Véhicules aménagés, moniteurs spécialisés, locaux accessibles. 05 56 96 33 20.",
+    "slug": "handicap-mobilite"
+  },
+  "h1": "Formation Permis Adapté Handicap à Bordeaux — Véhicules Aménagés & Accompagnement Personnalisé",
+  "introduction": "L'auto-école Saint-Genès s'engage depuis de nombreuses années à rendre l'accès au permis de conduire possible pour toutes les personnes en situation de handicap. Nos moniteurs spécialement formés, nos véhicules aménagés et nos locaux entièrement accessibles en font l'une des auto-écoles les plus adaptées de Bordeaux pour les personnes à mobilité réduite ou présentant un handicap moteur.",
+  "sections": [
+    {
+      "h2": "Un accompagnement pensé pour chaque type de handicap",
+      "contenu": "Chaque situation de handicap est unique, et notre approche l'est tout autant. Avant de débuter toute formation, nous réalisons un bilan médical et fonctionnel avec vous pour déterminer les adaptations nécessaires au poste de conduite. Nos moniteurs sont formés aux spécificités de conduite avec une déficience motrice des membres supérieurs ou inférieurs, et maîtrisent l'ensemble des équipements d'adaptation disponibles. Nous travaillons en lien avec votre médecin traitant, votre spécialiste et éventuellement le médecin agréé de la préfecture pour s'assurer que votre dossier est complet et conforme."
+    },
+    {
+      "h2": "Nos véhicules aménagés pour la conduite adaptée",
+      "contenu": "Saint-Genès dispose de véhicules équipés d'aménagements spécifiques pour les conducteurs en situation de handicap moteur. Ces équipements peuvent inclure : commandes au volant (accélérateur et frein à main), pédale d'accélérateur transférée à gauche, boule au volant pour faciliter les manœuvres, palettes d'accélération et de freinage, ou tout autre dispositif préconisé par le médecin agréé. Tous nos véhicules adaptés sont équipés en boîte automatique, ce qui facilite l'apprentissage en supprimant une contrainte motrice supplémentaire."
+    },
+    {
+      "h2": "Accès et accueil dans nos locaux",
+      "contenu": "Nos locaux sont entièrement accessibles aux personnes en fauteuil roulant : accès de plain-pied ou rampe d'accès, espace d'accueil adapté, sanitaires accessibles. Nous veillons à ce que votre venue à l'auto-école soit toujours confortable et sans obstacle. Si vous avez besoin d'aide pour vous garer, accéder aux locaux ou pour tout autre aspect logistique, n'hésitez pas à nous le signaler lors de votre appel, nous nous organisons pour vous accueillir dans les meilleures conditions."
+    },
+    {
+      "h2": "Financement et aides spécifiques pour le permis adapté",
+      "contenu": "Le coût d'une formation en véhicule aménagé peut être plus élevé en raison des équipements spécifiques. Plusieurs aides existent pour vous accompagner financièrement : le CPF (Compte Personnel de Formation) est utilisable pour la formation au permis adapté, l'AGEFIPH (Association de Gestion du Fonds pour l'Insertion Professionnelle des Personnes Handicapées) peut financer tout ou partie du surcoût lié à l'adaptation du véhicule et à la formation spécifique, la MDPH (Maison Départementale des Personnes Handicapées) peut également orienter vers des dispositifs d'aide au transport et à la mobilité. Nos conseillers vous aident à identifier et à mobiliser toutes les aides disponibles pour votre situation."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Puis-je passer mon permis de conduire avec un handicap moteur ?",
+      "reponse": "Oui, dans la grande majorité des cas, un handicap moteur n'empêche pas l'obtention du permis de conduire. Un bilan auprès d'un médecin agréé par la préfecture détermine les éventuelles adaptations nécessaires au véhicule et au permis. Saint-Genès vous accompagne dans toutes ces démarches."
+    },
+    {
+      "question": "Quels types d'aménagements propose votre auto-école ?",
+      "reponse": "Nous proposons divers aménagements selon les préconisations médicales : commandes au volant (frein/accélérateur), transfert de pédale d'accélérateur, boule au volant, palettes de freinage, et autres dispositifs. Tous nos véhicules adaptés sont en boîte automatique. Contactez-nous au 05 56 96 33 20 pour un bilan personnalisé."
+    },
+    {
+      "question": "L'AGEFIPH peut-elle financer mon permis adapté ?",
+      "reponse": "Oui, l'AGEFIPH peut prendre en charge le surcoût lié au véhicule aménagé et à la formation spécifique pour les personnes reconnues travailleur handicapé. Nos conseillers vous accompagnent dans la constitution de votre dossier AGEFIPH. D'autres aides (MDPH, CPF) peuvent se cumuler selon votre situation."
+    },
+    {
+      "question": "Vos locaux sont-ils accessibles en fauteuil roulant ?",
+      "reponse": "Oui, nos locaux sont entièrement accessibles aux personnes en fauteuil roulant. Appelez-nous avant votre venue au 05 56 96 33 20 afin que nous puissions préparer votre accueil dans les meilleures conditions."
+    },
+    {
+      "question": "Comment contacter Saint-Genès pour une formation handicap ?",
+      "reponse": "Appelez-nous au 05 56 96 33 20, du lundi au vendredi de 14h à 19h. Lors de cet entretien téléphonique, nous prenons le temps de comprendre votre situation et de vous expliquer les étapes : bilan médical, choix des aménagements, financement et calendrier de formation."
+    }
+  ],
+  "cta": {
+    "titre": "Vous avez des questions sur la formation handicap ?",
+    "bouton": "Appelez-nous : 05 56 96 33 20"
+  }
+}

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agent SEO — Saint-Genès</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, sans-serif; background: #f9f9f7; color: #1a1a1a; }
+    header { padding: 1.5rem 2rem; border-bottom: 1px solid #e5e5e5; background: #fff; }
+    header h1 { font-size: 18px; font-weight: 500; }
+    header p { font-size: 13px; color: #666; margin-top: 2px; }
+    nav { display: flex; gap: 4px; padding: 0.75rem 2rem; background: #fff; border-bottom: 1px solid #e5e5e5; flex-wrap: wrap; }
+    nav a { font-size: 13px; padding: 6px 14px; border-radius: 6px; text-decoration: none; color: #444; border: 1px solid #e5e5e5; }
+    nav a:hover, nav a.active { background: #1a1a1a; color: #fff; border-color: #1a1a1a; }
+    main { max-width: 860px; margin: 2rem auto; padding: 0 1.5rem; }
+    .badge { display: inline-block; font-size: 12px; padding: 3px 10px; border-radius: 999px; background: #e6f1fb; color: #185fa5; margin-bottom: 12px; }
+    h2 { font-size: 18px; font-weight: 500; margin-bottom: 4px; }
+    .subtitle { font-size: 14px; color: #666; margin-bottom: 1.5rem; }
+    .input-area { border: 1px solid #e5e5e5; border-radius: 12px; padding: 1rem; background: #f5f5f3; margin-bottom: 1rem; }
+    .input-area label { font-size: 13px; color: #666; display: block; margin-bottom: 6px; }
+    textarea { width: 100%; min-height: 120px; resize: vertical; border: 1px solid #e5e5e5; border-radius: 8px; padding: 10px; font-size: 14px; font-family: system-ui, sans-serif; background: #fff; color: #1a1a1a; }
+    textarea:focus { outline: none; border-color: #999; }
+    .url-input { width: 100%; border: 1px solid #e5e5e5; border-radius: 8px; padding: 8px 12px; font-size: 14px; font-family: system-ui, sans-serif; background: #fff; color: #1a1a1a; margin-top: 8px; }
+    .url-input:focus { outline: none; border-color: #999; }
+    .actions { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 1.5rem; }
+    button { padding: 8px 18px; border-radius: 8px; border: 1px solid #e5e5e5; background: transparent; color: #1a1a1a; font-size: 14px; cursor: pointer; font-family: system-ui, sans-serif; }
+    button:hover { background: #f5f5f3; }
+    button.primary { background: #1a1a1a; color: #fff; border-color: #1a1a1a; }
+    button.primary:hover { opacity: 0.85; }
+    button:disabled { opacity: 0.4; cursor: not-allowed; }
+    .result-area { border: 1px solid #e5e5e5; border-radius: 12px; padding: 1.25rem; background: #fff; min-height: 200px; }
+    .loading { display: flex; align-items: center; gap: 8px; color: #666; font-size: 14px; padding: 2rem 0; }
+    .dot { width: 6px; height: 6px; border-radius: 50%; background: #999; animation: pulse 1.2s infinite; }
+    .dot:nth-child(2) { animation-delay: 0.2s; }
+    .dot:nth-child(3) { animation-delay: 0.4s; }
+    @keyframes pulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 1; } }
+    .tabs { display: flex; gap: 4px; margin-bottom: 1rem; border-bottom: 1px solid #e5e5e5; padding-bottom: 0; }
+    .tab { padding: 8px 14px; font-size: 13px; cursor: pointer; border: none; background: transparent; color: #666; border-bottom: 2px solid transparent; margin-bottom: -1px; font-family: system-ui, sans-serif; }
+    .tab.active { color: #1a1a1a; border-bottom-color: #1a1a1a; font-weight: 500; }
+    .tab:hover { color: #1a1a1a; }
+    .section-card { border: 1px solid #e5e5e5; border-radius: 8px; padding: 1rem; margin-bottom: 12px; background: #f9f9f7; }
+    .section-card h4 { font-size: 12px; font-weight: 500; color: #666; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.04em; }
+    .kw-pill { display: inline-block; font-size: 12px; padding: 3px 10px; border-radius: 999px; border: 1px solid #e5e5e5; margin: 3px; background: #fff; color: #1a1a1a; }
+    .kw-pill.high { background: #e1f5ee; color: #0f6e56; border-color: #5dcaa5; }
+    .kw-pill.med { background: #faeeda; color: #854f0b; border-color: #ef9f27; }
+    .error { color: #e24b4a; font-size: 14px; padding: 1rem; }
+    .empty { color: #666; font-size: 14px; text-align: center; padding: 2rem 0; }
+    footer { text-align: center; padding: 2rem; font-size: 13px; color: #999; margin-top: 3rem; border-top: 1px solid #e5e5e5; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Plateforme SEO — Auto-École Saint-Genès</h1>
+    <p>Système multi-agents pour le marketing digital</p>
+  </header>
+  <nav>
+    <a href="../index.html">Accueil</a>
+    <a href="agent-seo.html" class="active">Agent SEO</a>
+    <a href="agent-contenu.html">Agent Contenu</a>
+    <a href="agent-design.html">Agent Design</a>
+    <a href="agent-dev.html">Agent Dev</a>
+  </nav>
+  <main>
+    <span class="badge">Agent 1 — Analyste SEO/GEO</span>
+    <h2>Analyse SEO pour Auto-École Saint-Genès</h2>
+    <p class="subtitle">Colle ton document d'analyse pour générer les recommandations SEO structurées.</p>
+
+    <div class="input-area">
+      <label>Contenu de ton document d'analyse</label>
+      <textarea id="doc-input" placeholder="Colle ici le contenu de ton document analyse_auto_ecole.txt..."></textarea>
+      <label style="margin-top: 12px;">URL du site existant</label>
+      <input class="url-input" id="url-input" type="text" value="https://autoecolesaintgenes.com" />
+    </div>
+
+    <div class="actions">
+      <button class="primary" id="btn-analyze" onclick="runAnalysis()">Analyser</button>
+      <button onclick="loadSample()">Charger le doc exemple</button>
+      <button onclick="clearAll()">Effacer</button>
+    </div>
+
+    <div class="result-area" id="result-area">
+      <div class="empty">Lance l'analyse pour voir les recommandations SEO structurées.</div>
+    </div>
+  </main>
+  <footer>Projet SEO Agent — Saint-Genès &copy; 2026</footer>
+
+  <script>
+    const SAMPLE_DOC = `AUTO ECOLE SAINT-GENES BORDEAUX
+Entreprise : Auto-école Bordeaux Saint-Genès
+URL : https://autoecolesaintgenes.com
+Type : auto-école locale (Bordeaux)
+Offre : Permis B, AAC, moto, BA
+Cible : 15-25 ans + parents prescripteurs
+Zone : Bordeaux / Gironde
+Requêtes SEO :
+- "auto école bordeaux" : pas dans le top 5
+- "permis b bordeaux" : absente du top
+- "auto ecole boite auto bordeaux" : gap SEO malgré spécialisation
+Forces : spécialisation boîte automatique + handicap, 40 ans ancienneté, CPF/1€
+Faiblesses : peu de contenu editorial, pas de FAQ, pas de pages comparatives`;
+
+    function loadSample() {
+      document.getElementById('doc-input').value = SAMPLE_DOC;
+    }
+
+    function clearAll() {
+      document.getElementById('doc-input').value = '';
+      document.getElementById('result-area').innerHTML = '<div class="empty">Lance l\'analyse pour voir les recommandations SEO structurées.</div>';
+    }
+
+    function showTab(tab) {
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      document.querySelector(`[data-tab="${tab}"]`).classList.add('active');
+      document.querySelectorAll('.tab-content').forEach(c => c.style.display = 'none');
+      document.getElementById(`tab-${tab}`).style.display = 'block';
+    }
+
+    async function runAnalysis() {
+      const doc = document.getElementById('doc-input').value.trim();
+      const url = document.getElementById('url-input').value.trim();
+      if (!doc) { alert('Merci de coller ton document d\'analyse.'); return; }
+
+      const btn = document.getElementById('btn-analyze');
+      btn.disabled = true;
+      btn.textContent = 'Analyse en cours...';
+
+      document.getElementById('result-area').innerHTML = `
+        <div class="loading">
+          <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+          <span>Analyse SEO en cours...</span>
+        </div>`;
+
+      const prompt = `Tu es un expert SEO/GEO spécialisé dans le référencement local pour les PME françaises.
+Voici le document d'analyse d'une auto-école locale :
+---
+${doc}
+---
+URL du site : ${url || 'non fournie'}
+
+Génère une analyse SEO structurée EN JSON avec exactement ce format (réponds UNIQUEMENT en JSON, sans markdown ni backticks) :
+{
+  "mots_cles": {
+    "prioritaires": ["mot-clé 1", "mot-clé 2", "mot-clé 3", "mot-clé 4", "mot-clé 5"],
+    "secondaires": ["mot-clé 1", "mot-clé 2", "mot-clé 3", "mot-clé 4", "mot-clé 5"],
+    "longue_traine": ["requête longue 1", "requête longue 2", "requête longue 3", "requête longue 4"]
+  },
+  "plan_site": [
+    {"page": "Nom", "url_suggeree": "/url", "h1": "Titre H1 optimisé", "priorite": "haute", "raison": "pourquoi"}
+  ],
+  "gaps_seo": [
+    {"probleme": "Description", "impact": "fort", "solution": "Comment corriger"}
+  ],
+  "recommandations_geo": ["Recommandation 1", "Recommandation 2", "Recommandation 3"],
+  "score_actuel": {
+    "seo_local": 45,
+    "contenu_editorial": 25,
+    "presence_geo": 50,
+    "accessibilite": 60
+  }
+}
+Inclus au minimum 5 pages dans plan_site et 4 gaps_seo. Sois précis et actionnable.`;
+
+      try {
+        const response = await fetch("https://api.anthropic.com/v1/messages", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            model: "claude-sonnet-4-20250514",
+            max_tokens: 2000,
+            messages: [{ role: "user", content: prompt }]
+          })
+        });
+        const data = await response.json();
+        const text = data.content.map(i => i.text || "").join("");
+        const clean = text.replace(/```json|```/g, "").trim();
+        const result = JSON.parse(clean);
+        renderResult(result);
+      } catch (err) {
+        document.getElementById('result-area').innerHTML = `<div class="error">Erreur : ${err.message}</div>`;
+      }
+
+      btn.disabled = false;
+      btn.textContent = 'Analyser';
+    }
+
+    function renderResult(data) {
+      const scores = data.score_actuel;
+      const scoreHtml = Object.entries(scores).map(([k, v]) => {
+        const label = k.replace(/_/g, ' ');
+        const color = v >= 60 ? '#1d9e75' : v >= 40 ? '#ba7517' : '#e24b4a';
+        return `<div style="margin-bottom:10px;">
+          <div style="display:flex;justify-content:space-between;font-size:13px;margin-bottom:4px;">
+            <span style="color:#666;text-transform:capitalize;">${label}</span>
+            <span style="font-weight:500;color:${color};">${v}/100</span>
+          </div>
+          <div style="background:#f5f5f3;border-radius:999px;height:6px;overflow:hidden;">
+            <div style="height:100%;width:${v}%;background:${color};border-radius:999px;"></div>
+          </div>
+        </div>`;
+      }).join('');
+
+      const kwHtml = `
+        <div class="section-card"><h4>Prioritaires</h4>${data.mots_cles.prioritaires.map(k => `<span class="kw-pill high">${k}</span>`).join('')}</div>
+        <div class="section-card"><h4>Secondaires</h4>${data.mots_cles.secondaires.map(k => `<span class="kw-pill med">${k}</span>`).join('')}</div>
+        <div class="section-card"><h4>Longue traîne</h4>${data.mots_cles.longue_traine.map(k => `<span class="kw-pill">${k}</span>`).join('')}</div>`;
+
+      const planHtml = data.plan_site.map(p => {
+        const c = p.priorite === 'haute' ? '#1d9e75' : p.priorite === 'moyenne' ? '#ba7517' : '#888';
+        return `<div class="section-card">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px;">
+            <strong style="font-size:14px;">${p.page}</strong>
+            <span style="font-size:11px;padding:2px 8px;border-radius:999px;background:${c}22;color:${c};border:1px solid ${c}44;">${p.priorite}</span>
+          </div>
+          <div style="font-size:12px;color:#666;margin-bottom:4px;">${p.url_suggeree}</div>
+          <div style="font-size:13px;margin-bottom:4px;"><strong>H1 :</strong> ${p.h1}</div>
+          <div style="font-size:13px;color:#666;">${p.raison}</div>
+        </div>`;
+      }).join('');
+
+      const gapsHtml = data.gaps_seo.map(g => {
+        const c = g.impact === 'fort' ? '#e24b4a' : g.impact === 'moyen' ? '#ba7517' : '#888';
+        return `<div class="section-card">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px;">
+            <strong style="font-size:14px;">${g.probleme}</strong>
+            <span style="font-size:11px;padding:2px 8px;border-radius:999px;background:${c}22;color:${c};border:1px solid ${c}44;">${g.impact}</span>
+          </div>
+          <div style="font-size:13px;color:#666;"><strong style="color:#1a1a1a;">Solution :</strong> ${g.solution}</div>
+        </div>`;
+      }).join('');
+
+      const geoHtml = data.recommandations_geo.map((r, i) => `
+        <div class="section-card" style="display:flex;gap:10px;align-items:flex-start;">
+          <div style="min-width:24px;height:24px;border-radius:50%;background:#e6f1fb;color:#185fa5;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:500;">${i+1}</div>
+          <div style="font-size:14px;">${r}</div>
+        </div>`).join('');
+
+      document.getElementById('result-area').innerHTML = `
+        <div class="tabs">
+          <button class="tab active" data-tab="keywords" onclick="showTab('keywords')">Mots-clés</button>
+          <button class="tab" data-tab="plan" onclick="showTab('plan')">Plan du site</button>
+          <button class="tab" data-tab="gaps" onclick="showTab('gaps')">Gaps SEO</button>
+          <button class="tab" data-tab="geo" onclick="showTab('geo')">GEO / IA</button>
+          <button class="tab" data-tab="scores" onclick="showTab('scores')">Scores</button>
+        </div>
+        <div class="tab-content" id="tab-keywords">${kwHtml}</div>
+        <div class="tab-content" id="tab-plan" style="display:none;">${planHtml}</div>
+        <div class="tab-content" id="tab-gaps" style="display:none;">${gapsHtml}</div>
+        <div class="tab-content" id="tab-geo" style="display:none;">${geoHtml}</div>
+        <div class="tab-content" id="tab-scores" style="display:none;">${scoreHtml}</div>
+        <div style="margin-top:1.5rem;padding-top:1rem;border-top:1px solid #e5e5e5;">
+          <p style="font-size:13px;color:#666;">Prochaine étape → <a href="agent-contenu.html" style="color:#185fa5;">Agent 2 — Contenu</a></p>
+        </div>`;
+    }
+  </script>
+</body>
+</html>
