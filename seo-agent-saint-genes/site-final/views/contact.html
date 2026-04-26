@@ -3,161 +3,383 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact — Auto-École Saint-Genès Bordeaux</title>
-  <meta name="description" content="Contactez l'Auto-École Saint-Genès à Bordeaux. Téléphone, email, formulaire de contact et accès — 22 cours de la Marne, 33800 Bordeaux.">
+  <title>Contact &amp; équipe — Auto-École Saint-Genès Bordeaux</title>
+  <meta name="description" content="Contactez l'Auto-École Saint-Genès à Bordeaux. 182 Boulevard George V — 05 56 96 33 20. Rencontrez notre équipe de moniteurs diplômés.">
   <link rel="canonical" href="https://autoecole-saint-genes.fr/contact">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/style.css">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@graph":[
-    {"@type":"DrivingSchool","@id":"https://autoecole-saint-genes.fr/#ecole","name":"Auto-École Saint-Genès","telephone":"+33556912345","email":"contact@autoecole-saint-genes.fr","address":{"@type":"PostalAddress","streetAddress":"22 Cours de la Marne","addressLocality":"Bordeaux","postalCode":"33800","addressCountry":"FR"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"19:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:00","closes":"17:00"}]},
+    {"@type":"DrivingSchool","@id":"https://autoecole-saint-genes.fr/#ecole","name":"Auto-École Saint-Genès","telephone":"+33556963320","email":"contact@autoecole-saint-genes.fr","address":{"@type":"PostalAddress","streetAddress":"182 Boulevard George V","addressLocality":"Bordeaux","postalCode":"33200","addressCountry":"FR"},"openingHours":["Mo-Fr 09:00-12:30","Mo-Fr 14:00-19:00","Sa 09:00-12:00"]},
     {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://autoecole-saint-genes.fr/"},{"@type":"ListItem","position":2,"name":"Contact","item":"https://autoecole-saint-genes.fr/contact"}]}
-  ]}</script>
+  ]}
+  </script>
 </head>
 <body>
-  <a href="#contenu-principal" class="skip-link">Aller au contenu</a>
-  <header class="site-header">
-    <nav class="nav-container" role="navigation" aria-label="Navigation principale">
-      <a href="/" class="nav-logo"><span class="logo-icon">🚗</span><span class="logo-text">Auto-École<strong>Saint-Genès</strong></span></a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu">☰</button>
-      <ul class="nav-menu" id="nav-menu" role="list">
-        <li class="nav-item nav-dropdown"><a href="#" class="nav-link" aria-haspopup="true">Permis voiture ▾</a>
-          <ul class="dropdown-menu" role="list">
-            <li><a href="/permis-b" class="dropdown-link">Permis B classique</a></li>
-            <li><a href="/conduite-accompagnee" class="dropdown-link">Conduite accompagnée</a></li>
-            <li><a href="/conduite-supervisee" class="dropdown-link">Conduite supervisée</a></li>
-            <li><a href="/permis-ba" class="dropdown-link">Permis B automatique</a></li>
-            <li><a href="/formation-acceleree" class="dropdown-link">Formation accélérée</a></li>
+
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<nav class="nav" role="navigation" aria-label="Navigation principale">
+  <div class="nav__inner">
+    <a href="/" class="nav__logo">
+      <span class="nav__logo-badge">SG</span>
+      Saint-Genès
+    </a>
+    <ul class="nav__menu" role="list">
+      <li>
+        <a href="/permis-b" aria-haspopup="true">Formations auto
+          <svg class="nav__caret" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+        <ul class="nav__dropdown" role="list">
+          <li><a href="/permis-b">Permis B (boîte manuelle)</a></li>
+          <li><a href="/permis-ba">Permis B boîte automatique</a></li>
+          <li><a href="/conduite-accompagnee">Conduite accompagnée (AAC)</a></li>
+          <li><a href="/conduite-supervisee">Conduite supervisée</a></li>
+          <li><a href="/formation-acceleree">Formation accélérée</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="/permis-a2" aria-haspopup="true">Formations moto
+          <svg class="nav__caret" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+        <ul class="nav__dropdown" role="list">
+          <li><a href="/permis-a2">Permis A2</a></li>
+          <li><a href="/permis-am">Permis AM / BSR</a></li>
+          <li><a href="/formation-125-cm">Formation 125 cm³</a></li>
+          <li><a href="/passerelle-a2-vers-a">Passerelle A2 → A</a></li>
+        </ul>
+      </li>
+      <li><a href="/code-de-la-route">Code en ligne</a></li>
+      <li><a href="/mobilite-handicap">Handicap</a></li>
+      <li><a href="/permis-a-1-euro">Financement</a></li>
+    </ul>
+    <div class="nav__cta">
+      <a href="tel:+33556963320" class="btn btn--ghost btn--sm">05 56 96 33 20</a>
+      <a href="/preinscription" class="btn btn--primary btn--sm">S'inscrire</a>
+    </div>
+    <button class="nav__burger" id="nav-burger" aria-expanded="false" aria-controls="nav-mobile" aria-label="Ouvrir le menu">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true"><path d="M3 6h16M3 11h16M3 16h16" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</nav>
+
+<div class="nav__mobile" id="nav-mobile" role="dialog" aria-label="Menu mobile">
+  <div class="nav__mobile-section">
+    <p class="nav__mobile-section-title">Formations auto</p>
+    <a href="/permis-b">Permis B</a>
+    <a href="/permis-ba">Permis B automatique</a>
+    <a href="/conduite-accompagnee">Conduite accompagnée</a>
+    <a href="/formation-acceleree">Formation accélérée</a>
+  </div>
+  <div class="nav__mobile-section">
+    <p class="nav__mobile-section-title">Formations moto</p>
+    <a href="/permis-a2">Permis A2</a>
+    <a href="/permis-am">Permis AM / BSR</a>
+    <a href="/formation-125-cm">Formation 125 cm³</a>
+  </div>
+  <div class="nav__mobile-section">
+    <p class="nav__mobile-section-title">Services</p>
+    <a href="/code-de-la-route">Code en ligne 24/7</a>
+    <a href="/mobilite-handicap">Mobilité handicap</a>
+    <a href="/permis-a-1-euro">Financement</a>
+  </div>
+  <div class="nav__mobile-cta">
+    <a href="/preinscription" class="btn btn--primary btn--full">S'inscrire</a>
+    <a href="tel:+33556963320" class="btn btn--ghost btn--full"> 05 56 96 33 20</a>
+  </div>
+</div>
+
+<main id="main">
+
+  <div class="page-header">
+    <div class="container">
+      <nav aria-label="Fil d'Ariane" class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep" aria-hidden="true">›</span>
+        <span class="breadcrumb__cur">Contact</span>
+      </nav>
+      <div class="mb-4"><span class="eyebrow">Nous contacter</span></div>
+      <h1 class="page-header__title">Contactez l'Auto-École Saint-Genès</h1>
+      <p class="page-header__intro">Notre équipe répond dans les 24h ouvrées. Pour une réponse immédiate, appelez-nous.</p>
+    </div>
+  </div>
+
+  <!-- 3 BLOCS INFOS -->
+  <section class="section section--surface reveal">
+    <div class="container">
+      <div class="grid grid-3">
+
+        <div class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+              <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+          </div>
+          <h2 class="card__title">Adresse</h2>
+          <p class="card__body">
+            182 Boulevard George V<br>
+            33200 Bordeaux<br><br>
+            <strong>Tramway ligne B</strong> — arrêt Belcier<br>
+            Parking à proximité
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+            </svg>
+          </div>
+          <h2 class="card__title">Téléphone</h2>
+          <p class="card__body">
+            <a href="tel:+33556963320" style="font-family:var(--font-display);font-size:1.5rem;font-weight:700;color:var(--c-accent);letter-spacing:-0.02em;">05 56 96 33 20</a><br><br>
+            Réponse immédiate pendant nos horaires d'ouverture.
+          </p>
+          <a href="tel:+33556963320" class="btn btn--primary mt-4">Appeler maintenant</a>
+        </div>
+
+        <div class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h2 class="card__title">Horaires</h2>
+          <p class="card__body">
+            <strong>Lundi – Vendredi</strong><br>
+            9h00 – 12h30 &amp; 14h00 – 19h00<br><br>
+            <strong>Samedi</strong><br>
+            9h00 – 12h00<br><br>
+            <em style="color:var(--c-muted);font-size:var(--text-sm);">Leçons de conduite tous les jours selon planning.</em>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CARTE SVG STYLISÉE -->
+  <section class="section reveal">
+    <div class="container">
+      <div class="map-card">
+        <div style="width:100%;max-width:680px;text-align:center;">
+          <svg class="map-svg" viewBox="0 0 400 260" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Carte schématique — 182 Boulevard George V, Bordeaux" role="img">
+            <rect width="400" height="260" rx="12" fill="#E6EDF7"/>
+            <!-- Rues verticales -->
+            <line x1="80"  y1="0"   x2="80"  y2="260" stroke="#C5D0E8" stroke-width="8"  stroke-linecap="round"/>
+            <line x1="160" y1="0"   x2="160" y2="260" stroke="#C5D0E8" stroke-width="8"  stroke-linecap="round"/>
+            <line x1="240" y1="0"   x2="240" y2="260" stroke="#C5D0E8" stroke-width="14" stroke-linecap="round"/>
+            <line x1="320" y1="0"   x2="320" y2="260" stroke="#C5D0E8" stroke-width="8"  stroke-linecap="round"/>
+            <!-- Rues horizontales -->
+            <line x1="0"   y1="65"  x2="400" y2="65"  stroke="#C5D0E8" stroke-width="8"  stroke-linecap="round"/>
+            <line x1="0"   y1="130" x2="400" y2="130" stroke="#C5D0E8" stroke-width="14" stroke-linecap="round"/>
+            <line x1="0"   y1="195" x2="400" y2="195" stroke="#C5D0E8" stroke-width="8"  stroke-linecap="round"/>
+            <!-- Îlots -->
+            <rect x="95"  y="80"  width="50" height="35" rx="4" fill="#D0DBF0"/>
+            <rect x="95"  y="145" width="50" height="35" rx="4" fill="#D0DBF0"/>
+            <rect x="175" y="80"  width="50" height="35" rx="4" fill="#D0DBF0"/>
+            <rect x="175" y="145" width="50" height="35" rx="4" fill="#D0DBF0"/>
+            <rect x="255" y="80"  width="50" height="35" rx="4" fill="#D0DBF0"/>
+            <rect x="255" y="145" width="50" height="35" rx="4" fill="#D0DBF0"/>
+            <rect x="15"  y="80"  width="50" height="35" rx="4" fill="#D0DBF0"/>
+            <rect x="15"  y="145" width="50" height="35" rx="4" fill="#D0DBF0"/>
+            <rect x="335" y="80"  width="50" height="35" rx="4" fill="#D0DBF0"/>
+            <rect x="335" y="145" width="50" height="35" rx="4" fill="#D0DBF0"/>
+            <!-- Label voie -->
+            <text x="200" y="124" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="9" fill="white" font-weight="500" letter-spacing="0.06em">BOULEVARD GEORGE V</text>
+            <!-- Pin -->
+            <g transform="translate(240,120)">
+              <ellipse cx="0" cy="28" rx="10" ry="4" fill="rgba(11,18,32,.2)"/>
+              <path d="M0 -4 C-12 -4 -12 10 -6 18 L0 28 L6 18 C12 10 12 -4 0 -4Z" fill="#1349A6"/>
+              <circle cx="0" cy="6" r="5" fill="white"/>
+            </g>
+            <!-- Étiquette -->
+            <rect x="142" y="62" width="118" height="24" rx="6" fill="white" stroke="#E3E5EB"/>
+            <text x="201" y="78" text-anchor="middle" font-family="'Inter Tight',sans-serif" font-size="10" fill="#0B1220" font-weight="600">Auto-École Saint-Genès</text>
+          </svg>
+          <p style="margin-top:1rem;font-family:var(--font-mono);font-size:11px;text-transform:uppercase;letter-spacing:var(--tracking-mono);color:var(--c-muted);">—— 182 Boulevard George V · 33200 Bordeaux</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOTRE ÉQUIPE -->
+  <section class="section section--surface reveal">
+    <div class="container">
+      <div class="section-title">
+        <span class="eyebrow section-title__eyebrow">Notre équipe</span>
+        <h2 class="section-title__h">Des moniteurs diplômés et passionnés</h2>
+        <p class="section-title__sub">Tous titulaires du BEPECASER ou du Titre Pro ECSR, avec en moyenne 12 ans d'expérience à Saint-Genès.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-card__avatar">JM</div>
+          <p class="team-card__name">Jean-Marc Pellegrini</p>
+          <p class="team-card__role">Directeur pédagogique</p>
+        </div>
+        <div class="team-card">
+          <div class="team-card__avatar">LV</div>
+          <p class="team-card__name">Lionel Vives</p>
+          <p class="team-card__role">Référent mobilité handicap</p>
+        </div>
+        <div class="team-card">
+          <div class="team-card__avatar">SC</div>
+          <p class="team-card__name">Sophie Carbonneau</p>
+          <p class="team-card__role">Monitrice Permis B</p>
+        </div>
+        <div class="team-card">
+          <div class="team-card__avatar">AR</div>
+          <p class="team-card__name">Antoine Renaud</p>
+          <p class="team-card__role">Moniteur Permis B &amp; BA</p>
+        </div>
+        <div class="team-card">
+          <div class="team-card__avatar">NB</div>
+          <p class="team-card__name">Nadia Bouchard</p>
+          <p class="team-card__role">Monitrice Permis B · AAC</p>
+        </div>
+        <div class="team-card">
+          <div class="team-card__avatar">KM</div>
+          <p class="team-card__name">Kevin Moreau</p>
+          <p class="team-card__role">Moniteur Moto A2 &amp; AM</p>
+        </div>
+        <div class="team-card">
+          <div class="team-card__avatar">CL</div>
+          <p class="team-card__name">Clara Lefevre</p>
+          <p class="team-card__role">Conseillère accueil &amp; inscription</p>
+        </div>
+        <div class="team-card">
+          <div class="team-card__avatar">PD</div>
+          <p class="team-card__name">Pierre Dubois</p>
+          <p class="team-card__role">Moniteur · Formation accélérée</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULAIRE CONTACT -->
+  <section class="section reveal">
+    <div class="container">
+      <div class="page-layout">
+        <article class="page-main">
+          <div class="mb-6">
+            <span class="eyebrow">Formulaire</span>
+            <h2 style="font-family:var(--font-display);font-size:var(--text-2xl);font-weight:700;letter-spacing:var(--tracking-display);margin-top:.5rem;">Envoyez-nous un message</h2>
+          </div>
+          <div id="contact-alert" class="form-alert mb-6" role="alert" aria-live="polite"></div>
+          <form id="contact-form" novalidate>
+            <div style="display:flex;flex-direction:column;gap:1rem;">
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="nom">Nom complet <span>*</span></label>
+                  <input class="form-input" type="text" id="nom" name="nom" autocomplete="name" required placeholder="Marie Dupont">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="email">Email <span>*</span></label>
+                  <input class="form-input" type="email" id="email" name="email" autocomplete="email" required placeholder="marie@exemple.fr">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="objet">Sujet <span>*</span></label>
+                <select class="form-select" id="objet" name="objet" required>
+                  <option value="">Sélectionnez un sujet…</option>
+                  <option value="inscription">Inscription / préinscription</option>
+                  <option value="tarifs">Tarifs et formules</option>
+                  <option value="financement">Financement (CPF, 1€/jour…)</option>
+                  <option value="handicap">Mobilité handicap</option>
+                  <option value="planning">Planning et disponibilités</option>
+                  <option value="autre">Autre question</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="message">Message <span>*</span></label>
+                <textarea class="form-textarea" id="message" name="message" required rows="5" placeholder="Décrivez votre demande…"></textarea>
+              </div>
+              <div class="form-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="rgpd" name="rgpd" required>
+                  <span>J'accepte que mes données soient utilisées pour traiter ma demande.
+                    <a href="/politique-confidentialite" style="color:var(--c-accent);text-decoration:underline;">Politique de confidentialité</a>
+                  </span>
+                </label>
+              </div>
+              <div>
+                <button type="submit" class="btn btn--primary btn--lg">Envoyer mon message</button>
+              </div>
+            </div>
+          </form>
+        </article>
+
+        <aside class="page-sidebar">
+          <div class="sidebar-card sidebar-card--highlight">
+            <p class="sidebar-card__title"> Appel direct</p>
+            <a href="tel:+33556963320" class="sidebar-card__phone">05 56 96 33 20</a>
+            <p class="sidebar-card__hours">Lun–Ven 9h–12h30 &amp; 14h–19h<br>Sam 9h–12h</p>
+          </div>
+          <div class="sidebar-card">
+            <p class="sidebar-card__title">Nous trouver</p>
+            <ul class="sidebar-card__list">
+              <li> 182 Boulevard George V, 33200 Bordeaux</li>
+              <li> Tramway ligne B — arrêt Belcier</li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <p class="sidebar-card__title">Préinscription rapide</p>
+            <p style="font-size:var(--text-sm);color:var(--c-ink-dim);margin-bottom:.875rem;">Gratuite, sans engagement. Réponse en 24h.</p>
+            <a href="/preinscription" class="btn btn--primary btn--full">S'inscrire en ligne</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__top">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <p class="footer__brand">Auto-École Saint-Genès</p>
+          <p class="footer__tagline">Label Qualité, Qualiopi. Bordeaux depuis 1984.</p>
+        </div>
+        <div class="footer__col">
+          <p class="footer__heading">Formations</p>
+          <ul class="footer__links">
+            <li><a href="/permis-b">Permis B</a></li>
+            <li><a href="/conduite-accompagnee">Conduite accompagnée</a></li>
+            <li><a href="/code-de-la-route">Code en ligne 24/7</a></li>
+            <li><a href="/permis-a2">Permis moto</a></li>
           </ul>
-        </li>
-        <li class="nav-item nav-dropdown"><a href="#" class="nav-link" aria-haspopup="true">Permis moto ▾</a>
-          <ul class="dropdown-menu" role="list">
-            <li><a href="/permis-a2" class="dropdown-link">Permis A2</a></li>
-            <li><a href="/permis-am" class="dropdown-link">Permis AM / BSR</a></li>
-            <li><a href="/formation-125-cm" class="dropdown-link">Formation 125 cm³</a></li>
-            <li><a href="/passerelle-a2-vers-a" class="dropdown-link">Passerelle A2 → A</a></li>
+        </div>
+        <div class="footer__col">
+          <p class="footer__heading">Infos pratiques</p>
+          <ul class="footer__links">
+            <li><a href="/permis-a-1-euro">Financement</a></li>
+            <li><a href="/mobilite-handicap">Mobilité handicap</a></li>
+            <li><a href="/preinscription">Préinscription</a></li>
           </ul>
-        </li>
-        <li class="nav-item"><a href="/code-de-la-route" class="nav-link">Code</a></li>
-        <li class="nav-item"><a href="/mobilite-handicap" class="nav-link">Handicap</a></li>
-        <li class="nav-item"><a href="/permis-a-1-euro" class="nav-link">Financement</a></li>
-        <li class="nav-item"><a href="/contact" class="nav-link" aria-current="page">Contact</a></li>
-        <li class="nav-item"><a href="/preinscription" class="nav-link nav-cta">S'inscrire</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main id="contenu-principal">
-    <div class="page-header">
-      <nav aria-label="Fil d'Ariane" class="breadcrumb"><ol><li><a href="/">Accueil</a></li><li aria-current="page">Contact</li></ol></nav>
-      <h1>Contactez l'Auto-École Saint-Genès</h1>
-      <p class="page-subtitle">À Bordeaux depuis 1987 — réponse sous 24h ouvrées</p>
-    </div>
-
-    <div class="page-layout">
-      <article class="page-main">
-        <form id="form-contact" class="contact-form" novalidate>
-          <div class="form-group">
-            <label for="nom">Nom complet <span aria-hidden="true">*</span></label>
-            <input type="text" id="nom" name="nom" autocomplete="name" required minlength="2" placeholder="Marie Dupont">
-            <span class="form-error" id="err-nom" role="alert"></span>
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email <span aria-hidden="true">*</span></label>
-            <input type="email" id="email" name="email" autocomplete="email" required placeholder="marie@exemple.fr">
-            <span class="form-error" id="err-email" role="alert"></span>
-          </div>
-
-          <div class="form-group">
-            <label for="objet">Objet <span aria-hidden="true">*</span></label>
-            <select id="objet" name="objet" required>
-              <option value="">-- Sélectionnez --</option>
-              <option value="inscription">Demande d'inscription</option>
-              <option value="tarifs">Renseignements tarifs</option>
-              <option value="financement">Financement (CPF, 1€/jour…)</option>
-              <option value="handicap">Formation mobilité handicap</option>
-              <option value="perfectionnement">Perfectionnement / remise à niveau</option>
-              <option value="autre">Autre</option>
-            </select>
-            <span class="form-error" id="err-objet" role="alert"></span>
-          </div>
-
-          <div class="form-group">
-            <label for="message">Message <span aria-hidden="true">*</span></label>
-            <textarea id="message" name="message" rows="5" required minlength="10" placeholder="Votre message…"></textarea>
-            <span class="form-error" id="err-message" role="alert"></span>
-          </div>
-
-          <div class="form-group">
-            <label class="checkbox-label">
-              <input type="checkbox" id="rgpd" name="rgpd" required>
-              <span>J'accepte le traitement de mes données pour répondre à ma demande. <a href="/politique-confidentialite">En savoir plus</a></span>
-            </label>
-            <span class="form-error" id="err-rgpd" role="alert"></span>
-          </div>
-
-          <button type="submit" class="btn btn--primary btn--lg">Envoyer mon message</button>
-          <div id="form-feedback" class="form-feedback" role="alert" aria-live="polite" hidden></div>
-        </form>
-      </article>
-
-      <aside class="page-sidebar">
-        <div class="sidebar-card sidebar-card--highlight">
-          <h3>📞 Par téléphone</h3>
-          <p><a href="tel:+33556912345" class="sidebar-phone">05 56 91 23 45</a></p>
-          <p class="sidebar-hours">Lun–Ven : 9h–19h<br>Samedi : 9h–17h<br>Dimanche : fermé</p>
         </div>
-
-        <div class="sidebar-card">
-          <h3>📍 Nous trouver</h3>
-          <address style="font-style:normal">
-            <p><strong>Auto-École Saint-Genès</strong><br>22 cours de la Marne<br>33800 Bordeaux</p>
-          </address>
-          <div class="map-placeholder" role="img" aria-label="Carte de localisation — 22 cours de la Marne, Bordeaux" style="background:#e2e8f0;border-radius:8px;height:160px;display:flex;align-items:center;justify-content:center;margin-top:0.75rem;color:#64748b;font-size:0.875rem;">
-            📍 22 cours de la Marne<br>Bordeaux (33800)
-          </div>
-          <p style="margin-top:0.5rem;font-size:0.875rem;color:#64748b;">À 5 min à pied de la gare Saint-Jean<br>Tramway ligne C — arrêt Belcier</p>
+        <div class="footer__col">
+          <p class="footer__heading">Contact</p>
+          <div class="footer__contact-item"><span class="footer__contact-icon"></span><span>182 Bd George V, 33200 Bordeaux</span></div>
+          <a href="tel:+33556963320" class="footer__phone">05 56 96 33 20</a>
         </div>
-
-        <div class="sidebar-card">
-          <h3>✉️ Par email</h3>
-          <p><a href="mailto:contact@autoecole-saint-genes.fr">contact@autoecole-saint-genes.fr</a></p>
-        </div>
-      </aside>
+      </div>
     </div>
-  </main>
-
-  <footer class="site-footer" role="contentinfo">
-    <div class="footer-grid">
-      <div class="footer-col"><h3>Auto-École Saint-Genès</h3><p>22 cours de la Marne<br>33800 Bordeaux</p><p><a href="tel:+33556912345">05 56 91 23 45</a></p></div>
-      <div class="footer-col"><h3>Formations</h3><ul><li><a href="/permis-b">Permis B</a></li><li><a href="/conduite-accompagnee">Conduite accompagnée</a></li><li><a href="/code-de-la-route">Code de la route</a></li></ul></div>
-      <div class="footer-col"><h3>Informations</h3><ul><li><a href="/permis-a-1-euro">Financement</a></li><li><a href="/contact">Contact</a></li><li><a href="/mentions-legales">Mentions légales</a></li></ul></div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="footer__bottom-inner">
+        <p class="footer__copy">© 2026 Auto-École Saint-Genès · Bordeaux</p>
+        <nav class="footer__legal" aria-label="Liens légaux">
+          <a href="/mentions-legales">Mentions légales</a>
+          <a href="/politique-confidentialite">Politique de confidentialité</a>
+        </nav>
+      </div>
     </div>
-    <p class="footer-copy">© 2024 Auto-École Saint-Genès — Bordeaux. Agrément préfectoral n° E0503300330.</p>
-  </footer>
-  <script src="/assets/main.js" defer></script>
-  <script>
-  document.getElementById('form-contact').addEventListener('submit', async function(e) {
-    e.preventDefault();
-    const btn = this.querySelector('[type=submit]');
-    const feedback = document.getElementById('form-feedback');
-    btn.disabled = true; btn.textContent = 'Envoi…';
-    try {
-      const res = await fetch('/api/contact', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(Object.fromEntries(new FormData(this)))});
-      const json = await res.json();
-      if (res.ok) {
-        feedback.textContent = '✅ Message envoyé ! Référence : ' + json.id + '. Réponse sous 24h.';
-        feedback.className = 'form-feedback form-feedback--success';
-        this.reset();
-      } else {
-        feedback.textContent = '❌ ' + (json.errors?.join(', ') || json.error || 'Erreur — veuillez réessayer.');
-        feedback.className = 'form-feedback form-feedback--error';
-      }
-    } catch { feedback.textContent = '❌ Erreur réseau.'; feedback.className = 'form-feedback form-feedback--error'; }
-    feedback.hidden = false; btn.disabled = false; btn.textContent = 'Envoyer mon message';
-  });
-  </script>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
 </body>
 </html>

@@ -68,6 +68,7 @@ app.get('/permis-a2',              sendView('permis-a2.html'));
 app.get('/permis-am',              sendView('permis-am.html'));
 app.get('/formation-125-cm',       sendView('formation-125-cm.html'));
 app.get('/passerelle-a2-vers-a',   sendView('passerelle-a2-vers-a.html'));
+app.get('/formules',               sendView('formules.html'));
 app.get('/preinscription',         sendView('preinscription.html'));
 app.get('/code-en-ligne',          sendView('code-en-ligne.html'));
 app.get('/contact',                sendView('contact.html'));
