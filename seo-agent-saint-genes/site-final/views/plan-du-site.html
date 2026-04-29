@@ -130,93 +130,334 @@
         <span class="breadcrumb__sep" aria-hidden="true">›</span>
         <span class="breadcrumb__cur">Plan du site</span>
       </nav>
-      <div class="mb-4"><span class="eyebrow">Navigation complète</span></div>
-      <h1 class="page-header__title">Plan du site</h1>
+      <div class="mb-4"><span class="eyebrow">Architecture du site</span></div>
+      <h1 class="page-header__title">Plan du site Auto-École Saint-Genès</h1>
       <p class="page-header__intro">
-        Retrouvez ici l'ensemble des pages du site Auto-École Saint-Genès, classées par thématique
-        pour faciliter votre navigation. Une version XML destinée aux moteurs de recherche est
-        également disponible : <a href="/sitemap.xml">sitemap.xml</a>.
+        Carte hiérarchique complète de toutes les pages du site, organisée par thématique
+        et par profondeur. Pour les moteurs de recherche, la version XML est disponible :
+        <a href="/sitemap.xml">sitemap.xml</a>.
       </p>
     </div>
   </div>
 
-  <section class="section">
-    <div class="container">
-      <div class="grid grid-3">
-
-        <article class="card">
-          <h2 class="card__title">Accueil &amp; général</h2>
-          <ul class="footer__links" style="padding-left:0;">
-            <li><a href="/">Accueil</a></li>
-            <li><a href="/formules">Toutes les formules &amp; tarifs</a></li>
-            <li><a href="/preinscription">Préinscription en ligne</a></li>
-            <li><a href="/contact">Contact &amp; équipe</a></li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h2 class="card__title">Formations auto</h2>
-          <ul class="footer__links" style="padding-left:0;">
-            <li><a href="/permis-b">Permis B — boîte manuelle</a></li>
-            <li><a href="/permis-ba">Permis B — boîte automatique</a></li>
-            <li><a href="/conduite-accompagnee">Conduite accompagnée (AAC) dès 15 ans</a></li>
-            <li><a href="/conduite-supervisee">Conduite supervisée</a></li>
-            <li><a href="/formation-acceleree">Formation accélérée</a></li>
-            <li><a href="/perfectionnement">Perfectionnement / Post-permis</a></li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h2 class="card__title">Formations moto &amp; deux-roues</h2>
-          <ul class="footer__links" style="padding-left:0;">
-            <li><a href="/permis-a2">Permis A2</a></li>
-            <li><a href="/permis-am">Permis AM / BSR</a></li>
-            <li><a href="/formation-125-cm">Formation 125 cm³</a></li>
-            <li><a href="/passerelle-a2-vers-a">Passerelle A2 → A</a></li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h2 class="card__title">Code de la route</h2>
-          <ul class="footer__links" style="padding-left:0;">
-            <li><a href="/code-de-la-route">Code de la route — formation</a></li>
-            <li><a href="/code-en-ligne">Code en ligne 24h/24</a></li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h2 class="card__title">Financement &amp; accessibilité</h2>
-          <ul class="footer__links" style="padding-left:0;">
-            <li><a href="/permis-a-1-euro">Permis à 1€/jour, CPF, aides</a></li>
-            <li><a href="/mobilite-handicap">Mobilité handicap (véhicules aménagés)</a></li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h2 class="card__title">Actualités &amp; contenus</h2>
-          <ul class="footer__links" style="padding-left:0;">
-            <li><a href="/actualites">Actualités — réforme, conduite, sécurité routière</a></li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h2 class="card__title">Mentions &amp; informations légales</h2>
-          <ul class="footer__links" style="padding-left:0;">
-            <li><a href="/mentions-legales">Mentions légales</a></li>
-            <li><a href="/politique-confidentialite">Politique de confidentialité (RGPD)</a></li>
-            <li><a href="/plan-du-site" aria-current="page">Plan du site</a></li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h2 class="card__title">Pages techniques</h2>
-          <ul class="footer__links" style="padding-left:0;">
-            <li><a href="/success">Page de confirmation paiement</a></li>
-            <li><a href="/cancel">Page d'annulation paiement</a></li>
-          </ul>
-        </article>
-
+  <!-- ── COMPTEURS ─────────────────────────────────────── -->
+  <section class="section" style="padding-block:1.5rem;">
+    <div class="container" style="max-width:980px;">
+      <div class="sitemap-stats">
+        <div class="sitemap-stat"><span class="sitemap-stat__val tabular">25</span><span class="sitemap-stat__lbl">pages publiées</span></div>
+        <div class="sitemap-stat"><span class="sitemap-stat__val tabular">7</span><span class="sitemap-stat__lbl">grandes rubriques</span></div>
+        <div class="sitemap-stat"><span class="sitemap-stat__val tabular">3</span><span class="sitemap-stat__lbl">niveaux de profondeur</span></div>
+        <div class="sitemap-stat"><span class="sitemap-stat__val tabular">100 %</span><span class="sitemap-stat__lbl">accessibles depuis l'accueil</span></div>
       </div>
+    </div>
+  </section>
+
+  <!-- ── ARBORESCENCE ──────────────────────────────────── -->
+  <section class="section">
+    <div class="container" style="max-width:980px;">
+
+      <!-- Racine -->
+      <div class="sitemap-root">
+        <a href="/" class="sitemap-root__link">
+          <span class="sitemap-root__badge">SG</span>
+          <div>
+            <span class="sitemap-root__name">autoecole-saint-genes.fr</span>
+            <span class="sitemap-root__url">/</span>
+            <span class="sitemap-root__hint">Accueil — page de référence, schémas DrivingSchool + WebSite</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- ── 01 · Formations Auto ── -->
+      <article class="sitemap-group">
+        <header class="sitemap-group__head">
+          <span class="sitemap-group__num">01</span>
+          <div>
+            <h2 class="sitemap-group__title">Formations auto</h2>
+            <p class="sitemap-group__desc">Permis B, conduite accompagnée, post-permis — la voie classique des candidats permis voiture.</p>
+          </div>
+        </header>
+        <ul class="sitemap-tree" role="list">
+          <li class="sitemap-tree__item">
+            <a href="/permis-b" class="sitemap-tree__link">
+              <span class="sitemap-tree__name">Permis B — boîte manuelle</span>
+              <span class="sitemap-tree__url">/permis-b</span>
+              <span class="sitemap-tree__desc">Formation classique 20h conduite minimum</span>
+            </a>
+          </li>
+          <li class="sitemap-tree__item">
+            <a href="/permis-ba" class="sitemap-tree__link">
+              <span class="sitemap-tree__name">Permis B — boîte automatique</span>
+              <span class="sitemap-tree__url">/permis-ba</span>
+              <span class="sitemap-tree__desc">13h conduite minimum, idéal pour véhicules électriques et ZFE</span>
+            </a>
+          </li>
+          <li class="sitemap-tree__item">
+            <a href="/conduite-accompagnee" class="sitemap-tree__link">
+              <span class="sitemap-tree__name">Conduite accompagnée (AAC)</span>
+              <span class="sitemap-tree__url">/conduite-accompagnee</span>
+              <span class="sitemap-tree__desc">Dès 15 ans — examen possible à 17 ans</span>
+            </a>
+          </li>
+          <li class="sitemap-tree__item">
+            <a href="/conduite-supervisee" class="sitemap-tree__link">
+              <span class="sitemap-tree__name">Conduite supervisée</span>
+              <span class="sitemap-tree__url">/conduite-supervisee</span>
+              <span class="sitemap-tree__desc">Pour majeurs après échec ou en complément formation</span>
+            </a>
+          </li>
+          <li class="sitemap-tree__item">
+            <a href="/formation-acceleree" class="sitemap-tree__link">
+              <span class="sitemap-tree__name">Formation accélérée</span>
+              <span class="sitemap-tree__url">/formation-acceleree</span>
+              <span class="sitemap-tree__desc">Permis en 3 à 4 semaines, programme intensif</span>
+            </a>
+          </li>
+          <li class="sitemap-tree__item">
+            <a href="/perfectionnement" class="sitemap-tree__link">
+              <span class="sitemap-tree__name">Perfectionnement / Post-permis</span>
+              <span class="sitemap-tree__url">/perfectionnement</span>
+              <span class="sitemap-tree__desc">Réduit la période probatoire — autoroute, nuit, mauvais temps</span>
+            </a>
+          </li>
+          <li class="sitemap-tree__item sitemap-tree__item--summary">
+            <a href="/formules" class="sitemap-tree__link">
+              <span class="sitemap-tree__name">→ Toutes les formules &amp; tarifs</span>
+              <span class="sitemap-tree__url">/formules</span>
+              <span class="sitemap-tree__desc">Comparateur global toutes catégories</span>
+            </a>
+          </li>
+        </ul>
+      </article>
+
+      <!-- ── 02 · Formations Moto ── -->
+      <article class="sitemap-group">
+        <header class="sitemap-group__head">
+          <span class="sitemap-group__num">02</span>
+          <div>
+            <h2 class="sitemap-group__title">Formations moto &amp; deux-roues</h2>
+            <p class="sitemap-group__desc">A2, AM/BSR, 125 cm³ et passerelles — toutes les filières deux-roues.</p>
+          </div>
+        </header>
+        <ul class="sitemap-tree" role="list">
+          <li class="sitemap-tree__item">
+            <a href="/permis-a2" class="sitemap-tree__link">
+              <span class="sitemap-tree__name">Permis A2</span>
+              <span class="sitemap-tree__url">/permis-a2</span>
+              <span class="sitemap-tree__desc">Dès 18 ans, motos jusqu'à 35 kW (réforme mars 2020)</span>
+            </a>
+          </li>
+          <li class="sitemap-tree__item">
+            <a href="/permis-am" class="sitemap-tree__link">
+              <span class="sitemap-tree__name">Permis AM / BSR</span>
+              <span class="sitemap-tree__url">/permis-am</span>
+              <span class="sitemap-tree__desc">Dès 14 ans, scooters / cyclos jusqu'à 50 cm³</span>
+            </a>
+          </li>
+          <li class="sitemap-tree__item">
+            <a href="/formation-125-cm" class="sitemap-tree__link">
+              <span class="sitemap-tree__name">Formation 125 cm³</span>
+              <span class="sitemap-tree__url">/formation-125-cm</span>
+              <span class="sitemap-tree__desc">7h obligatoires pour titulaires permis B (≥ 2 ans)</span>
+            </a>
+          </li>
+          <li class="sitemap-tree__item">
+            <a href="/passerelle-a2-vers-a" class="sitemap-tree__link">
+              <span class="sitemap-tree__name">Passerelle A2 → A</span>
+              <span class="sitemap-tree__url">/passerelle-a2-vers-a</span>
+              <span class="sitemap-tree__desc">7h formation après 2 ans de permis A2 — toutes cylindrées</span>
+            </a>
+          </li>
+        </ul>
+      </article>
+
+      <!-- ── 03 · Code de la route ── -->
+      <article class="sitemap-group">
+        <header class="sitemap-group__head">
+          <span class="sitemap-group__num">03</span>
+          <div>
+            <h2 class="sitemap-group__title">Code de la route</h2>
+            <p class="sitemap-group__desc">L'épreuve théorique générale (ETG) et notre plateforme en ligne 24/7.</p>
+          </div>
+        </header>
+        <ul class="sitemap-tree" role="list">
+          <li class="sitemap-tree__item">
+            <a href="/code-de-la-route" class="sitemap-tree__link">
+              <span class="sitemap-tree__name">Code de la route — formation</span>
+              <span class="sitemap-tree__url">/code-de-la-route</span>
+              <span class="sitemap-tree__desc">Cours, examens blancs, suivi de progression</span>
+            </a>
+          </li>
+          <li class="sitemap-tree__item">
+            <a href="/code-en-ligne" class="sitemap-tree__link">
+              <span class="sitemap-tree__name">Code en ligne — accès &amp; tarifs</span>
+              <span class="sitemap-tree__url">/code-en-ligne</span>
+              <span class="sitemap-tree__desc">Plateforme accessible 6 mois illimités, tous supports</span>
+            </a>
+          </li>
+        </ul>
+      </article>
+
+      <!-- ── 04 · Services & accessibilité ── -->
+      <article class="sitemap-group">
+        <header class="sitemap-group__head">
+          <span class="sitemap-group__num">04</span>
+          <div>
+            <h2 class="sitemap-group__title">Services &amp; accessibilité</h2>
+            <p class="sitemap-group__desc">Mobilité handicap, financements et aides à la conduite.</p>
+          </div>
+        </header>
+        <ul class="sitemap-tree" role="list">
+          <li class="sitemap-tree__item">
+            <a href="/mobilite-handicap" class="sitemap-tree__link">
+              <span class="sitemap-tree__name">Mobilité handicap</span>
+              <span class="sitemap-tree__url">/mobilite-handicap</span>
+              <span class="sitemap-tree__desc">Véhicules aménagés, MDPH, AGEFIPH — référent dédié</span>
+            </a>
+          </li>
+          <li class="sitemap-tree__item">
+            <a href="/permis-a-1-euro" class="sitemap-tree__link">
+              <span class="sitemap-tree__name">Financement &amp; permis 1€/jour</span>
+              <span class="sitemap-tree__url">/permis-a-1-euro</span>
+              <span class="sitemap-tree__desc">CPF (reste à charge 100 €), permis 1€/jour, aides régionales</span>
+            </a>
+          </li>
+        </ul>
+      </article>
+
+      <!-- ── 05 · Actualités & informations ── -->
+      <article class="sitemap-group">
+        <header class="sitemap-group__head">
+          <span class="sitemap-group__num">05</span>
+          <div>
+            <h2 class="sitemap-group__title">Actualités &amp; informations</h2>
+            <p class="sitemap-group__desc">Articles informationnels — réforme, ZFE Bordeaux, code, sécurité routière. Optimisé SEO/GEO.</p>
+          </div>
+        </header>
+        <ul class="sitemap-tree" role="list">
+          <li class="sitemap-tree__item">
+            <a href="/actualites" class="sitemap-tree__link">
+              <span class="sitemap-tree__name">Actualités — blog &amp; dossiers</span>
+              <span class="sitemap-tree__url">/actualites</span>
+              <span class="sitemap-tree__desc">10 dossiers long-format avec sources gouv.fr — Schema Blog/BlogPosting</span>
+            </a>
+            <ul class="sitemap-tree sitemap-tree--nested" role="list">
+              <li class="sitemap-tree__item"><a href="/actualites#reforme-permis-2026" class="sitemap-tree__link sitemap-tree__link--anchor"><span class="sitemap-tree__name">Réforme du permis 2024-2026</span><span class="sitemap-tree__url">#reforme-permis-2026</span></a></li>
+              <li class="sitemap-tree__item"><a href="/actualites#zfe-bordeaux" class="sitemap-tree__link sitemap-tree__link--anchor"><span class="sitemap-tree__name">ZFE de Bordeaux Métropole 2025</span><span class="sitemap-tree__url">#zfe-bordeaux</span></a></li>
+              <li class="sitemap-tree__item"><a href="/actualites#permis-electrique" class="sitemap-tree__link sitemap-tree__link--anchor"><span class="sitemap-tree__name">Voiture électrique &amp; formation 7h</span><span class="sitemap-tree__url">#permis-electrique</span></a></li>
+              <li class="sitemap-tree__item"><a href="/actualites#nouveautes-code" class="sitemap-tree__link sitemap-tree__link--anchor"><span class="sitemap-tree__name">Code 2025-2026 — nouveautés ETG</span><span class="sitemap-tree__url">#nouveautes-code</span></a></li>
+              <li class="sitemap-tree__item"><a href="/actualites#permis-17-ans" class="sitemap-tree__link sitemap-tree__link--anchor"><span class="sitemap-tree__name">Permis B à 17 ans (depuis 2024)</span><span class="sitemap-tree__url">#permis-17-ans</span></a></li>
+              <li class="sitemap-tree__item"><a href="/actualites#conduite-hiver" class="sitemap-tree__link sitemap-tree__link--anchor"><span class="sitemap-tree__name">Conduite hivernale à Bordeaux</span><span class="sitemap-tree__url">#conduite-hiver</span></a></li>
+              <li class="sitemap-tree__item"><a href="/actualites#securite-jeunes" class="sitemap-tree__link sitemap-tree__link--anchor"><span class="sitemap-tree__name">Permis probatoire — durée &amp; points</span><span class="sitemap-tree__url">#securite-jeunes</span></a></li>
+              <li class="sitemap-tree__item"><a href="/actualites#eco-conduite" class="sitemap-tree__link sitemap-tree__link--anchor"><span class="sitemap-tree__name">Éco-conduite ADEME — chiffres</span><span class="sitemap-tree__url">#eco-conduite</span></a></li>
+              <li class="sitemap-tree__item"><a href="/actualites#ants-permis" class="sitemap-tree__link sitemap-tree__link--anchor"><span class="sitemap-tree__name">Inscription ANTS pas-à-pas</span><span class="sitemap-tree__url">#ants-permis</span></a></li>
+              <li class="sitemap-tree__item"><a href="/actualites#permis-a2-actu" class="sitemap-tree__link sitemap-tree__link--anchor"><span class="sitemap-tree__name">Permis A2 — épreuves &amp; passerelle</span><span class="sitemap-tree__url">#permis-a2-actu</span></a></li>
+            </ul>
+          </li>
+          <li class="sitemap-tree__item">
+            <a href="/formules" class="sitemap-tree__link">
+              <span class="sitemap-tree__name">Toutes les formules &amp; tarifs</span>
+              <span class="sitemap-tree__url">/formules</span>
+              <span class="sitemap-tree__desc">Sélecteur 3 étapes — comparateur des formules auto et moto</span>
+            </a>
+          </li>
+        </ul>
+      </article>
+
+      <!-- ── 06 · Démarches & conversion ── -->
+      <article class="sitemap-group">
+        <header class="sitemap-group__head">
+          <span class="sitemap-group__num">06</span>
+          <div>
+            <h2 class="sitemap-group__title">Démarches &amp; conversion</h2>
+            <p class="sitemap-group__desc">Préinscription en ligne, contact équipe, paiement sécurisé Stripe.</p>
+          </div>
+        </header>
+        <ul class="sitemap-tree" role="list">
+          <li class="sitemap-tree__item">
+            <a href="/preinscription" class="sitemap-tree__link">
+              <span class="sitemap-tree__name">Préinscription en ligne</span>
+              <span class="sitemap-tree__url">/preinscription</span>
+              <span class="sitemap-tree__desc">Formulaire gratuit, sans engagement, réponse sous 24h</span>
+            </a>
+          </li>
+          <li class="sitemap-tree__item">
+            <a href="/contact" class="sitemap-tree__link">
+              <span class="sitemap-tree__name">Contact &amp; équipe</span>
+              <span class="sitemap-tree__url">/contact</span>
+              <span class="sitemap-tree__desc">Adresse Boulevard George V, téléphone, formulaire — Schema LocalBusiness</span>
+            </a>
+          </li>
+        </ul>
+      </article>
+
+      <!-- ── 07 · Légal & technique ── -->
+      <article class="sitemap-group sitemap-group--legal">
+        <header class="sitemap-group__head">
+          <span class="sitemap-group__num">07</span>
+          <div>
+            <h2 class="sitemap-group__title">Mentions légales &amp; pages techniques</h2>
+            <p class="sitemap-group__desc">Conformité LCEN/RGPD, navigation, et pages de retour de paiement.</p>
+          </div>
+        </header>
+        <ul class="sitemap-tree" role="list">
+          <li class="sitemap-tree__item">
+            <a href="/mentions-legales" class="sitemap-tree__link">
+              <span class="sitemap-tree__name">Mentions légales</span>
+              <span class="sitemap-tree__url">/mentions-legales</span>
+              <span class="sitemap-tree__desc">Éditeur, hébergeur, agrément préfectoral, médiation conso</span>
+            </a>
+          </li>
+          <li class="sitemap-tree__item">
+            <a href="/politique-confidentialite" class="sitemap-tree__link">
+              <span class="sitemap-tree__name">Politique de confidentialité (RGPD)</span>
+              <span class="sitemap-tree__url">/politique-confidentialite</span>
+              <span class="sitemap-tree__desc">Traitement des données, droits, CNIL, durée de conservation</span>
+            </a>
+          </li>
+          <li class="sitemap-tree__item">
+            <a href="/plan-du-site" class="sitemap-tree__link" aria-current="page">
+              <span class="sitemap-tree__name">Plan du site (vous êtes ici)</span>
+              <span class="sitemap-tree__url">/plan-du-site</span>
+              <span class="sitemap-tree__desc">Cette page — Schema BreadcrumbList</span>
+            </a>
+          </li>
+          <li class="sitemap-tree__item sitemap-tree__item--tech">
+            <a href="/success" class="sitemap-tree__link">
+              <span class="sitemap-tree__name">Confirmation de paiement</span>
+              <span class="sitemap-tree__url">/success</span>
+              <span class="sitemap-tree__desc">Page de retour Stripe après paiement réussi</span>
+            </a>
+          </li>
+          <li class="sitemap-tree__item sitemap-tree__item--tech">
+            <a href="/cancel" class="sitemap-tree__link">
+              <span class="sitemap-tree__name">Annulation de paiement</span>
+              <span class="sitemap-tree__url">/cancel</span>
+              <span class="sitemap-tree__desc">Page de retour Stripe après abandon</span>
+            </a>
+          </li>
+          <li class="sitemap-tree__item sitemap-tree__item--tech">
+            <span class="sitemap-tree__link sitemap-tree__link--static">
+              <span class="sitemap-tree__name">Page 404</span>
+              <span class="sitemap-tree__url">/* (toute URL inexistante)</span>
+              <span class="sitemap-tree__desc">Servie automatiquement par Express si la route n'existe pas</span>
+            </span>
+          </li>
+        </ul>
+      </article>
+
+      <!-- ── Footer du sitemap ── -->
+      <div class="sitemap-foot">
+        <p>
+          <strong>Pour les robots et moteurs de recherche</strong> — version XML : <a href="/sitemap.xml"><code>/sitemap.xml</code></a>.
+        </p>
+        <p>
+          <strong>Une page manque ou un lien est cassé ?</strong> Signalez-le-nous à
+          <a href="mailto:contact@autoecole-saint-genes.fr">contact@autoecole-saint-genes.fr</a>
+          — nous corrigeons sous 48h.
+        </p>
+      </div>
+
     </div>
   </section>
 
