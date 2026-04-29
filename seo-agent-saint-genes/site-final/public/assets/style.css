@@ -838,10 +838,6 @@ input, select, textarea { font: inherit; }
 
 /* Pied : prochaine session + signature */
 .hero__card-foot {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 1rem;
-  align-items: end;
   padding-top: 1.25rem;
   border-top: 1px dashed var(--c-border);
 }
