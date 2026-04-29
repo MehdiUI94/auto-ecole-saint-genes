@@ -43,6 +43,8 @@ function buildHeader(currentPath) {
           <li><a href="/conduite-accompagnee">Conduite accompagnée (AAC)</a></li>
           <li><a href="/conduite-supervisee">Conduite supervisée</a></li>
           <li><a href="/formation-acceleree">Formation accélérée</a></li>
+          <li><a href="/perfectionnement">Perfectionnement / Post-permis</a></li>
+          <li class="nav__dropdown-sep"><a href="/formules">→ Toutes les formules auto</a></li>
         </ul>
       </li>
       <li>
@@ -55,6 +57,7 @@ function buildHeader(currentPath) {
           <li><a href="/permis-am">Permis AM / BSR</a></li>
           <li><a href="/formation-125-cm">Formation 125 cm³</a></li>
           <li><a href="/passerelle-a2-vers-a">Passerelle A2 → A</a></li>
+          <li class="nav__dropdown-sep"><a href="/formules">→ Toutes les formules</a></li>
         </ul>
       </li>
       ${navLink('/code-de-la-route', 'Code en ligne', currentPath)}

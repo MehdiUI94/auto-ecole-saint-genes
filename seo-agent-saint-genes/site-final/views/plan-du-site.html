@@ -33,9 +33,11 @@
       <span class="nav__logo-badge">SG</span>
       Saint-Genès
     </a>
+
     <ul class="nav__menu" role="list">
       <li>
-        <a href="/permis-b" aria-haspopup="true">Formations auto
+        <a href="/permis-b" aria-haspopup="true">
+          Formations auto
           <svg class="nav__caret" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
         </a>
         <ul class="nav__dropdown" role="list">
@@ -44,10 +46,13 @@
           <li><a href="/conduite-accompagnee">Conduite accompagnée (AAC)</a></li>
           <li><a href="/conduite-supervisee">Conduite supervisée</a></li>
           <li><a href="/formation-acceleree">Formation accélérée</a></li>
+          <li><a href="/perfectionnement">Perfectionnement / Post-permis</a></li>
+          <li class="nav__dropdown-sep"><a href="/formules">→ Toutes les formules auto</a></li>
         </ul>
       </li>
       <li>
-        <a href="/permis-a2" aria-haspopup="true">Formations moto
+        <a href="/permis-a2" aria-haspopup="true">
+          Formations moto
           <svg class="nav__caret" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
         </a>
         <ul class="nav__dropdown" role="list">
@@ -55,6 +60,7 @@
           <li><a href="/permis-am">Permis AM / BSR</a></li>
           <li><a href="/formation-125-cm">Formation 125 cm³</a></li>
           <li><a href="/passerelle-a2-vers-a">Passerelle A2 → A</a></li>
+          <li class="nav__dropdown-sep"><a href="/formules">→ Toutes les formules</a></li>
         </ul>
       </li>
       <li><a href="/code-de-la-route">Code en ligne</a></li>
@@ -63,16 +69,21 @@
       <li><a href="/actualites">Actualités</a></li>
       <li><a href="/contact">Contact</a></li>
     </ul>
+
     <div class="nav__cta">
       <a href="tel:+33556963320" class="btn btn--ghost btn--sm">05 56 96 33 20</a>
       <a href="/preinscription" class="btn btn--primary btn--sm">S'inscrire</a>
     </div>
+
     <button class="nav__burger" id="nav-burger" aria-expanded="false" aria-controls="nav-mobile" aria-label="Ouvrir le menu">
-      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true"><path d="M3 6h16M3 11h16M3 16h16" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+        <path d="M3 6h16M3 11h16M3 16h16" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+      </svg>
     </button>
   </div>
 </nav>
 
+<!-- MENU MOBILE -->
 <div class="nav__mobile" id="nav-mobile" role="dialog" aria-label="Menu mobile">
   <div class="nav__mobile-section">
     <p class="nav__mobile-section-title">Formations auto</p>
@@ -101,7 +112,7 @@
     <a href="/actualites">Actualités</a>
     <a href="/formules">Toutes les formules</a>
     <a href="/contact">Contact &amp; équipe</a>
-    <a href="/plan-du-site" aria-current="page">Plan du site</a>
+    <a href="/plan-du-site">Plan du site</a>
   </div>
   <div class="nav__mobile-cta">
     <a href="/preinscription" class="btn btn--primary btn--full">S'inscrire — c'est gratuit</a>
@@ -110,6 +121,7 @@
 </div>
 
 <main id="main">
+
 
   <div class="page-header">
     <div class="container">
@@ -208,6 +220,7 @@
     </div>
   </section>
 
+
 </main>
 
 <!-- FOOTER -->
@@ -272,5 +285,6 @@
 </footer>
 
 <script src="/assets/main.js"></script>
+
 </body>
 </html>
