@@ -46,52 +46,102 @@
   </script>
 </head>
 <body>
-  <a href="#contenu-principal" class="skip-link">Aller au contenu</a>
 
-  <header class="site-header">
-    <nav class="nav-container" role="navigation" aria-label="Navigation principale">
-      <a href="/" class="nav-logo" aria-label="Auto-École Saint-Genès — Accueil">
-        <span class="logo-icon"></span>
-        <span class="logo-text">Auto-École<strong>Saint-Genès</strong></span>
-      </a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu"></button>
-      <ul class="nav-menu" id="nav-menu" role="list">
-        <li class="nav-item nav-dropdown">
-          <a href="#" class="nav-link" aria-haspopup="true">Permis voiture ▾</a>
-          <ul class="dropdown-menu" role="list">
-            <li><a href="/permis-b" class="dropdown-link">Permis B classique</a></li>
-            <li><a href="/conduite-accompagnee" class="dropdown-link">Conduite accompagnée</a></li>
-            <li><a href="/conduite-supervisee" class="dropdown-link">Conduite supervisée</a></li>
-            <li><a href="/permis-ba" class="dropdown-link">Permis B automatique</a></li>
-            <li><a href="/formation-acceleree" class="dropdown-link">Formation accélérée</a></li>
-          </ul>
-        </li>
-        <li class="nav-item nav-dropdown">
-          <a href="#" class="nav-link" aria-haspopup="true">Permis moto ▾</a>
-          <ul class="dropdown-menu" role="list">
-            <li><a href="/permis-a2" class="dropdown-link">Permis A2</a></li>
-            <li><a href="/permis-am" class="dropdown-link">Permis AM / BSR</a></li>
-            <li><a href="/formation-125-cm" class="dropdown-link">Formation 125 cm³</a></li>
-            <li><a href="/passerelle-a2-vers-a" class="dropdown-link">Passerelle A2 → A</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a href="/code-de-la-route" class="nav-link">Code</a></li>
-        <li class="nav-item"><a href="/mobilite-handicap" class="nav-link">Handicap</a></li>
-        <li class="nav-item"><a href="/permis-a-1-euro" class="nav-link" aria-current="page">Financement</a></li>
-        <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
-        <li class="nav-item"><a href="/preinscription" class="nav-link nav-cta">S'inscrire</a></li>
-      </ul>
-    </nav>
-  </header>
+<a class="skip-link" href="#main">Aller au contenu</a>
 
-  <div class="trust-bar" role="complementary" aria-label="Indicateurs de confiance">
-    <span> Permis à 1€/jour disponible</span>
-    <span> CPF accepté</span>
-    <span> Aide Région Nouvelle-Aquitaine</span>
-    <span> MDPH / Agefiph</span>
+<!-- NAV -->
+<nav class="nav" role="navigation" aria-label="Navigation principale">
+  <div class="nav__inner">
+    <a href="/" class="nav__logo">
+      <span class="nav__logo-badge">SG</span>
+      Saint-Genès
+    </a>
+
+    <ul class="nav__menu" role="list">
+      <li>
+        <a href="/permis-b" aria-haspopup="true">
+          Formations auto
+          <svg class="nav__caret" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+        <ul class="nav__dropdown" role="list">
+          <li><a href="/permis-b">Permis B (boîte manuelle)</a></li>
+          <li><a href="/permis-ba">Permis B boîte automatique</a></li>
+          <li><a href="/conduite-accompagnee">Conduite accompagnée (AAC)</a></li>
+          <li><a href="/conduite-supervisee">Conduite supervisée</a></li>
+          <li><a href="/formation-acceleree">Formation accélérée</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="/permis-a2" aria-haspopup="true">
+          Formations moto
+          <svg class="nav__caret" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+        <ul class="nav__dropdown" role="list">
+          <li><a href="/permis-a2">Permis A2</a></li>
+          <li><a href="/permis-am">Permis AM / BSR</a></li>
+          <li><a href="/formation-125-cm">Formation 125 cm³</a></li>
+          <li><a href="/passerelle-a2-vers-a">Passerelle A2 → A</a></li>
+        </ul>
+      </li>
+      <li><a href="/code-de-la-route">Code en ligne</a></li>
+      <li><a href="/mobilite-handicap">Handicap</a></li>
+      <li><a href="/permis-a-1-euro" aria-current="page">Financement</a></li>
+      <li><a href="/actualites">Actualités</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+
+    <div class="nav__cta">
+      <a href="tel:+33556963320" class="btn btn--ghost btn--sm">05 56 96 33 20</a>
+      <a href="/preinscription" class="btn btn--primary btn--sm">S'inscrire</a>
+    </div>
+
+    <button class="nav__burger" id="nav-burger" aria-expanded="false" aria-controls="nav-mobile" aria-label="Ouvrir le menu">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+        <path d="M3 6h16M3 11h16M3 16h16" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+      </svg>
+    </button>
   </div>
+</nav>
 
-  <main id="contenu-principal">
+<!-- MENU MOBILE -->
+<div class="nav__mobile" id="nav-mobile" role="dialog" aria-label="Menu mobile">
+  <div class="nav__mobile-section">
+    <p class="nav__mobile-section-title">Formations auto</p>
+    <a href="/permis-b">Permis B (boîte manuelle)</a>
+    <a href="/permis-ba">Permis B boîte automatique</a>
+    <a href="/conduite-accompagnee">Conduite accompagnée (AAC)</a>
+    <a href="/conduite-supervisee">Conduite supervisée</a>
+    <a href="/formation-acceleree">Formation accélérée</a>
+  </div>
+  <div class="nav__mobile-section">
+    <p class="nav__mobile-section-title">Formations moto</p>
+    <a href="/permis-a2">Permis A2</a>
+    <a href="/permis-am">Permis AM / BSR</a>
+    <a href="/formation-125-cm">Formation 125 cm³</a>
+    <a href="/passerelle-a2-vers-a">Passerelle A2 → A</a>
+  </div>
+  <div class="nav__mobile-section">
+    <p class="nav__mobile-section-title">Services</p>
+    <a href="/code-de-la-route">Code en ligne 24/7</a>
+    <a href="/mobilite-handicap">Mobilité handicap</a>
+    <a href="/permis-a-1-euro">Financement (permis 1€/jour, CPF…)</a>
+    <a href="/perfectionnement">Perfectionnement</a>
+  </div>
+  <div class="nav__mobile-section">
+    <p class="nav__mobile-section-title">Infos &amp; contact</p>
+    <a href="/actualites">Actualités</a>
+    <a href="/formules">Toutes les formules</a>
+    <a href="/contact">Contact &amp; équipe</a>
+    <a href="/plan-du-site">Plan du site</a>
+  </div>
+  <div class="nav__mobile-cta">
+    <a href="/preinscription" class="btn btn--primary btn--full">S'inscrire — c'est gratuit</a>
+    <a href="tel:+33556963320" class="btn btn--ghost btn--full">05 56 96 33 20</a>
+  </div>
+</div>
+
+<main id="main">
+
     <div class="page-header">
       <nav aria-label="Fil d'Ariane" class="breadcrumb">
         <ol>
@@ -296,37 +346,71 @@
         <a href="/contact" class="btn btn--outline btn--lg">Nous appeler</a>
       </div>
     </section>
-  </main>
+  
+</main>
 
-  <footer class="site-footer" role="contentinfo">
-    <div class="footer-grid">
-      <div class="footer-col">
-        <h3>Auto-École Saint-Genès</h3>
-        <p>182 Boulevard George V<br>33200 Bordeaux</p>
-        <p><a href="tel:+33556963320">05 56 96 33 20</a></p>
-      </div>
-      <div class="footer-col">
-        <h3>Formations</h3>
-        <ul>
-          <li><a href="/permis-b">Permis B</a></li>
-          <li><a href="/conduite-accompagnee">Conduite accompagnée</a></li>
-          <li><a href="/code-de-la-route">Code de la route</a></li>
-          <li><a href="/permis-a2">Permis A2</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h3>Informations</h3>
-        <ul>
-          <li><a href="/permis-a-1-euro">Financement</a></li>
-          <li><a href="/mobilite-handicap">Mobilité Handicap</a></li>
-          <li><a href="/contact">Contact</a></li>
-          <li><a href="/mentions-legales">Mentions légales</a></li>
-        </ul>
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__top">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <p class="footer__brand">Auto-École Saint-Genès</p>
+          <p class="footer__tagline">Première auto-école de Bordeaux. Label Qualité, Qualiopi. Depuis 1984.</p>
+        </div>
+        <div class="footer__col">
+          <p class="footer__heading">Formations</p>
+          <ul class="footer__links">
+            <li><a href="/permis-b">Permis B manuelle</a></li>
+            <li><a href="/permis-ba">Permis B automatique</a></li>
+            <li><a href="/conduite-accompagnee">Conduite accompagnée</a></li>
+            <li><a href="/formation-acceleree">Formation accélérée</a></li>
+            <li><a href="/permis-a2">Permis moto A2</a></li>
+            <li><a href="/code-de-la-route">Code en ligne 24/7</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <p class="footer__heading">Infos pratiques</p>
+          <ul class="footer__links">
+            <li><a href="/mobilite-handicap">Mobilité handicap</a></li>
+            <li><a href="/permis-a-1-euro">Permis 1€/jour</a></li>
+            <li><a href="/formules">Toutes les formules</a></li>
+            <li><a href="/actualites">Actualités</a></li>
+            <li><a href="/contact">Contact &amp; équipe</a></li>
+            <li><a href="/preinscription">Préinscription en ligne</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <p class="footer__heading">Contact</p>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon"></span>
+            <span>182 Boulevard George V<br>33200 Bordeaux</span>
+          </div>
+          <a href="tel:+33556963320" class="footer__phone">05 56 96 33 20</a>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon"></span>
+            <span>Lun–Ven 9h–12h30 &amp; 14h–19h<br>Sam 9h–12h</span>
+          </div>
+        </div>
       </div>
     </div>
-    <p class="footer-copy">© 2026 Auto-École Saint-Genès — Bordeaux. Agrément préfectoral n° E0503300330.</p>
-  </footer>
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="footer__bottom-inner">
+        <p class="footer__copy">© 2026 Auto-École Saint-Genès · Bordeaux · SIRET 753 311 100 33 000</p>
+        <nav class="footer__legal" aria-label="Liens légaux">
+          <a href="/mentions-legales">Mentions légales</a>
+          <a href="/politique-confidentialite">Politique de confidentialité</a>
+          <a href="/plan-du-site">Plan du site</a>
+          <a href="/contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</footer>
 
-  <script src="/assets/main.js" defer></script>
+<script src="/assets/main.js"></script>
+
 </body>
 </html>

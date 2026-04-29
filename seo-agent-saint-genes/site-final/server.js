@@ -74,6 +74,8 @@ app.get('/code-en-ligne',          sendView('code-en-ligne.html'));
 app.get('/contact',                sendView('contact.html'));
 app.get('/success',                sendView('success.html'));
 app.get('/cancel',                 sendView('cancel.html'));
+app.get('/actualites',             sendView('actualites.html'));
+app.get('/plan-du-site',           sendView('plan-du-site.html'));
 app.get('/mentions-legales',       sendView('mentions-legales.html'));
 app.get('/politique-confidentialite', sendView('politique-confidentialite.html'));
 

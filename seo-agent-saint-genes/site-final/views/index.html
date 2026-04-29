@@ -56,11 +56,6 @@
 
 <a class="skip-link" href="#main">Aller au contenu</a>
 
-<!-- STRIPE TEST BANNER -->
-<div class="stripe-test-banner">
-  Mode TEST Stripe — Carte test : 4242 4242 4242 4242 · Exp : 12/34 · CVV : 123
-</div>
-
 <!-- NAV -->
 <nav class="nav" role="navigation" aria-label="Navigation principale">
   <div class="nav__inner">
@@ -98,7 +93,8 @@
       <li><a href="/code-de-la-route">Code en ligne</a></li>
       <li><a href="/mobilite-handicap">Handicap</a></li>
       <li><a href="/permis-a-1-euro">Financement</a></li>
-      <li><a href="/formules">Toutes les formules</a></li>
+      <li><a href="/actualites">Actualités</a></li>
+      <li><a href="/contact">Contact</a></li>
     </ul>
 
     <div class="nav__cta">
@@ -138,13 +134,21 @@
     <a href="/permis-a-1-euro">Financement (permis 1€/jour, CPF…)</a>
     <a href="/perfectionnement">Perfectionnement</a>
   </div>
+  <div class="nav__mobile-section">
+    <p class="nav__mobile-section-title">Infos &amp; contact</p>
+    <a href="/actualites">Actualités</a>
+    <a href="/formules">Toutes les formules</a>
+    <a href="/contact">Contact &amp; équipe</a>
+    <a href="/plan-du-site">Plan du site</a>
+  </div>
   <div class="nav__mobile-cta">
     <a href="/preinscription" class="btn btn--primary btn--full">S'inscrire — c'est gratuit</a>
-    <a href="tel:+33556963320" class="btn btn--ghost btn--full"> 05 56 96 33 20</a>
+    <a href="tel:+33556963320" class="btn btn--ghost btn--full">05 56 96 33 20</a>
   </div>
 </div>
 
 <main id="main">
+
 
   <!-- HERO SPLIT -->
   <section class="hero">
@@ -194,53 +198,85 @@
           </div>
         </div>
 
-        <!-- Colonne visuelle -->
-        <div class="hero__visual">
-          <div class="hero__img-wrap">
-            <!-- Placeholder rayé — remplacer par photo réelle -->
+        <!-- Colonne visuelle — carte de crédentiel typographique (zéro image) -->
+        <div class="hero__visual" aria-hidden="true">
+
+          <div class="hero__card">
+
+            <!-- En-tête : monogramme + identité -->
+            <div class="hero__card-head">
+              <div class="hero__monogram">
+                <span>SG</span>
+                <span class="hero__monogram-est">EST. 1984</span>
+              </div>
+              <div class="hero__card-meta">
+                <p class="hero__card-eyebrow">Auto-École · Bordeaux</p>
+                <p class="hero__card-name">Saint-Genès</p>
+                <p class="hero__card-sub">Agrément <span class="tabular">E&nbsp;05&nbsp;033&nbsp;0033&nbsp;0</span></p>
+              </div>
+              <div class="hero__card-status">
+                <span class="hero__card-status-dot"></span>
+                Ouvert
+              </div>
+            </div>
+
+            <!-- Bloc réussite : anneau + checklist accréditations -->
+            <div class="hero__card-body">
+              <div class="hero__ring" style="--p:93;">
+                <div class="hero__ring-inner">
+                  <span class="hero__ring-val">93<small>%</small></span>
+                  <span class="hero__ring-lbl">Réussite 2024</span>
+                </div>
+              </div>
+              <ul class="hero__card-list">
+                <li><span class="hero__check"></span>Label Qualité</li>
+                <li><span class="hero__check"></span>Qualiopi certifié</li>
+                <li><span class="hero__check"></span>CPF accepté</li>
+                <li><span class="hero__check"></span>Permis 1€/jour</li>
+              </ul>
+            </div>
+
+            <!-- Pied : prochaine session + signature -->
+            <div class="hero__card-foot">
+              <div class="hero__sess">
+                <div class="hero__sess-date">
+                  <span class="hero__sess-day tabular">04</span>
+                  <span class="hero__sess-mo">MAI</span>
+                </div>
+                <div class="hero__sess-info">
+                  <span class="hero__sess-eyebrow">Prochaine session</span>
+                  <span class="hero__sess-text">4 places — boîte manuelle</span>
+                </div>
+              </div>
+              <div class="hero__signature">
+                <span class="hero__signature-line"></span>
+                <span class="hero__signature-name">Lionel Vives</span>
+                <span class="hero__signature-role">Directeur</span>
+              </div>
+            </div>
+
           </div>
-          <div class="hero__chips">
-            <span class="hero__chip">— Label Qualité</span>
-            <span class="hero__chip">— Qualiopi</span>
-            <span class="hero__chip">— Permis 1€/jour</span>
-            <span class="hero__chip">— CPF accepté</span>
-          </div>
+
+          <!-- Badge flottant : avis -->
           <div class="hero__kpi">
-            <span class="hero__kpi-val eyebrow--accent" style="font-family:var(--font-display);font-size:2rem;letter-spacing:-0.04em;">93%</span>
-            <div class="hero__kpi-lbl">de réussite</div>
-            <div style="margin-top:.25rem;font-family:var(--font-mono);font-size:9px;text-transform:uppercase;letter-spacing:.12em;color:var(--c-muted);">— Résultats 2024</div>
+            <span class="hero__kpi-val tabular">4,8<small>/5</small></span>
+            <div class="hero__kpi-lbl">+248 avis vérifiés</div>
+            <div class="hero__kpi-stars">★★★★★</div>
           </div>
+
+          <!-- Badge flottant secondaire : 40 ans -->
+          <div class="hero__years">
+            <span class="hero__years-val tabular">40</span>
+            <span class="hero__years-lbl">ans à<br>Bordeaux</span>
+          </div>
+
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- MARQUEE -->
-  <div class="marquee" aria-hidden="true">
-    <div class="marquee__track">
-      <span>—— LABEL QUALITÉ</span>
-      <span>—— QUALIOPI</span>
-      <span>—— +248 AVIS · 4,8/5</span>
-      <span>—— 40 ANS À BORDEAUX</span>
-      <span>—— 93% DE RÉUSSITE</span>
-      <span>—— CPF ACCEPTÉ</span>
-      <span>—— PERMIS 1€/JOUR</span>
-      <span>—— CODE 24H/24</span>
-      <span>—— CONDUITE ACCOMPAGNÉE DÈS 15 ANS</span>
-      <span>—— MOBILITÉ HANDICAP</span>
-      <span>—— LABEL QUALITÉ</span>
-      <span>—— QUALIOPI</span>
-      <span>—— +248 AVIS · 4,8/5</span>
-      <span>—— 40 ANS À BORDEAUX</span>
-      <span>—— 93% DE RÉUSSITE</span>
-      <span>—— CPF ACCEPTÉ</span>
-      <span>—— PERMIS 1€/JOUR</span>
-      <span>—— CODE 24H/24</span>
-      <span>—— CONDUITE ACCOMPAGNÉE DÈS 15 ANS</span>
-      <span>—— MOBILITÉ HANDICAP</span>
-    </div>
-  </div>
+ 
 
   <!-- PREUVES -->
   <section class="section section--surface reveal">
@@ -531,6 +567,7 @@
     </div>
   </section>
 
+
 </main>
 
 <!-- FOOTER -->
@@ -559,6 +596,7 @@
             <li><a href="/mobilite-handicap">Mobilité handicap</a></li>
             <li><a href="/permis-a-1-euro">Permis 1€/jour</a></li>
             <li><a href="/formules">Toutes les formules</a></li>
+            <li><a href="/actualites">Actualités</a></li>
             <li><a href="/contact">Contact &amp; équipe</a></li>
             <li><a href="/preinscription">Préinscription en ligne</a></li>
           </ul>
@@ -581,10 +619,11 @@
   <div class="footer__bottom">
     <div class="container">
       <div class="footer__bottom-inner">
-        <p class="footer__copy">© 2026 Auto-École Saint-Genès · Bordeaux · SIRET 000 000 000 00000</p>
+        <p class="footer__copy">© 2026 Auto-École Saint-Genès · Bordeaux · SIRET 753 311 100 33 000</p>
         <nav class="footer__legal" aria-label="Liens légaux">
           <a href="/mentions-legales">Mentions légales</a>
           <a href="/politique-confidentialite">Politique de confidentialité</a>
+          <a href="/plan-du-site">Plan du site</a>
           <a href="/contact">Contact</a>
         </nav>
       </div>
@@ -592,41 +631,7 @@
   </div>
 </footer>
 
-<!-- TWEAKS PANEL -->
-<div class="tweaks-panel">
-  <button class="tweaks-toggle" id="tweaks-toggle" aria-label="Options de design" title="Tweaks design">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
-      <path d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
-      <circle cx="12" cy="12" r="4"/>
-    </svg>
-  </button>
-  <div class="tweaks-drawer" id="tweaks-drawer" role="dialog" aria-label="Options visuelles">
-    <p class="tweaks-drawer__title">—— Tweaks design</p>
-    <div class="tweaks-group">
-      <p class="tweaks-group-label">Palette</p>
-      <div class="tweaks-row">
-        <button class="tweak-btn is-active" data-tweak-palette="bleu">Bleu</button>
-        <button class="tweak-btn" data-tweak-palette="foret">Forêt</button>
-        <button class="tweak-btn" data-tweak-palette="indigo">Indigo</button>
-      </div>
-    </div>
-    <div class="tweaks-group">
-      <p class="tweaks-group-label">Cartes</p>
-      <div class="tweaks-row">
-        <button class="tweak-btn is-active" data-tweak-card="soft">Soft</button>
-        <button class="tweak-btn" data-tweak-card="sharp">Sharp</button>
-      </div>
-    </div>
-    <div class="tweaks-group">
-      <p class="tweaks-group-label">Boutons</p>
-      <div class="tweaks-row">
-        <button class="tweak-btn is-active" data-tweak-button="soft">Pills</button>
-        <button class="tweak-btn" data-tweak-button="sharp">Sharp</button>
-      </div>
-    </div>
-  </div>
-</div>
-
 <script src="/assets/main.js"></script>
+
 </body>
 </html>

@@ -250,6 +250,11 @@ input, select, textarea { font: inherit; }
   align-items: center;
   gap: .5rem;
   flex-shrink: 0;
+  width: 126px;
+  height: 50px;
+  background: url("/assets/logo-saint-genes.svg") center / contain no-repeat;
+  font-size: 0;
+  position: relative;
 }
 
 .nav__logo-badge {
@@ -266,6 +271,19 @@ input, select, textarea { font: inherit; }
 
 .nav__logo-badge:empty::before {
   content: 'SG';
+}
+
+.nav__logo > .nav__logo-badge {
+  display: none;
+}
+
+.nav__logo > span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
 }
 
 .nav__menu {
@@ -305,8 +323,9 @@ input, select, textarea { font: inherit; }
 
 .nav__dropdown {
   position: absolute;
-  top: calc(100% + .5rem);
+  top: 100%;
   left: 0;
+  margin-top: .5rem;
   min-width: 220px;
   background: var(--c-surface);
   border: 1px solid var(--c-border);
@@ -319,6 +338,17 @@ input, select, textarea { font: inherit; }
   pointer-events: none;
   transform: translateY(8px);
   transition: opacity var(--tr), transform var(--tr), visibility var(--tr);
+}
+/* Pont invisible qui couvre l'espace entre le lien parent et le dropdown,
+   pour que le curseur puisse traverser sans fermer le menu. */
+.nav__dropdown::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -.75rem;
+  height: .75rem;
+  background: transparent;
 }
 .nav__menu > li:hover .nav__dropdown,
 .nav__menu > li:focus-within .nav__dropdown {
@@ -571,74 +601,414 @@ input, select, textarea { font: inherit; }
   margin-top: .125rem;
 }
 
-/* Visuel hero */
+/* ── Hero visuel : carte de crédentiel typographique (zéro image) ── */
 .hero__visual {
   position: relative;
-  border-radius: var(--r-card);
-  overflow: visible;
+  padding-block: 1rem;
+  isolation: isolate;
 }
 
-.hero__img-wrap {
-  border-radius: var(--r-card);
-  overflow: hidden;
-  aspect-ratio: 4/3;
-  background-color: var(--c-accent-l);
-  background-image: repeating-linear-gradient(
-    -45deg,
-    transparent,
-    transparent 12px,
-    rgba(19,73,166,.08) 12px,
-    rgba(19,73,166,.08) 14px
-  );
-  position: relative;
-}
-
-.hero__chips {
+/* Décor : grille très douce derrière la carte */
+.hero__visual::before {
+  content: '';
   position: absolute;
-  bottom: 1.25rem;
-  left: 1.25rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: .5rem;
+  inset: -1rem;
+  background-image:
+    linear-gradient(rgba(19,73,166,.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(19,73,166,.06) 1px, transparent 1px);
+  background-size: 36px 36px;
+  mask-image: radial-gradient(ellipse at center, #000 35%, transparent 75%);
+  z-index: -1;
 }
 
-.hero__chip {
-  padding: .375rem .875rem;
-  background: rgba(255,255,255,.9);
-  backdrop-filter: blur(8px);
+.hero__card {
+  position: relative;
+  background:
+    linear-gradient(155deg, #fff 0%, #fff 60%, var(--c-accent-l) 100%);
   border: 1px solid var(--c-border);
-  border-radius: var(--r-full);
+  border-radius: var(--r-card);
+  box-shadow: var(--sh-lg);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  overflow: hidden;
+}
+
+/* Filigrane "S" géant en arrière-plan */
+.hero__card::before {
+  content: 'S';
+  position: absolute;
+  right: -2rem;
+  bottom: -6rem;
+  font-family: var(--font-display);
+  font-size: 22rem;
+  font-weight: 700;
+  letter-spacing: -0.06em;
+  color: var(--c-accent);
+  opacity: .04;
+  line-height: 1;
+  pointer-events: none;
+}
+
+/* En-tête : monogramme + identité + statut */
+.hero__card-head {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 1rem;
+  align-items: center;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px dashed var(--c-border);
+}
+
+.hero__monogram {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  border-radius: var(--r-md);
+  background: var(--c-accent);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.75rem;
+  letter-spacing: -0.04em;
+  box-shadow: 0 8px 20px rgba(19,73,166,.28);
+}
+.hero__monogram-est {
+  position: absolute;
+  bottom: -.5rem;
+  left: 50%;
+  transform: translateX(-50%);
   font-family: var(--font-mono);
-  font-size: 11px;
-  font-weight: 500;
+  font-size: 8px;
+  letter-spacing: .12em;
+  background: var(--c-ink);
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.hero__card-meta { min-width: 0; }
+.hero__card-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-mono);
+  color: var(--c-muted);
+  margin: 0 0 .25rem;
+}
+.hero__card-name {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
   color: var(--c-ink);
+  margin: 0;
+  line-height: 1;
+}
+.hero__card-sub {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--c-ink-dim);
+  margin: .35rem 0 0;
   letter-spacing: .04em;
 }
 
+.hero__card-status {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  padding: .3rem .55rem;
+  background: rgba(22,163,74,.1);
+  color: #15803d;
+  border-radius: var(--r-full);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  align-self: start;
+}
+.hero__card-status-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: #16a34a;
+  box-shadow: 0 0 0 3px rgba(22,163,74,.18);
+  animation: heroPulse 2s ease-in-out infinite;
+}
+@keyframes heroPulse {
+  0%, 100% { box-shadow: 0 0 0 3px rgba(22,163,74,.18); }
+  50%      { box-shadow: 0 0 0 6px rgba(22,163,74,.06); }
+}
+
+/* Bloc central : anneau de réussite + checklist */
+.hero__card-body {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.hero__ring {
+  --size: 116px;
+  --thick: 10px;
+  --p: 93;
+  position: relative;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background:
+    conic-gradient(var(--c-accent) calc(var(--p) * 1%), var(--c-accent-l) 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+.hero__ring-inner {
+  position: absolute;
+  inset: var(--thick);
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: inset 0 1px 2px rgba(11,18,32,.04);
+}
+.hero__ring-val {
+  font-family: var(--font-display);
+  font-size: 1.85rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  color: var(--c-accent);
+  line-height: 1;
+}
+.hero__ring-val small {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-left: 1px;
+}
+.hero__ring-lbl {
+  font-family: var(--font-mono);
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-mono);
+  color: var(--c-muted);
+  margin-top: .2rem;
+}
+
+.hero__card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: .55rem;
+}
+.hero__card-list li {
+  display: flex;
+  align-items: center;
+  gap: .55rem;
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--c-ink);
+}
+.hero__check {
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  background: var(--c-accent);
+  flex: 0 0 auto;
+  position: relative;
+}
+.hero__check::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  width: 4px;
+  height: 8px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* Pied : prochaine session + signature */
+.hero__card-foot {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+  align-items: end;
+  padding-top: 1.25rem;
+  border-top: 1px dashed var(--c-border);
+}
+
+.hero__sess {
+  display: flex;
+  align-items: center;
+  gap: .9rem;
+}
+.hero__sess-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 56px; height: 56px;
+  border: 2px solid var(--c-ink);
+  border-radius: var(--r-sm);
+  background: #fff;
+}
+.hero__sess-day {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  color: var(--c-ink);
+  line-height: 1;
+}
+.hero__sess-mo {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: .14em;
+  color: var(--c-accent);
+  font-weight: 600;
+  margin-top: 2px;
+}
+.hero__sess-info { display: flex; flex-direction: column; }
+.hero__sess-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-mono);
+  color: var(--c-muted);
+}
+.hero__sess-text {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--c-ink);
+  margin-top: .15rem;
+}
+
+.hero__signature { text-align: right; }
+.hero__signature-line {
+  display: block;
+  width: 90px;
+  height: 22px;
+  margin-left: auto;
+  background:
+    radial-gradient(ellipse 60% 90% at 20% 50%, var(--c-ink) 0 1.5px, transparent 2px),
+    radial-gradient(ellipse 30% 80% at 50% 60%, var(--c-ink) 0 1.5px, transparent 2px),
+    radial-gradient(ellipse 50% 90% at 80% 40%, var(--c-ink) 0 1.5px, transparent 2px);
+  mask-image: linear-gradient(90deg, transparent, #000 20%, #000 80%, transparent);
+  opacity: .55;
+  transform: rotate(-4deg);
+}
+.hero__signature-name {
+  display: block;
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--c-ink);
+  margin-top: .1rem;
+}
+.hero__signature-role {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-mono);
+  color: var(--c-muted);
+}
+
+/* Badges flottants */
 .hero__kpi {
   position: absolute;
-  top: -1rem;
-  right: -1rem;
+  top: -.5rem;
+  right: -.75rem;
   background: var(--c-surface);
   border: 1px solid var(--c-border);
   border-radius: var(--r-card);
   box-shadow: var(--sh-lg);
-  padding: 1rem 1.25rem;
-  min-width: 140px;
+  padding: .9rem 1.1rem;
+  min-width: 130px;
+  text-align: center;
+  z-index: 3;
+  transform: rotate(2deg);
 }
 .hero__kpi-val {
   display: block;
   font-family: var(--font-display);
-  font-size: var(--text-3xl);
+  font-size: 1.6rem;
   font-weight: 700;
-  letter-spacing: var(--tracking-display);
-  color: var(--c-accent);
-  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.04em;
+  color: var(--c-ink);
+}
+.hero__kpi-val small {
+  font-size: .8rem;
+  color: var(--c-muted);
+  font-weight: 500;
 }
 .hero__kpi-lbl {
-  font-size: var(--text-xs);
+  font-family: var(--font-mono);
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-mono);
   color: var(--c-muted);
-  margin-top: .125rem;
+  margin-top: .25rem;
+}
+.hero__kpi-stars {
+  color: #f59e0b;
+  font-size: .75rem;
+  letter-spacing: .12em;
+  margin-top: .35rem;
+}
+
+.hero__years {
+  position: absolute;
+  bottom: -1rem;
+  left: -.75rem;
+  background: var(--c-ink);
+  color: #fff;
+  border-radius: var(--r-card);
+  padding: .85rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  box-shadow: var(--sh-lg);
+  z-index: 3;
+  transform: rotate(-3deg);
+}
+.hero__years-val {
+  font-family: var(--font-display);
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  line-height: 1;
+  color: #fff;
+}
+.hero__years-lbl {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-mono);
+  color: rgba(255,255,255,.7);
+  line-height: 1.4;
+}
+
+/* Ajustements responsives */
+@media (max-width: 640px) {
+  .hero__card { padding: 1.25rem; gap: 1.25rem; }
+  .hero__card::before { font-size: 14rem; }
+  .hero__ring { --size: 96px; }
+  .hero__card-body { grid-template-columns: 1fr; gap: 1rem; }
+  .hero__ring { margin-inline: auto; }
+  .hero__kpi { top: -.5rem; right: -.25rem; padding: .7rem .85rem; min-width: 110px; }
+  .hero__kpi-val { font-size: 1.3rem; }
+  .hero__years { left: -.25rem; bottom: -.75rem; padding: .7rem .85rem; }
+  .hero__years-val { font-size: 2rem; }
 }
 
 /* ── Marquee ──────────────────────────────────────────────── */
@@ -1997,6 +2367,95 @@ input, select, textarea { font: inherit; }
 .legal-content ul { padding-left: 1.25rem; list-style: disc; }
 .legal-content a { color: var(--c-accent); text-decoration: underline; }
 
+/* ── FAQ basée sur <details> (utilisée sur /actualites) ───── */
+.faq { display: flex; flex-direction: column; gap: .5rem; }
+.faq details.faq-item {
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: var(--r-md);
+  padding: 1rem 1.25rem;
+  transition: box-shadow .2s ease, border-color .2s ease;
+}
+.faq details.faq-item[open] {
+  box-shadow: var(--sh-card);
+  border-color: var(--c-accent-l);
+}
+.faq details.faq-item > summary {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--text-base);
+  color: var(--c-ink);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.faq details.faq-item > summary::-webkit-details-marker { display: none; }
+.faq details.faq-item > summary::after {
+  content: "+";
+  font-family: var(--font-mono);
+  font-size: 1.25rem;
+  color: var(--c-accent);
+  transition: transform .2s ease;
+}
+.faq details.faq-item[open] > summary::after { content: "−"; }
+.faq details.faq-item > p {
+  margin-top: .75rem;
+  font-size: var(--text-sm);
+  color: var(--c-ink-dim);
+  line-height: 1.7;
+}
+
+/* ── Bloc "Sources & lectures récentes" (cartes /actualites) ── */
+.sources {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--c-border);
+}
+.sources__title {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-mono);
+  color: var(--c-muted);
+  margin: 0 0 .5rem;
+}
+.sources ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: .35rem;
+}
+.sources li {
+  font-size: var(--text-sm);
+  line-height: 1.5;
+  position: relative;
+  padding-left: 1.1rem;
+}
+.sources li::before {
+  content: "↗";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--c-accent);
+  font-size: .9em;
+  opacity: .7;
+}
+.sources a {
+  color: var(--c-ink-dim);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color var(--tr), border-color var(--tr);
+}
+.sources a:hover {
+  color: var(--c-accent);
+  border-bottom-color: var(--c-accent);
+}
+
 /* ── Tableau ──────────────────────────────────────────────── */
 .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 table {
@@ -2080,6 +2539,11 @@ tr:last-child td { border-bottom: none; }
   font-weight: 700;
   letter-spacing: var(--tracking-display);
   color: var(--c-ink);
+  width: 126px;
+  height: 50px;
+  background: url("/assets/logo-saint-genes.svg") center / contain no-repeat;
+  font-size: 0;
+  position: relative;
 }
 
 .logo-icon {
@@ -2106,6 +2570,19 @@ tr:last-child td { border-bottom: none; }
 .logo-text strong {
   font-size: var(--text-lg);
   font-weight: 700;
+}
+
+.nav-logo > .logo-icon {
+  display: none;
+}
+
+.nav-logo > .logo-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
 }
 
 .nav-toggle {

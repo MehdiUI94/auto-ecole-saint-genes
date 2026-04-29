@@ -3,11 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page introuvable (404) — Auto-École Saint-Genès</title>
-  <meta name="robots" content="noindex, nofollow">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <title>Plan du site — Auto-École Saint-Genès Bordeaux</title>
+  <meta name="description" content="Plan du site Auto-École Saint-Genès Bordeaux : toutes les pages classées par thématique — formations auto, moto, code, financement, actualités, contact.">
+  <link rel="canonical" href="https://autoecole-saint-genes.fr/plan-du-site">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Plan du site — Auto-École Saint-Genès">
+  <meta property="og:description" content="Toutes les pages du site Auto-École Saint-Genès, classées par thématique.">
+  <meta property="og:type" content="website">
   <link rel="stylesheet" href="/assets/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Accueil","item":"https://autoecole-saint-genes.fr/"},
+      {"@type":"ListItem","position":2,"name":"Plan du site","item":"https://autoecole-saint-genes.fr/plan-du-site"}
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -20,11 +33,9 @@
       <span class="nav__logo-badge">SG</span>
       Saint-Genès
     </a>
-
     <ul class="nav__menu" role="list">
       <li>
-        <a href="/permis-b" aria-haspopup="true">
-          Formations auto
+        <a href="/permis-b" aria-haspopup="true">Formations auto
           <svg class="nav__caret" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
         </a>
         <ul class="nav__dropdown" role="list">
@@ -36,8 +47,7 @@
         </ul>
       </li>
       <li>
-        <a href="/permis-a2" aria-haspopup="true">
-          Formations moto
+        <a href="/permis-a2" aria-haspopup="true">Formations moto
           <svg class="nav__caret" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
         </a>
         <ul class="nav__dropdown" role="list">
@@ -53,21 +63,16 @@
       <li><a href="/actualites">Actualités</a></li>
       <li><a href="/contact">Contact</a></li>
     </ul>
-
     <div class="nav__cta">
       <a href="tel:+33556963320" class="btn btn--ghost btn--sm">05 56 96 33 20</a>
       <a href="/preinscription" class="btn btn--primary btn--sm">S'inscrire</a>
     </div>
-
     <button class="nav__burger" id="nav-burger" aria-expanded="false" aria-controls="nav-mobile" aria-label="Ouvrir le menu">
-      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
-        <path d="M3 6h16M3 11h16M3 16h16" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
-      </svg>
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true"><path d="M3 6h16M3 11h16M3 16h16" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
     </button>
   </div>
 </nav>
 
-<!-- MENU MOBILE -->
 <div class="nav__mobile" id="nav-mobile" role="dialog" aria-label="Menu mobile">
   <div class="nav__mobile-section">
     <p class="nav__mobile-section-title">Formations auto</p>
@@ -96,7 +101,7 @@
     <a href="/actualites">Actualités</a>
     <a href="/formules">Toutes les formules</a>
     <a href="/contact">Contact &amp; équipe</a>
-    <a href="/plan-du-site">Plan du site</a>
+    <a href="/plan-du-site" aria-current="page">Plan du site</a>
   </div>
   <div class="nav__mobile-cta">
     <a href="/preinscription" class="btn btn--primary btn--full">S'inscrire — c'est gratuit</a>
@@ -106,29 +111,103 @@
 
 <main id="main">
 
-    <div class="result-page">
-      <div class="result-icon" aria-hidden="true"></div>
-      <h1>Page introuvable</h1>
-      <p class="result-message">La page que vous cherchez n'existe pas ou a été déplacée. Utilisez les liens ci-dessous pour retrouver votre chemin.</p>
+  <div class="page-header">
+    <div class="container">
+      <nav aria-label="Fil d'Ariane" class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep" aria-hidden="true">›</span>
+        <span class="breadcrumb__cur">Plan du site</span>
+      </nav>
+      <div class="mb-4"><span class="eyebrow">Navigation complète</span></div>
+      <h1 class="page-header__title">Plan du site</h1>
+      <p class="page-header__intro">
+        Retrouvez ici l'ensemble des pages du site Auto-École Saint-Genès, classées par thématique
+        pour faciliter votre navigation. Une version XML destinée aux moteurs de recherche est
+        également disponible : <a href="/sitemap.xml">sitemap.xml</a>.
+      </p>
+    </div>
+  </div>
 
-      <div class="result-details">
-        <h2>Liens utiles</h2>
-        <ul>
-          <li><a href="/"> Accueil</a></li>
-          <li><a href="/permis-b"> Permis B — 1 566 €</a></li>
-          <li><a href="/code-de-la-route"> Code de la route — 325 €</a></li>
-          <li><a href="/permis-a2"> Permis A2 — 930 €</a></li>
-          <li><a href="/permis-a-1-euro"> Financement (permis à 1€/jour)</a></li>
-          <li><a href="/contact"> Contact</a></li>
-        </ul>
-      </div>
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-3">
 
-      <div class="result-actions">
-        <a href="/" class="btn btn--primary btn--lg">Retour à l'accueil</a>
-        <a href="/contact" class="btn btn--outline btn--lg">Nous contacter</a>
+        <article class="card">
+          <h2 class="card__title">Accueil &amp; général</h2>
+          <ul class="footer__links" style="padding-left:0;">
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/formules">Toutes les formules &amp; tarifs</a></li>
+            <li><a href="/preinscription">Préinscription en ligne</a></li>
+            <li><a href="/contact">Contact &amp; équipe</a></li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2 class="card__title">Formations auto</h2>
+          <ul class="footer__links" style="padding-left:0;">
+            <li><a href="/permis-b">Permis B — boîte manuelle</a></li>
+            <li><a href="/permis-ba">Permis B — boîte automatique</a></li>
+            <li><a href="/conduite-accompagnee">Conduite accompagnée (AAC) dès 15 ans</a></li>
+            <li><a href="/conduite-supervisee">Conduite supervisée</a></li>
+            <li><a href="/formation-acceleree">Formation accélérée</a></li>
+            <li><a href="/perfectionnement">Perfectionnement / Post-permis</a></li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2 class="card__title">Formations moto &amp; deux-roues</h2>
+          <ul class="footer__links" style="padding-left:0;">
+            <li><a href="/permis-a2">Permis A2</a></li>
+            <li><a href="/permis-am">Permis AM / BSR</a></li>
+            <li><a href="/formation-125-cm">Formation 125 cm³</a></li>
+            <li><a href="/passerelle-a2-vers-a">Passerelle A2 → A</a></li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2 class="card__title">Code de la route</h2>
+          <ul class="footer__links" style="padding-left:0;">
+            <li><a href="/code-de-la-route">Code de la route — formation</a></li>
+            <li><a href="/code-en-ligne">Code en ligne 24h/24</a></li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2 class="card__title">Financement &amp; accessibilité</h2>
+          <ul class="footer__links" style="padding-left:0;">
+            <li><a href="/permis-a-1-euro">Permis à 1€/jour, CPF, aides</a></li>
+            <li><a href="/mobilite-handicap">Mobilité handicap (véhicules aménagés)</a></li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2 class="card__title">Actualités &amp; contenus</h2>
+          <ul class="footer__links" style="padding-left:0;">
+            <li><a href="/actualites">Actualités — réforme, conduite, sécurité routière</a></li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2 class="card__title">Mentions &amp; informations légales</h2>
+          <ul class="footer__links" style="padding-left:0;">
+            <li><a href="/mentions-legales">Mentions légales</a></li>
+            <li><a href="/politique-confidentialite">Politique de confidentialité (RGPD)</a></li>
+            <li><a href="/plan-du-site" aria-current="page">Plan du site</a></li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2 class="card__title">Pages techniques</h2>
+          <ul class="footer__links" style="padding-left:0;">
+            <li><a href="/success">Page de confirmation paiement</a></li>
+            <li><a href="/cancel">Page d'annulation paiement</a></li>
+          </ul>
+        </article>
+
       </div>
     </div>
-  
+  </section>
+
 </main>
 
 <!-- FOOTER -->
@@ -193,6 +272,5 @@
 </footer>
 
 <script src="/assets/main.js"></script>
-
 </body>
 </html>

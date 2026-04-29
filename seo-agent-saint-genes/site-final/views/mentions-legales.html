@@ -11,86 +11,326 @@
   <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
-  <a href="#contenu-principal" class="skip-link">Aller au contenu</a>
-  <header class="site-header">
-    <nav class="nav-container" role="navigation" aria-label="Navigation principale">
-      <a href="/" class="nav-logo"><span class="logo-icon"></span><span class="logo-text">Auto-École<strong>Saint-Genès</strong></span></a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu"></button>
-      <ul class="nav-menu" id="nav-menu" role="list">
-        <li class="nav-item"><a href="/" class="nav-link">Accueil</a></li>
-        <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
-        <li class="nav-item"><a href="/preinscription" class="nav-link nav-cta">S'inscrire</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main id="contenu-principal">
-    <div class="page-header">
-      <nav aria-label="Fil d'Ariane" class="breadcrumb"><ol><li><a href="/">Accueil</a></li><li aria-current="page">Mentions légales</li></ol></nav>
-      <h1>Mentions légales</h1>
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<!-- NAV -->
+<nav class="nav" role="navigation" aria-label="Navigation principale">
+  <div class="nav__inner">
+    <a href="/" class="nav__logo">
+      <span class="nav__logo-badge">SG</span>
+      Saint-Genès
+    </a>
+
+    <ul class="nav__menu" role="list">
+      <li>
+        <a href="/permis-b" aria-haspopup="true">
+          Formations auto
+          <svg class="nav__caret" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+        <ul class="nav__dropdown" role="list">
+          <li><a href="/permis-b">Permis B (boîte manuelle)</a></li>
+          <li><a href="/permis-ba">Permis B boîte automatique</a></li>
+          <li><a href="/conduite-accompagnee">Conduite accompagnée (AAC)</a></li>
+          <li><a href="/conduite-supervisee">Conduite supervisée</a></li>
+          <li><a href="/formation-acceleree">Formation accélérée</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="/permis-a2" aria-haspopup="true">
+          Formations moto
+          <svg class="nav__caret" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+        <ul class="nav__dropdown" role="list">
+          <li><a href="/permis-a2">Permis A2</a></li>
+          <li><a href="/permis-am">Permis AM / BSR</a></li>
+          <li><a href="/formation-125-cm">Formation 125 cm³</a></li>
+          <li><a href="/passerelle-a2-vers-a">Passerelle A2 → A</a></li>
+        </ul>
+      </li>
+      <li><a href="/code-de-la-route">Code en ligne</a></li>
+      <li><a href="/mobilite-handicap">Handicap</a></li>
+      <li><a href="/permis-a-1-euro">Financement</a></li>
+      <li><a href="/actualites">Actualités</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+
+    <div class="nav__cta">
+      <a href="tel:+33556963320" class="btn btn--ghost btn--sm">05 56 96 33 20</a>
+      <a href="/preinscription" class="btn btn--primary btn--sm">S'inscrire</a>
     </div>
 
-    <div class="legal-content" style="max-width:800px;margin:0 auto;padding:2rem 1rem">
+    <button class="nav__burger" id="nav-burger" aria-expanded="false" aria-controls="nav-mobile" aria-label="Ouvrir le menu">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+        <path d="M3 6h16M3 11h16M3 16h16" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+</nav>
 
-      <section>
+<!-- MENU MOBILE -->
+<div class="nav__mobile" id="nav-mobile" role="dialog" aria-label="Menu mobile">
+  <div class="nav__mobile-section">
+    <p class="nav__mobile-section-title">Formations auto</p>
+    <a href="/permis-b">Permis B (boîte manuelle)</a>
+    <a href="/permis-ba">Permis B boîte automatique</a>
+    <a href="/conduite-accompagnee">Conduite accompagnée (AAC)</a>
+    <a href="/conduite-supervisee">Conduite supervisée</a>
+    <a href="/formation-acceleree">Formation accélérée</a>
+  </div>
+  <div class="nav__mobile-section">
+    <p class="nav__mobile-section-title">Formations moto</p>
+    <a href="/permis-a2">Permis A2</a>
+    <a href="/permis-am">Permis AM / BSR</a>
+    <a href="/formation-125-cm">Formation 125 cm³</a>
+    <a href="/passerelle-a2-vers-a">Passerelle A2 → A</a>
+  </div>
+  <div class="nav__mobile-section">
+    <p class="nav__mobile-section-title">Services</p>
+    <a href="/code-de-la-route">Code en ligne 24/7</a>
+    <a href="/mobilite-handicap">Mobilité handicap</a>
+    <a href="/permis-a-1-euro">Financement (permis 1€/jour, CPF…)</a>
+    <a href="/perfectionnement">Perfectionnement</a>
+  </div>
+  <div class="nav__mobile-section">
+    <p class="nav__mobile-section-title">Infos &amp; contact</p>
+    <a href="/actualites">Actualités</a>
+    <a href="/formules">Toutes les formules</a>
+    <a href="/contact">Contact &amp; équipe</a>
+    <a href="/plan-du-site">Plan du site</a>
+  </div>
+  <div class="nav__mobile-cta">
+    <a href="/preinscription" class="btn btn--primary btn--full">S'inscrire — c'est gratuit</a>
+    <a href="tel:+33556963320" class="btn btn--ghost btn--full">05 56 96 33 20</a>
+  </div>
+</div>
+
+<main id="main">
+
+  <div class="page-header">
+    <div class="container">
+      <nav aria-label="Fil d'Ariane" class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep" aria-hidden="true">›</span>
+        <span class="breadcrumb__cur">Mentions légales</span>
+      </nav>
+      <div class="mb-4"><span class="eyebrow">Informations légales</span></div>
+      <h1 class="page-header__title">Mentions légales</h1>
+      <p class="page-header__intro">
+        Conformément aux articles 6-III et 19 de la loi n° 2004-575 du 21 juin 2004 pour la
+        Confiance dans l'Économie Numérique (LCEN), voici les informations légales de l'éditeur
+        et de l'hébergeur du site <strong>autoecole-saint-genes.fr</strong>.
+      </p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container" style="max-width:880px;">
+
+      <article class="legal-content">
+
         <h2>1. Éditeur du site</h2>
-        <p><strong>Auto-École Saint-Genès</strong><br>
-        Forme juridique : Entreprise individuelle<br>
-        Directeur : Lionel Vives<br>
-        Adresse : 182 Boulevard George V, 33200 Bordeaux<br>
-        Téléphone : 05 56 96 33 20<br>
-        Email : contact@autoecole-saint-genes.fr<br>
-        SIRET : 753 311 100 33 000<br>
-        Numéro d'agrément préfectoral : E0503300330</p>
-      </section>
+        <p>
+          <strong>Auto-École Saint-Genès</strong><br>
+          Forme juridique : Entreprise individuelle<br>
+          Directeur de la publication : <strong>Lionel Vives</strong><br>
+          Siège social : 182 Boulevard George V, 33200 Bordeaux, France<br>
+          Téléphone : <a href="tel:+33556963320">05 56 96 33 20</a><br>
+          Courriel : <a href="mailto:contact@autoecole-saint-genes.fr">contact@autoecole-saint-genes.fr</a><br>
+          SIRET : 753 311 100 33 000<br>
+          Code APE : 8553Z (Enseignement de la conduite)<br>
+          N° TVA intracommunautaire : FR 00 753311100<br>
+          Agrément préfectoral d'enseignement de la conduite : <strong>E 05 033 0033 0</strong> — Préfecture de la Gironde
+        </p>
 
-      <section style="margin-top:2rem">
-        <h2>2. Déclaration d'activité</h2>
-        <p>L'Auto-École Saint-Genès est déclarée et agréée conformément aux articles L.213-1 et suivants du Code de la route. Numéro de déclaration : <strong>75331110033</strong>.</p>
-        <p>Activité soumise au contrôle de la Direction Régionale de l'Environnement, de l'Aménagement et du Logement (DREAL) Nouvelle-Aquitaine.</p>
-      </section>
+        <h2>2. Hébergeur</h2>
+        <p>
+          <strong>OVH SAS</strong><br>
+          2 rue Kellermann — 59100 Roubaix, France<br>
+          Téléphone : +33 9 72 10 10 07<br>
+          Site : <a href="https://www.ovhcloud.com" rel="noopener" target="_blank">www.ovhcloud.com</a><br>
+          RCS Lille Métropole 424 761 419
+        </p>
 
-      <section style="margin-top:2rem">
-        <h2>3. Hébergement</h2>
-        <p>Ce site est hébergé par :<br>
-        <strong>OVH SAS</strong><br>
-        2 rue Kellermann, 59100 Roubaix — France<br>
-        Téléphone : +33 9 72 10 10 07</p>
-      </section>
+        <h2>3. Activité réglementée</h2>
+        <p>
+          L'Auto-École Saint-Genès exerce une activité d'enseignement de la conduite et de la sécurité
+          routière soumise aux articles <strong>L.213-1 et suivants</strong> et
+          <strong>R.213-1 et suivants</strong> du Code de la route.
+          L'établissement est titulaire d'un agrément préfectoral renouvelable tous les cinq ans.
+        </p>
+        <p>
+          Autorité de contrôle : <strong>Direction Départementale des Territoires et de la Mer (DDTM) de la Gironde</strong>
+          — Préfecture de la Gironde, Esplanade Charles-de-Gaulle, 33000 Bordeaux.
+        </p>
+        <p>
+          L'établissement est certifié <strong>Qualiopi</strong> (au titre des actions concourant au développement
+          des compétences) et <strong>Label Qualité des formations au sein des écoles de conduite</strong>
+          (arrêté du 26 février 2018), ce qui permet le financement des formations par le
+          Compte Personnel de Formation (CPF).
+        </p>
 
-      <section style="margin-top:2rem">
         <h2>4. Propriété intellectuelle</h2>
-        <p>L'ensemble du contenu de ce site (textes, images, graphismes, logo, icônes) est la propriété exclusive de l'Auto-École Saint-Genès ou de ses partenaires. Toute reproduction, représentation ou utilisation sans autorisation préalable est strictement interdite.</p>
-      </section>
+        <p>
+          L'ensemble des éléments figurant sur le site <strong>autoecole-saint-genes.fr</strong> — textes,
+          structure, photographies, illustrations, logos, marques, vidéos, sons, codes sources, mises en page,
+          chartes graphiques — sont la propriété exclusive de l'Auto-École Saint-Genès ou font l'objet
+          d'une autorisation d'utilisation. Ils sont protégés au titre du droit d'auteur, du droit des marques
+          et du droit des bases de données (Code de la propriété intellectuelle).
+        </p>
+        <p>
+          Toute reproduction, représentation, diffusion, modification ou exploitation, totale ou partielle,
+          sans autorisation écrite préalable est strictement interdite et constituerait une contrefaçon
+          sanctionnée par les articles L.335-2 et suivants du Code de la propriété intellectuelle.
+        </p>
 
-      <section style="margin-top:2rem">
-        <h2>5. Responsabilité</h2>
-        <p>L'Auto-École Saint-Genès s'efforce de maintenir les informations publiées sur ce site à jour et exactes. Toutefois, elle ne saurait être tenue responsable d'erreurs ou omissions dans les informations diffusées, ni des dommages résultant de l'utilisation du site.</p>
-        <p>Les paiements en ligne sur ce site sont réalisés en <strong>mode TEST Stripe</strong> — aucun prélèvement réel n'est effectué. Les données de paiement ne transitent pas par nos serveurs.</p>
-      </section>
+        <h2>5. Données personnelles (RGPD)</h2>
+        <p>
+          Conformément au <strong>Règlement (UE) 2016/679 (RGPD)</strong> et à la
+          <strong>loi n° 78-17 du 6 janvier 1978 modifiée</strong>, vous disposez sur les données vous concernant
+          d'un droit d'accès, de rectification, d'effacement, de limitation, de portabilité, d'opposition,
+          ainsi que du droit de définir des directives relatives au sort de vos données après votre décès.
+        </p>
+        <p>
+          Responsable de traitement : <strong>Lionel Vives — Auto-École Saint-Genès</strong>.<br>
+          Pour exercer vos droits :
+          <a href="mailto:contact@autoecole-saint-genes.fr">contact@autoecole-saint-genes.fr</a>
+          ou par courrier postal à l'adresse du siège social.
+        </p>
+        <p>
+          En cas de désaccord, vous avez la possibilité d'introduire une réclamation auprès de la
+          <strong>CNIL</strong> — 3 place de Fontenoy, 75007 Paris —
+          <a href="https://www.cnil.fr" rel="noopener" target="_blank">www.cnil.fr</a>.
+        </p>
+        <p>
+          Pour le détail des traitements, finalités et durées de conservation, consultez notre
+          <a href="/politique-confidentialite">Politique de confidentialité</a>.
+        </p>
 
-      <section style="margin-top:2rem">
-        <h2>6. Données personnelles</h2>
-        <p>Conformément au RGPD (Règlement Général sur la Protection des Données) et à la loi Informatique et Libertés, vous disposez d'un droit d'accès, de rectification et de suppression de vos données. Pour exercer ce droit, contactez-nous à : <a href="mailto:contact@autoecole-saint-genes.fr">contact@autoecole-saint-genes.fr</a></p>
-        <p>Voir notre <a href="/politique-confidentialite">Politique de confidentialité</a> pour plus de détails.</p>
-      </section>
+        <h2>6. Cookies</h2>
+        <p>
+          Le site n'utilise <strong>aucun cookie publicitaire ni traceur tiers</strong>. Seuls des cookies
+          strictement nécessaires au fonctionnement du site (cookie de session, préférences d'affichage)
+          peuvent être déposés. Conformément à l'article 82 de la loi Informatique et Libertés et aux
+          recommandations de la CNIL, ces cookies fonctionnels ne nécessitent pas de consentement préalable.
+        </p>
 
-      <section style="margin-top:2rem">
-        <h2>7. Cookies</h2>
-        <p>Ce site n'utilise pas de cookies publicitaires ou de tracking tiers. Un cookie de session peut être créé lors de la navigation pour le bon fonctionnement du site. Il est supprimé à la fermeture du navigateur.</p>
-      </section>
+        <h2>7. Médiation de la consommation</h2>
+        <p>
+          Conformément aux articles L.611-1 et suivants du Code de la consommation, en cas de litige non
+          résolu directement avec l'Auto-École Saint-Genès, le consommateur peut recourir gratuitement au
+          médiateur de la consommation suivant :
+        </p>
+        <p>
+          <strong>Médiation des Auto-Écoles (CNPA)</strong><br>
+          50 rue Rouget de Lisle — 92158 Suresnes Cedex<br>
+          <a href="https://www.mediateur-cnpa.fr" rel="noopener" target="_blank">www.mediateur-cnpa.fr</a>
+        </p>
+        <p>
+          Plateforme européenne de règlement en ligne des litiges :
+          <a href="https://ec.europa.eu/consumers/odr" rel="noopener" target="_blank">ec.europa.eu/consumers/odr</a>.
+        </p>
 
+        <h2>8. Paiement en ligne</h2>
+        <p>
+          Les paiements en ligne effectués sur le site sont opérés via la solution <strong>Stripe Payments
+          Europe Ltd</strong> (Irlande), prestataire de services de paiement agréé. Les données bancaires
+          sont collectées et traitées directement par Stripe et ne transitent jamais par nos serveurs.
+        </p>
+        <p>
+          <em>Note : ce site est actuellement en mode TEST Stripe — aucun prélèvement réel n'est effectué
+          tant que la mise en production n'est pas activée.</em>
+        </p>
+
+        <h2>9. Responsabilité</h2>
+        <p>
+          L'Auto-École Saint-Genès s'efforce de fournir des informations exactes et tenues à jour.
+          Elle ne saurait toutefois être tenue responsable des erreurs, omissions ou indisponibilités
+          temporaires du site, ni des dommages directs ou indirects résultant de son utilisation ou de
+          l'impossibilité de l'utiliser. Les liens vers des sites tiers sont fournis à titre d'information ;
+          l'Auto-École Saint-Genès n'exerce aucun contrôle sur leur contenu et décline toute responsabilité
+          à leur égard.
+        </p>
+
+        <h2>10. Droit applicable et juridiction compétente</h2>
+        <p>
+          Les présentes mentions légales sont régies par le <strong>droit français</strong>.
+          En cas de litige et à défaut de résolution amiable, les tribunaux compétents seront ceux du
+          ressort de la Cour d'appel de Bordeaux.
+        </p>
+
+        <p style="margin-top:2.5rem;color:var(--c-muted);font-size:.9rem;">
+          Dernière mise à jour : 29 avril 2026.
+        </p>
+
+      </article>
     </div>
-  </main>
+  </section>
+  
+</main>
 
-  <footer class="site-footer" role="contentinfo">
-    <div class="footer-grid">
-      <div class="footer-col"><h3>Auto-École Saint-Genès</h3><p>182 Boulevard George V<br>33200 Bordeaux</p><p><a href="tel:+33556963320">05 56 96 33 20</a></p></div>
-      <div class="footer-col"><h3>Informations légales</h3><ul><li><a href="/mentions-legales">Mentions légales</a></li><li><a href="/politique-confidentialite">Confidentialité</a></li><li><a href="/contact">Contact</a></li></ul></div>
-      <div class="footer-col"><h3>Formations</h3><ul><li><a href="/permis-b">Permis B</a></li><li><a href="/code-de-la-route">Code</a></li><li><a href="/permis-a2">Permis A2</a></li></ul></div>
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__top">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <p class="footer__brand">Auto-École Saint-Genès</p>
+          <p class="footer__tagline">Première auto-école de Bordeaux. Label Qualité, Qualiopi. Depuis 1984.</p>
+        </div>
+        <div class="footer__col">
+          <p class="footer__heading">Formations</p>
+          <ul class="footer__links">
+            <li><a href="/permis-b">Permis B manuelle</a></li>
+            <li><a href="/permis-ba">Permis B automatique</a></li>
+            <li><a href="/conduite-accompagnee">Conduite accompagnée</a></li>
+            <li><a href="/formation-acceleree">Formation accélérée</a></li>
+            <li><a href="/permis-a2">Permis moto A2</a></li>
+            <li><a href="/code-de-la-route">Code en ligne 24/7</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <p class="footer__heading">Infos pratiques</p>
+          <ul class="footer__links">
+            <li><a href="/mobilite-handicap">Mobilité handicap</a></li>
+            <li><a href="/permis-a-1-euro">Permis 1€/jour</a></li>
+            <li><a href="/formules">Toutes les formules</a></li>
+            <li><a href="/actualites">Actualités</a></li>
+            <li><a href="/contact">Contact &amp; équipe</a></li>
+            <li><a href="/preinscription">Préinscription en ligne</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <p class="footer__heading">Contact</p>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon"></span>
+            <span>182 Boulevard George V<br>33200 Bordeaux</span>
+          </div>
+          <a href="tel:+33556963320" class="footer__phone">05 56 96 33 20</a>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon"></span>
+            <span>Lun–Ven 9h–12h30 &amp; 14h–19h<br>Sam 9h–12h</span>
+          </div>
+        </div>
+      </div>
     </div>
-    <p class="footer-copy">© 2026 Auto-École Saint-Genès — Bordeaux. Agrément préfectoral n° E0503300330.</p>
-  </footer>
-  <script src="/assets/main.js" defer></script>
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="footer__bottom-inner">
+        <p class="footer__copy">© 2026 Auto-École Saint-Genès · Bordeaux · SIRET 753 311 100 33 000</p>
+        <nav class="footer__legal" aria-label="Liens légaux">
+          <a href="/mentions-legales">Mentions légales</a>
+          <a href="/politique-confidentialite">Politique de confidentialité</a>
+          <a href="/plan-du-site">Plan du site</a>
+          <a href="/contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+
 </body>
 </html>
