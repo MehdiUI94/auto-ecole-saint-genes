@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" role="img" aria-labelledby="pipeline-title">
+  <title id="pipeline-title">Pipeline SEO Multi-Agents — Auto-École Saint-Genès</title>
+  <defs>
+    <style>
+      .bg { fill: #0f172a; }
+      .card { fill: #1e293b; rx: 12; }
+      .card-border-seo   { stroke: #3b82f6; }
+      .card-border-cont  { stroke: #10b981; }
+      .card-border-des   { stroke: #f59e0b; }
+      .card-border-dev   { stroke: #a855f7; }
+      .badge-seo   { fill: #1d3e6e; }
+      .badge-cont  { fill: #0d3b2e; }
+      .badge-des   { fill: #422006; }
+      .badge-dev   { fill: #3b0764; }
+      .num-seo   { fill: #3b82f6; }
+      .num-cont  { fill: #10b981; }
+      .num-des   { fill: #f59e0b; }
+      .num-dev   { fill: #a855f7; }
+      .title-seo  { fill: #93c5fd; }
+      .title-cont { fill: #6ee7b7; }
+      .title-des  { fill: #fcd34d; }
+      .title-dev  { fill: #d8b4fe; }
+      .role { fill: #94a3b8; }
+      .detail { fill: #64748b; }
+      .arrow { fill: #334155; }
+      .arrow-accent { fill: #475569; }
+      .label { fill: #e2e8f0; font-family: system-ui, -apple-system, sans-serif; }
+      .mono { font-family: 'JetBrains Mono', 'Consolas', monospace; }
+      .header-text { fill: #f8fafc; }
+      .sub-text { fill: #94a3b8; }
+      .token-badge { fill: #0f172a; }
+      .token-text { fill: #64748b; }
+    </style>
+    <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="400" class="bg"/>
+
+  <!-- Header -->
+  <text x="600" y="38" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" class="header-text">Pipeline SEO Multi-Agents</text>
+  <text x="600" y="58" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" class="sub-text">Auto-École Saint-Genès · Bordeaux · Anthropic claude-sonnet-4</text>
+
+  <!-- Separator line -->
+  <line x1="80" y1="72" x2="1120" y2="72" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- ─── CARD 1 — Agent SEO ─── -->
+  <rect x="30" y="88" width="240" height="290" rx="12" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+  <!-- Number badge -->
+  <rect x="42" y="100" width="32" height="32" rx="6" class="badge-seo"/>
+  <text x="58" y="122" text-anchor="middle" font-family="system-ui" font-size="16" font-weight="800" class="num-seo">01</text>
+  <!-- Title -->
+  <text x="82" y="114" font-family="system-ui" font-size="13" font-weight="700" class="title-seo">Agent SEO</text>
+  <text x="82" y="128" font-family="system-ui" font-size="10" class="role">Analyste stratégie locale</text>
+  <!-- Divider -->
+  <line x1="42" y1="140" x2="258" y2="140" stroke="#334155" stroke-width="1"/>
+  <!-- Token badge -->
+  <rect x="192" y="150" width="56" height="18" rx="4" class="token-badge"/>
+  <text x="220" y="163" text-anchor="middle" font-family="'Consolas', monospace" font-size="9" class="num-seo">2 000 tok</text>
+  <!-- Input -->
+  <text x="42" y="162" font-family="system-ui" font-size="10" font-weight="600" fill="#64748b">INPUT</text>
+  <text x="42" y="176" font-family="system-ui" font-size="10" fill="#94a3b8">· Texte site existant</text>
+  <text x="42" y="189" font-family="system-ui" font-size="10" fill="#94a3b8">· URL actuelle</text>
+  <!-- Output -->
+  <line x1="42" y1="202" x2="258" y2="202" stroke="#1d3e6e" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="42" y="217" font-family="system-ui" font-size="10" font-weight="600" fill="#3b82f6">OUTPUT JSON</text>
+  <text x="42" y="231" font-family="system-ui" font-size="10" fill="#64748b">· mots_cles (5+5+4)</text>
+  <text x="42" y="244" font-family="system-ui" font-size="10" fill="#64748b">· plan_site (6 pages)</text>
+  <text x="42" y="257" font-family="system-ui" font-size="10" fill="#64748b">· gaps_seo (5+ items)</text>
+  <text x="42" y="270" font-family="system-ui" font-size="10" fill="#64748b">· recommandations_geo</text>
+  <text x="42" y="283" font-family="system-ui" font-size="10" fill="#64748b">· score_actuel (4 scores)</text>
+  <!-- Bottom tag -->
+  <rect x="42" y="350" width="68" height="18" rx="4" fill="#1d3e6e"/>
+  <text x="76" y="363" text-anchor="middle" font-family="system-ui" font-size="9" fill="#93c5fd">SEO · GEO</text>
+
+  <!-- Arrow 1→2 -->
+  <path d="M272 233 L302 233" stroke="#475569" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="287" y="225" text-anchor="middle" font-family="system-ui" font-size="8" fill="#475569">JSON</text>
+
+  <!-- ─── CARD 2 — Agent Contenu ─── -->
+  <rect x="305" y="88" width="240" height="290" rx="12" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+  <!-- Number badge -->
+  <rect x="317" y="100" width="32" height="32" rx="6" class="badge-cont"/>
+  <text x="333" y="122" text-anchor="middle" font-family="system-ui" font-size="16" font-weight="800" class="num-cont">02</text>
+  <!-- Title -->
+  <text x="357" y="114" font-family="system-ui" font-size="13" font-weight="700" class="title-cont">Agent Contenu</text>
+  <text x="357" y="128" font-family="system-ui" font-size="10" class="role">Architecte rédactionnel</text>
+  <!-- Divider -->
+  <line x1="317" y1="140" x2="533" y2="140" stroke="#334155" stroke-width="1"/>
+  <!-- Token badge -->
+  <rect x="467" y="150" width="56" height="18" rx="4" class="token-badge"/>
+  <text x="495" y="163" text-anchor="middle" font-family="'Consolas', monospace" font-size="9" class="num-cont">3 000 tok</text>
+  <!-- Input -->
+  <text x="317" y="162" font-family="system-ui" font-size="10" font-weight="600" fill="#64748b">INPUT</text>
+  <text x="317" y="176" font-family="system-ui" font-size="10" fill="#94a3b8">· Output Agent SEO</text>
+  <text x="317" y="189" font-family="system-ui" font-size="10" fill="#94a3b8">· Type de page + ton</text>
+  <!-- Output -->
+  <line x1="317" y1="202" x2="533" y2="202" stroke="#0d3b2e" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="317" y="217" font-family="system-ui" font-size="10" font-weight="600" fill="#10b981">OUTPUT JSON</text>
+  <text x="317" y="231" font-family="system-ui" font-size="10" fill="#64748b">· meta (title, desc, slug)</text>
+  <text x="317" y="244" font-family="system-ui" font-size="10" fill="#64748b">· h1 + introduction</text>
+  <text x="317" y="257" font-family="system-ui" font-size="10" fill="#64748b">· sections H2 (≥3)</text>
+  <text x="317" y="270" font-family="system-ui" font-size="10" fill="#64748b">· faq (≥3 questions)</text>
+  <text x="317" y="283" font-family="system-ui" font-size="10" fill="#64748b">· cta + analyse_existant</text>
+  <!-- Bottom tag -->
+  <rect x="317" y="350" width="88" height="18" rx="4" fill="#0d3b2e"/>
+  <text x="361" y="363" text-anchor="middle" font-family="system-ui" font-size="9" fill="#6ee7b7">4 tons A/B</text>
+
+  <!-- Arrow 2→3 -->
+  <path d="M547 233 L577 233" stroke="#475569" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="562" y="225" text-anchor="middle" font-family="system-ui" font-size="8" fill="#475569">JSON</text>
+
+  <!-- ─── CARD 3 — Agent Design ─── -->
+  <rect x="580" y="88" width="240" height="290" rx="12" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+  <!-- Number badge -->
+  <rect x="592" y="100" width="32" height="32" rx="6" class="badge-des"/>
+  <text x="608" y="122" text-anchor="middle" font-family="system-ui" font-size="16" font-weight="800" class="num-des">03</text>
+  <!-- Title -->
+  <text x="632" y="114" font-family="system-ui" font-size="13" font-weight="700" class="title-des">Agent Design</text>
+  <text x="632" y="128" font-family="system-ui" font-size="10" class="role">Système visuel WCAG AA</text>
+  <!-- Divider -->
+  <line x1="592" y1="140" x2="808" y2="140" stroke="#334155" stroke-width="1"/>
+  <!-- Token badge -->
+  <rect x="742" y="150" width="56" height="18" rx="4" class="token-badge"/>
+  <text x="770" y="163" text-anchor="middle" font-family="'Consolas', monospace" font-size="9" class="num-des">3 500 tok</text>
+  <!-- Input -->
+  <text x="592" y="162" font-family="system-ui" font-size="10" font-weight="600" fill="#64748b">INPUT</text>
+  <text x="592" y="176" font-family="system-ui" font-size="10" fill="#94a3b8">· Positionnement de marque</text>
+  <text x="592" y="189" font-family="system-ui" font-size="10" fill="#94a3b8">· Secteur + ton Agent 2</text>
+  <!-- Output -->
+  <line x1="592" y1="202" x2="808" y2="202" stroke="#422006" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="592" y="217" font-family="system-ui" font-size="10" font-weight="600" fill="#f59e0b">OUTPUT JSON</text>
+  <text x="592" y="231" font-family="system-ui" font-size="10" fill="#64748b">· couleurs (9 rôles + hex)</text>
+  <text x="592" y="244" font-family="system-ui" font-size="10" fill="#64748b">· typographie (Google Fonts)</text>
+  <text x="592" y="257" font-family="system-ui" font-size="10" fill="#64748b">· espacement (tokens)</text>
+  <text x="592" y="270" font-family="system-ui" font-size="10" fill="#64748b">· composants UI</text>
+  <text x="592" y="283" font-family="system-ui" font-size="10" fill="#64748b">· css_variables (:root)</text>
+  <!-- Bottom tag -->
+  <rect x="592" y="350" width="88" height="18" rx="4" fill="#422006"/>
+  <text x="636" y="363" text-anchor="middle" font-family="system-ui" font-size="9" fill="#fcd34d">Contraste ≥4.5:1</text>
+
+  <!-- Arrow 3→4 -->
+  <path d="M822 233 L852 233" stroke="#475569" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="837" y="225" text-anchor="middle" font-family="system-ui" font-size="8" fill="#475569">JSON</text>
+
+  <!-- ─── CARD 4 — Agent Dev ─── -->
+  <rect x="855" y="88" width="315" height="290" rx="12" fill="#1e293b" stroke="#a855f7" stroke-width="1.5"/>
+  <!-- Number badge -->
+  <rect x="867" y="100" width="32" height="32" rx="6" class="badge-dev"/>
+  <text x="883" y="122" text-anchor="middle" font-family="system-ui" font-size="16" font-weight="800" class="num-dev">04</text>
+  <!-- Title -->
+  <text x="907" y="114" font-family="system-ui" font-size="13" font-weight="700" class="title-dev">Agent Dev</text>
+  <text x="907" y="128" font-family="system-ui" font-size="10" class="role">Front-end auto-évaluateur</text>
+  <!-- Divider -->
+  <line x1="867" y1="140" x2="1158" y2="140" stroke="#334155" stroke-width="1"/>
+  <!-- Token badge -->
+  <rect x="1092" y="150" width="56" height="18" rx="4" class="token-badge"/>
+  <text x="1120" y="163" text-anchor="middle" font-family="'Consolas', monospace" font-size="9" class="num-dev">8 000 tok</text>
+  <!-- Input -->
+  <text x="867" y="162" font-family="system-ui" font-size="10" font-weight="600" fill="#64748b">INPUT</text>
+  <text x="867" y="176" font-family="system-ui" font-size="10" fill="#94a3b8">· Agent 2 JSON + Agent 3 CSS vars</text>
+  <text x="867" y="189" font-family="system-ui" font-size="10" fill="#94a3b8">· Nom de page + données réelles</text>
+  <!-- Output -->
+  <line x1="867" y1="202" x2="1158" y2="202" stroke="#3b0764" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="867" y="217" font-family="system-ui" font-size="10" font-weight="600" fill="#a855f7">OUTPUT JSON</text>
+  <!-- Two columns inside card 4 -->
+  <text x="867" y="231" font-family="system-ui" font-size="10" fill="#64748b">· html (page complète, 14 exigences)</text>
+  <text x="867" y="244" font-family="system-ui" font-size="10" fill="#64748b">· seo_checks [10 critères auto-audit]</text>
+  <text x="867" y="257" font-family="system-ui" font-size="10" fill="#64748b">  ✓ Title · Meta desc · H1 unique</text>
+  <text x="867" y="270" font-family="system-ui" font-size="10" fill="#64748b">  ✓ Schema.org · OG · Alt · ARIA</text>
+  <text x="867" y="283" font-family="system-ui" font-size="10" fill="#64748b">· recommandations_suivantes</text>
+  <!-- Bottom tags -->
+  <rect x="867" y="350" width="108" height="18" rx="4" fill="#3b0764"/>
+  <text x="921" y="363" text-anchor="middle" font-family="system-ui" font-size="9" fill="#d8b4fe">Schema.org + Auto-audit</text>
+  <rect x="983" y="350" width="98" height="18" rx="4" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+  <text x="1032" y="363" text-anchor="middle" font-family="system-ui" font-size="9" fill="#64748b">14 HTML rules</text>
+
+  <!-- Footer bar -->
+  <rect x="0" y="385" width="1200" height="15" fill="#0c1220"/>
+  <text x="600" y="396" text-anchor="middle" font-family="'Consolas', monospace" font-size="8" fill="#334155">Agent 1 → Agent 2 → Agent 3 → Agent 4  ·  Communication JSON stricte  ·  Anti-hallucination par injection de données réelles</text>
+</svg>

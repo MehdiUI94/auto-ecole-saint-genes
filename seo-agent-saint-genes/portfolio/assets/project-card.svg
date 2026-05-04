@@ -1,0 +1,200 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="card-title card-desc">
+  <title id="card-title">Projet Portfolio — Plateforme SEO Multi-Agents · Auto-École Saint-Genès</title>
+  <desc id="card-desc">Bannière de présentation du projet SEO multi-agents pour l'Auto-École Saint-Genès à Bordeaux.</desc>
+  <defs>
+    <style>
+      text { font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; }
+    </style>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c1220"/>
+      <stop offset="60%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#131f35"/>
+    </linearGradient>
+    <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0"/>
+      <stop offset="20%" style="stop-color:#3b82f6"/>
+      <stop offset="50%" style="stop-color:#a855f7"/>
+      <stop offset="80%" style="stop-color:#f59e0b"/>
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="glowBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1d3e6e;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#1d3e6e;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="blur6">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <filter id="blur12">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.04" stroke="#94a3b8" stroke-width="0.5">
+    <line x1="0" y1="90" x2="1200" y2="90"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/>
+    <line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="150" y1="0" x2="150" y2="630"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="450" y1="0" x2="450" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="750" y1="0" x2="750" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+    <line x1="1050" y1="0" x2="1050" y2="630"/>
+  </g>
+
+  <!-- Glow top-left -->
+  <ellipse cx="180" cy="180" rx="280" ry="180" fill="#1d3e6e" opacity="0.18" filter="url(#blur12)"/>
+  <!-- Glow right -->
+  <ellipse cx="1050" cy="350" rx="240" ry="200" fill="#3b0764" opacity="0.15" filter="url(#blur12)"/>
+
+  <!-- Accent line top -->
+  <rect x="0" y="4" width="1200" height="2" fill="url(#accentLine)" opacity="0.8"/>
+
+  <!-- ─── LEFT COLUMN (content) ─── -->
+
+  <!-- School badge -->
+  <rect x="60" y="60" width="180" height="32" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <rect x="72" y="70" width="10" height="10" rx="2" fill="#3b82f6"/>
+  <text x="90" y="81" font-size="11" fill="#94a3b8" letter-spacing="0.5">EUGENIA SCHOOL</text>
+
+  <!-- Project label -->
+  <text x="60" y="136" font-size="13" font-weight="600" fill="#64748b" letter-spacing="2" text-transform="uppercase">PROJET PORTFOLIO · 2025–2026</text>
+
+  <!-- Main title -->
+  <text x="60" y="196" font-size="52" font-weight="800" fill="#f8fafc" letter-spacing="-1">Plateforme SEO</text>
+  <text x="60" y="254" font-size="52" font-weight="800" fill="#f8fafc" letter-spacing="-1">Multi-<tspan fill="#3b82f6">Agents</tspan></text>
+
+  <!-- Subtitle -->
+  <text x="60" y="296" font-size="18" fill="#94a3b8">Auto-École Saint-Genès · Bordeaux</text>
+
+  <!-- Accent separator -->
+  <rect x="60" y="316" width="280" height="2" rx="1" fill="#3b82f6" opacity="0.6"/>
+
+  <!-- Description -->
+  <text x="60" y="348" font-size="14" fill="#64748b">Pipeline IA à 4 agents chaînés · Site Express.js 25 pages</text>
+  <text x="60" y="368" font-size="14" fill="#64748b">Schema.org · Stripe · WCAG AA · GEO optimisé</text>
+
+  <!-- ─── STATS ROW ─── -->
+  <!-- Stat 1 -->
+  <rect x="60" y="408" width="130" height="90" rx="10" fill="#1e293b" stroke="#1d3e6e" stroke-width="1.5"/>
+  <text x="125" y="450" text-anchor="middle" font-size="36" font-weight="800" fill="#3b82f6">4</text>
+  <text x="125" y="470" text-anchor="middle" font-size="11" fill="#64748b">agents IA</text>
+  <text x="125" y="485" text-anchor="middle" font-size="9" fill="#475569">chaînés JSON</text>
+
+  <!-- Stat 2 -->
+  <rect x="205" y="408" width="130" height="90" rx="10" fill="#1e293b" stroke="#0d3b2e" stroke-width="1.5"/>
+  <text x="270" y="450" text-anchor="middle" font-size="36" font-weight="800" fill="#10b981">25</text>
+  <text x="270" y="470" text-anchor="middle" font-size="11" fill="#64748b">pages HTML</text>
+  <text x="270" y="485" text-anchor="middle" font-size="9" fill="#475569">production-ready</text>
+
+  <!-- Stat 3 -->
+  <rect x="350" y="408" width="130" height="90" rx="10" fill="#1e293b" stroke="#422006" stroke-width="1.5"/>
+  <text x="415" y="450" text-anchor="middle" font-size="36" font-weight="800" fill="#f59e0b">93%</text>
+  <text x="415" y="470" text-anchor="middle" font-size="11" fill="#64748b">taux de réussite</text>
+  <text x="415" y="485" text-anchor="middle" font-size="9" fill="#475569">vs 67% nationale</text>
+
+  <!-- Stat 4 -->
+  <rect x="495" y="408" width="130" height="90" rx="10" fill="#1e293b" stroke="#3b0764" stroke-width="1.5"/>
+  <text x="560" y="450" text-anchor="middle" font-size="36" font-weight="800" fill="#a855f7">40</text>
+  <text x="560" y="470" text-anchor="middle" font-size="11" fill="#64748b">ans d'histoire</text>
+  <text x="560" y="485" text-anchor="middle" font-size="9" fill="#475569">fondée en 1984</text>
+
+  <!-- Tags row -->
+  <rect x="60" y="520" width="68" height="22" rx="4" fill="#1d3e6e"/>
+  <text x="94" y="536" text-anchor="middle" font-size="10" fill="#93c5fd">SEO Local</text>
+
+  <rect x="136" y="520" width="40" height="22" rx="4" fill="#0d3b2e"/>
+  <text x="156" y="536" text-anchor="middle" font-size="10" fill="#6ee7b7">GEO</text>
+
+  <rect x="184" y="520" width="62" height="22" rx="4" fill="#3b0764"/>
+  <text x="215" y="536" text-anchor="middle" font-size="10" fill="#d8b4fe">Express.js</text>
+
+  <rect x="254" y="520" width="50" height="22" rx="4" fill="#422006"/>
+  <text x="279" y="536" text-anchor="middle" font-size="10" fill="#fcd34d">Stripe</text>
+
+  <rect x="312" y="520" width="80" height="22" rx="4" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+  <text x="352" y="536" text-anchor="middle" font-size="10" fill="#64748b">WCAG AA</text>
+
+  <rect x="400" y="520" width="90" height="22" rx="4" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+  <text x="445" y="536" text-anchor="middle" font-size="10" fill="#64748b">Schema.org</text>
+
+  <!-- ─── RIGHT COLUMN (pipeline visual) ─── -->
+
+  <!-- Pipeline panel background -->
+  <rect x="700" y="55" width="450" height="520" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+
+  <!-- Panel header -->
+  <rect x="700" y="55" width="450" height="52" rx="16" fill="#0f172a"/>
+  <rect x="700" y="91" width="450" height="16" fill="#0f172a"/>
+  <text x="925" y="87" text-anchor="middle" font-size="13" font-weight="600" fill="#94a3b8" letter-spacing="1">PIPELINE AGENTS</text>
+
+  <!-- Traffic lights -->
+  <circle cx="726" cy="81" r="5" fill="#ef4444"/>
+  <circle cx="742" cy="81" r="5" fill="#f59e0b"/>
+  <circle cx="758" cy="81" r="5" fill="#22c55e"/>
+
+  <!-- Agent 1 row -->
+  <rect x="724" y="120" width="402" height="88" rx="8" fill="#0f172a" stroke="#1d3e6e" stroke-width="1"/>
+  <rect x="724" y="120" width="4" height="88" rx="2" fill="#3b82f6"/>
+  <text x="744" y="144" font-size="11" font-weight="700" fill="#93c5fd">01 · Agent SEO</text>
+  <text x="744" y="160" font-size="10" fill="#64748b">Audit · Mots-clés · Plan de site · Scores</text>
+  <rect x="1036" y="129" width="80" height="18" rx="4" fill="#1d3e6e"/>
+  <text x="1076" y="142" text-anchor="middle" font-family="'Consolas', monospace" font-size="9" fill="#3b82f6">2 000 tok</text>
+  <!-- Output preview -->
+  <rect x="744" y="168" width="372" height="30" rx="4" fill="#0c1220"/>
+  <text x="756" y="188" font-family="'Consolas', monospace" font-size="9" fill="#475569">→ {"mots_cles": [...], "plan_site": [...], "gaps_seo": [...], "score_actuel": {...}}</text>
+
+  <!-- Arrow -->
+  <line x1="925" y1="210" x2="925" y2="228" stroke="#334155" stroke-width="2"/>
+  <polygon points="919,222 931,222 925,230" fill="#334155"/>
+
+  <!-- Agent 2 row -->
+  <rect x="724" y="232" width="402" height="88" rx="8" fill="#0f172a" stroke="#0d3b2e" stroke-width="1"/>
+  <rect x="724" y="232" width="4" height="88" rx="2" fill="#10b981"/>
+  <text x="744" y="256" font-size="11" font-weight="700" fill="#6ee7b7">02 · Agent Contenu</text>
+  <text x="744" y="272" font-size="10" fill="#64748b">H1 · Sections H2 · FAQ · CTA · Meta tags</text>
+  <rect x="1036" y="241" width="80" height="18" rx="4" fill="#0d3b2e"/>
+  <text x="1076" y="254" text-anchor="middle" font-family="'Consolas', monospace" font-size="9" fill="#10b981">3 000 tok</text>
+  <rect x="744" y="280" width="372" height="30" rx="4" fill="#0c1220"/>
+  <text x="756" y="300" font-family="'Consolas', monospace" font-size="9" fill="#475569">→ {"meta": {...}, "sections": [...], "faq": [...], "cta": {...}}</text>
+
+  <!-- Arrow -->
+  <line x1="925" y1="322" x2="925" y2="340" stroke="#334155" stroke-width="2"/>
+  <polygon points="919,334 931,334 925,342" fill="#334155"/>
+
+  <!-- Agent 3 row -->
+  <rect x="724" y="344" width="402" height="88" rx="8" fill="#0f172a" stroke="#422006" stroke-width="1"/>
+  <rect x="724" y="344" width="4" height="88" rx="2" fill="#f59e0b"/>
+  <text x="744" y="368" font-size="11" font-weight="700" fill="#fcd34d">03 · Agent Design</text>
+  <text x="744" y="384" font-size="10" fill="#64748b">Palette · Typo · Spacing · CSS variables</text>
+  <rect x="1036" y="353" width="80" height="18" rx="4" fill="#422006"/>
+  <text x="1076" y="366" text-anchor="middle" font-family="'Consolas', monospace" font-size="9" fill="#f59e0b">3 500 tok</text>
+  <rect x="744" y="392" width="372" height="30" rx="4" fill="#0c1220"/>
+  <text x="756" y="412" font-family="'Consolas', monospace" font-size="9" fill="#475569">→ {"couleurs": [...], "css_variables": ":root { --color-primary: ... }"}</text>
+
+  <!-- Arrow -->
+  <line x1="925" y1="434" x2="925" y2="452" stroke="#334155" stroke-width="2"/>
+  <polygon points="919,446 931,446 925,454" fill="#334155"/>
+
+  <!-- Agent 4 row -->
+  <rect x="724" y="456" width="402" height="88" rx="8" fill="#0f172a" stroke="#3b0764" stroke-width="1.5"/>
+  <rect x="724" y="456" width="4" height="88" rx="2" fill="#a855f7"/>
+  <text x="744" y="480" font-size="11" font-weight="700" fill="#d8b4fe">04 · Agent Dev</text>
+  <text x="744" y="496" font-size="10" fill="#64748b">HTML complet · Schema.org · Auto-audit SEO</text>
+  <rect x="1036" y="465" width="80" height="18" rx="4" fill="#3b0764"/>
+  <text x="1076" y="478" text-anchor="middle" font-family="'Consolas', monospace" font-size="9" fill="#a855f7">8 000 tok</text>
+  <rect x="744" y="504" width="372" height="30" rx="4" fill="#0c1220"/>
+  <text x="756" y="524" font-family="'Consolas', monospace" font-size="9" fill="#475569">→ {"html": "&#x3C;!DOCTYPE html&#x3E;...", "seo_checks": [10 audits]}</text>
+
+  <!-- Bottom accent -->
+  <rect x="0" y="620" width="1200" height="10" fill="#0c1220"/>
+  <text x="60" y="628" font-size="8" fill="#1e293b">Auto-École Saint-Genès · Bordeaux · 2025–2026</text>
+  <text x="1140" y="628" text-anchor="end" font-size="8" fill="#1e293b">Mehdi Zitouni · Eugenia School</text>
+</svg>
